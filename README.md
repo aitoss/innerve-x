@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Innerve X Hackathon 🚀
 
-## Getting Started
+A Next.js application developed for the Innerve X Hackathon organized by OSS Club.
 
-First, run the development server:
+## 📅 Event Details
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Event:** Innerve X Hackathon
+- **Organizer:** OSS Club
+- **Date:** January 31, 2026
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 16.0.0](https://nextjs.org/) with App Router
+- **Runtime:** React 19.2.0
+- **Styling:** Tailwind CSS 4
+- **Code Quality:** Biome (Linter & Formatter)
+- **Optimization:** React Compiler (Babel Plugin)
+
+
+## 📁 Project Structure
+
+```
+innerve-x/
+├── src/
+│   └── app/
+│       ├── globals.css
+│       ├── layout.jsx
+│       └── page.jsx
+├── public/
+├── .next/
+├── biome.json
+├── jsconfig.json
+├── next.config.mjs
+├── package.json
+├── postcss.config.mjs
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Modern Next.js 16 App Router architecture
+- Server-side rendering (SSR) and static site generation (SSG)
+- Optimized with React 19 compiler
+- Tailwind CSS for responsive styling
+- Code quality enforced with Biome
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧪 Development
 
-## Learn More
+### Code Quality
 
-To learn more about Next.js, take a look at the following resources:
+This project uses [Biome](https://biomejs.dev/) for linting and formatting:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Linting:** Enabled with recommended rules for React and Next.js
+- **Formatting:** 2-space indentation, automatic import organization
+- **VCS Integration:** Git-aware with `.gitignore` support
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Configuration Files
 
-## Deploy on Vercel
+- [`biome.json`](biome.json) - Biome configuration
+- [`next.config.mjs`](next.config.mjs) - Next.js configuration
+- [`jsconfig.json`](jsconfig.json) - JavaScript compiler options
+- [`postcss.config.mjs`](postcss.config.mjs) - PostCSS configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is developed for the Innerve X Hackathon.
+
+
+
+## 📧 Contact
+
+For questions or support, reach out to the OSS Club organizers.
+
+---
+
+Built with ❤️ for Innerve X Hackathon 2026
