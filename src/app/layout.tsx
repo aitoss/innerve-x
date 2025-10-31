@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
+
 import "./globals.css";
+import { s } from "motion/react-client";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +14,28 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const clashClan = localFont({
+  src: [
+    {
+      path: "../../public/Clash_Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-clashclan", // useful for Tailwind
+});
+
+// const superCell = localFont({
+//   src: [
+//     {
+//       path: "../../public/supercell-magic.ttf",
+//       weight: "400",
+//       style: "normal",
+//     },
+//   ],
+//   variable: "--font-supercell", // useful for Tailwind
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,9 +48,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${clashClan.variable} antialiased`}
       >
         {children}
       </body>
