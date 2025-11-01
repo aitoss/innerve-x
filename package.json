@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "@react-spring/web": "^10.0.3",
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.4.0",
     "motion": "^12.23.24",
     "next": "16.0.0",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "three": "^0.181.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
