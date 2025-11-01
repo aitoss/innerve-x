@@ -85,4 +85,4 @@ For questions or support, reach out to the OSS Club organizers.
 
 ---
 
-Built with ❤️ for Innerve X Hackathon 2026
+Built with ❤️and Passion for Innerve X Hackathon 2026
