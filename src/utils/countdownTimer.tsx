@@ -25,17 +25,17 @@ const CountdownTimer = (props: Props) => {
         const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        // const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-        return { days, hours, minutes };
+        return { days, hours, minutes, seconds };
     };
 
-    const { days, hours, minutes } = getFormattedTime(timeRemaining);
+    const { days, hours, minutes, seconds } = getFormattedTime(timeRemaining);
 
     return (
         <>
-        <div className="text-[40px] text-white [text-shadow:0_3.558px_0_#000]">
-            {days}D {hours}H {minutes}M 
+        <div className="text-[34px] text-white [text-shadow:0_3.558px_0_#000]">
+            {days}D : {hours}H : {minutes}M : {seconds}S
         </div>
             
         </>

@@ -69,3 +69,16 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+
+/* globals.css */
+@keyframes spin-continuous {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spin-continuous {
+  transform-origin: 4px 6.5px; /* change pivot if needed */
+  animation: spin-continuous 4s linear infinite;
+  will-change: transform;
+}
