@@ -8,7 +8,7 @@ export default function Navbar() {
   const navItems = ["Prizes", "Tracks", "Timeline", "Sponser"];
 
   return (
-    <nav className="absolute z-10 top-0 w-full flex justify-between items-center p-5 px-14 bg-transparent">
+    <nav className="absolute z-5 top-0 w-full flex justify-between items-center p-5 px-14 bg-transparent">
       <InnerveNavbarLogo />
       <NavigationBar />
       <BrochureButton />
