@@ -1,11 +1,11 @@
-import CountdownTimerCard from "@/components/layout/countdownTimerCard";
-import EventCard from "@/components/layout/eventCard";
 import ClockSection from "@/sections/clockSection";
+import PrizePoolSection from "@/sections/prizePoolSection";
 
 export default function TestShashwatPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 gap-4">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 gap-200">
       <ClockSection />
+      <PrizePoolSection />
     </main>
   );
 }

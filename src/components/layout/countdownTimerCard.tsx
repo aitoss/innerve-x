@@ -1,4 +1,4 @@
-import CountdownTimer from "@/utils/countdownTimer";
+import CountdownTimer from "@/components/ui/countdownTimer";
 import ClockAnimation from "@/components/ui/clockanimation"
 import CountdownArrow from "@/components/ui/countdownArrows";
 

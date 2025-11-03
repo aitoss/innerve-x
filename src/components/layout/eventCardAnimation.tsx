@@ -35,7 +35,7 @@ export default function EventCardAnimated() {
       element: sceneRef.current,
       engine: engine,
       options: {
-        width: 1500,
+        width: 1300,
         height: 1200,
         wireframes: false,
         background: "transparent", // Make background transparent to see ropes
@@ -50,14 +50,14 @@ export default function EventCardAnimated() {
 
     // Fixed anchor points for ropes
     const leftAnchor = { x: 420, y: 300 };
-    const rightAnchor = { x: 1070, y: 300 };
+    const rightAnchor = { x: 1060, y: 300 };
 
     // Create physics body (suspended rectangle)
     const cardBody = Bodies.rectangle(600, 550, 900, 380, {
       density: 0.03,
       frictionAir: 0.01,
       render: {
-        fillStyle: "#ffffff",
+        fillStyle: "transparent",
         strokeStyle: "transparent",
         lineWidth: 0,
       },
