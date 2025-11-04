@@ -68,8 +68,8 @@ export default function HeroSectionAnimation() {
             {/* this is absolute positioning section that is relative to the this hero section */}
 
             {/* this is the bottom zero layer Image */}
-            {/* <Image src={heroImage} alt="Hero Image" layout="fill" objectFit="cover" className="absolute inset-0 z-0" /> */}
-            <video
+            <Image src={heroImage} alt="Hero Image" layout="fill" objectFit="cover" className="absolute inset-0 z-0" />
+            {/* <video
                 src="/videos/output_loop.webm"
                 className="absolute inset-0 w-full h-full object-cover z-0"
                 autoPlay
@@ -77,7 +77,7 @@ export default function HeroSectionAnimation() {
                 muted
                 playsInline
                 preload="auto"
-            />
+            /> */}
 
 
             {/* this is layer five navbar */}

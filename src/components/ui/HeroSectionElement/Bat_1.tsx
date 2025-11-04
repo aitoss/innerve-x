@@ -13,7 +13,7 @@ interface Bat1Props {
 export default function Bat1({ position = "", size = "h-[100px] w-[100px]", X, Y }: Bat1Props) {
     return (
         <motion.div className={`absolute ${position} z-20`} style={{ x: X, y: Y }}>
-            <Image src={BatGif} alt="Bat-1" className={size} />
+            <Image src={Bat1Image} alt="Bat-1" className={size} />
         </motion.div>
     )
 }
