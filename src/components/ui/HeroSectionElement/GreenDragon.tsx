@@ -1,10 +1,16 @@
 import Image from "next/image";
+import {motion} from "motion/react"
 import GreenDragonImage from "../../../assets/svg/dragon-1.svg"
 
-export default function GreenDragon(){
+interface GreenDragonProps {
+    X?:any;
+    Y?:any;
+}
+
+export default function GreenDragon({X,Y}: GreenDragonProps){
     return (
-        <div className="absolute bottom-[-5%] left-[-13%] z-20" >
+        <motion.div className="absolute bottom-[-5%] left-[-13%] z-20" style={{x:X, y:Y}}>
             <Image src={GreenDragonImage} alt="GreenDragonImage" />
-        </div>
+        </motion.div>
     )
 }

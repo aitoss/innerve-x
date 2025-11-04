@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import { s } from "motion/react-client";
+import LenisProvider from "@/utils/LenisProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,7 +53,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${clashClan.variable} antialiased`}
       >
-        {children}
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );
