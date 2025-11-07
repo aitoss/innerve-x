@@ -7,8 +7,11 @@ export default function PrizePoolSection() {
 
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
+        <div className="flex justify-center">
+
         <PrizePoolScroll />
+        </div>
         <PrizePoolCard />
     </div>
   );
