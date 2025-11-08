@@ -20,15 +20,13 @@ export default function EventCardAnimated() {
     const Render = Matter.Render;
     const Runner = Matter.Runner;
     const Constraint = Matter.Constraint;
-    const MouseConstraint = Matter.MouseConstraint;
-    const Mouse = Matter.Mouse;
     const Composite = Matter.Composite;
     const Bodies = Matter.Bodies;
 
     // create engine
     const engine = Engine.create();
     const world = engine.world;
-    world.gravity.y = 1;
+    world.gravity.y = 0.005;
 
     // create renderer with transparent background
     const render = Render.create({
@@ -49,12 +47,12 @@ export default function EventCardAnimated() {
     Runner.run(runner, engine);
 
     // Fixed anchor points for ropes
-    const leftAnchor = { x: 420, y: 300 };
-    const rightAnchor = { x: 1060, y: 300 };
+    const leftAnchor = { x: 420, y: 130 };
+    const rightAnchor = { x: 1060, y: 130 };
 
-    // Create physics body (suspended rectangle)
-    const cardBody = Bodies.rectangle(600, 550, 900, 380, {
-      density: 0.03,
+    // Create physics body (suspended rectangle) - starting from top for drop effect
+    const cardBody = Bodies.rectangle(740, 450, 900, 380, {
+      density: 3,
       frictionAir: 0.01,
       render: {
         fillStyle: "transparent",
@@ -63,25 +61,27 @@ export default function EventCardAnimated() {
       },
     });
 
-    // Create left rope constraint
+    // Create left rope constraint - acts like real rope (can compress but not extend)
     const leftRope = Constraint.create({
       pointA: leftAnchor,
       bodyB: cardBody,
-      pointB: { x: -320, y: -200 },
-      stiffness: 0.001,
-      damping: 0.05,
+      pointB: { x: -320, y: -250 },
+      stiffness: 0.0008,
+      damping: 0.001,
+      length: 290,
       render: {
         visible: false, // Hide the default spring line
       },
     });
 
-    // Create right rope constraint
+    // Create right rope constraint - acts like real rope (can compress but not extend)
     const rightRope = Constraint.create({
       pointA: rightAnchor,
       bodyB: cardBody,
-      pointB: { x: 320, y: -200 },
-      stiffness: 0.001,
-      damping: 0.05,
+      pointB: { x: 320, y: -250 },
+      stiffness: 0.0008,
+      damping: 0.001,
+      length: 290,
       render: {
         visible: false, // Hide the default spring line
       },
@@ -89,41 +89,6 @@ export default function EventCardAnimated() {
 
     // Add bodies and constraints to world
     Composite.add(world, [cardBody, leftRope, rightRope]);
-
-    // Don't add mouse constraint to canvas - we'll handle dragging on the cardRef instead
-
-    // Manual drag handling on the EventCard element
-    let isDragging = false;
-    let dragOffset = { x: 0, y: 0 };
-    
-    const handleMouseDown = (e: MouseEvent) => {
-      e.preventDefault(); // Prevent text selection and image dragging
-      isDragging = true;
-      const rect = cardRef.current?.getBoundingClientRect();
-      if (rect) {
-        dragOffset.x = e.clientX - cardBody.position.x;
-        dragOffset.y = e.clientY - cardBody.position.y;
-      }
-    };
-    
-    const handleMouseMove = (e: MouseEvent) => {
-      if (isDragging && cardRef.current) {
-        e.preventDefault(); // Prevent default drag behavior
-        const newX = e.clientX - dragOffset.x;
-        const newY = e.clientY - dragOffset.y;
-        Matter.Body.setPosition(cardBody, { x: newX, y: newY });
-      }
-    };
-    
-    const handleMouseUp = () => {
-      isDragging = false;
-    };
-    
-    if (cardRef.current) {
-      cardRef.current.addEventListener('mousedown', handleMouseDown as any);
-      document.addEventListener('mousemove', handleMouseMove);
-      document.addEventListener('mouseup', handleMouseUp);
-    }
 
     // Sync card DOM position with physics body and update rope positions
     const updateCardPosition = () => {
@@ -185,11 +150,6 @@ export default function EventCardAnimated() {
 
     // cleanup on unmount
     return () => {
-      if (cardRef.current) {
-        cardRef.current.removeEventListener('mousedown', handleMouseDown as any);
-      }
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseup', handleMouseUp);
       Render.stop(render);
       Runner.stop(runner);
       Engine.clear(engine);
@@ -248,17 +208,16 @@ export default function EventCardAnimated() {
       {/* Clean rectangle container - paste your content here */}
       <div
         ref={cardRef}
-        className="absolute cursor-grab active:cursor-grabbing select-none"
+        className="absolute select-none"
         style={{ 
           zIndex: 10, 
-          pointerEvents: "auto", // Only the card captures events
+          pointerEvents: "none",
           transformOrigin: "center center",
           width: "700px",
           height: "280px",
-          userSelect: "none", // Prevent text selection
-          WebkitUserSelect: "none" // Safari
+          userSelect: "none",
+          WebkitUserSelect: "none"
         }}
-        onDragStart={(e) => e.preventDefault()} // Prevent default drag
       >
         {/* Paste your content here */}<EventCard />
       </div>
