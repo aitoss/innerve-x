@@ -2,6 +2,7 @@ import Image from "next/image"
 import {motion} from "motion/react"
 import BalloonImage from "../../../assets/svg/balloon.svg"
 
+
 interface BalloonProps {
     position?: string;
     size?: string;

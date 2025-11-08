@@ -97,14 +97,14 @@ export default function HeroSectionAnimation() {
             <Balloon position="top-[30%] right-[35%]" size="h-[90px] w-[90px]" X={BalloonX} Y={BalloonY} />
 
             {/* this is the bat section of positions with random movements */}
-            <Bat1 position="top-[3%] right-[-3.5%]" size="h-[100px] w-[100px]" X={bat1X} Y={bat1Y} /> {/* the top right bat */}
-            <Bat1 position="top-[30%] right-[16%]" size="h-[50px] w-[50px]" X={bat2X} Y={bat2Y} />  {/* three bat as a background b3 */}
-            <Bat1 position="top-[36%] right-[20%]" size="h-[50px] w-[50px]" X={bat3X} Y={bat3Y} /> {/* three bat as a background b2 */}
-            <Bat2 position="top-[30%] right-[22%]" size="h-[60px] w-[60px]" X={bat4X} Y={bat4Y} /> {/* three bat as a background b1 */}
-            <Bat2 position="top-[38%] right-[25%]" size="h-[100px] w-[100px]" X={bat5X} Y={bat5Y} /> {/* bat side of innnerve logo */}
-            <Bat2 position="top-[26%] right-[26%]" size="h-[150px] w-[150px]" X={bat6X} Y={bat6Y} /> {/* bat above innnerve logo */}
-            <Bat1 position="top-[22%] right-[6%]" size="h-[70px] w-[70px]" X={bat7X} Y={bat7Y} /> {/* right first bat2 */}
-            <Bat2 position="top-[16%] right-[-1.5%]" size="h-[150px] w-[150px]" X={bat8X} Y={bat8Y} /> {/* right first bat1 */}
+            <Bat1 position="top-[3%] right-[-3.5%]" size="h-[100px] w-auto" X={bat1X} Y={bat1Y} /> {/* the top right bat */}
+            <Bat1 position="top-[30%] right-[16%]" size="h-[50px] w-auto" X={bat2X} Y={bat2Y} />  {/* three bat as a background b3 */}
+            <Bat1 position="top-[36%] right-[20%]" size="h-[50px] w-auto" X={bat3X} Y={bat3Y} /> {/* three bat as a background b2 */}
+            <Bat2 position="top-[30%] right-[22%]" size="h-[60px] w-auto" X={bat4X} Y={bat4Y} /> {/* three bat as a background b1 */}
+            <Bat2 position="top-[38%] right-[25%]" size="h-[100px] w-auto" X={bat5X} Y={bat5Y} /> {/* bat side of innnerve logo */}
+            <Bat2 position="top-[26%] right-[26%]" size="h-[150px] w-auto" X={bat6X} Y={bat6Y} /> {/* bat above innnerve logo */}
+            <Bat1 position="top-[22%] right-[6%]" size="h-[70px] w-auto" X={bat7X} Y={bat7Y} /> {/* right first bat2 */}
+            <Bat2 position="top-[16%] right-[-1.5%]" size="h-[150px] w-auto" X={bat8X} Y={bat8Y} /> {/* right first bat1 */}
 
 
             <Cloud position="bottom-[-10%] left-[-10%]" X={leftCloudX} />

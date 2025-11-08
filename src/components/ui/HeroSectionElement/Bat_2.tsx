@@ -2,6 +2,7 @@ import Image from "next/image"
 import { motion } from "motion/react"
 import Bat2Image from "../../../assets/svg/bat 2.svg"
 
+
 interface Bat2Props {
     position?: string;
     size?: string;

@@ -4,12 +4,21 @@ import HeroSection from "@/sections/HeroSection";
 import SvgTo3D from "@/components/ui/svgTo3D"
 import CharacterScroll from "@/sections/LoadingScreen";
 import HeroSectionAnimation from "@/sections/HeroSectionAnimation";
+import ClockSection from "@/sections/clockSection";
+import PrizePoolSection from "@/sections/prizePoolSection";
+import CountdownTimerCard from "@/components/layout/countdownTimerCard";
 
-export default function TestPage() {
-    return (
+export default function () {
+    return ( 
         <>
             {/* <HeroSection /> */}
             <HeroSectionAnimation />
+
+            {/* <div className="flex justify-center absolute top-220 left-[25%] z-50">
+                <ClockSection />
+            </div>
+            <PrizePoolSection /> */}
+            
             <div className="h-screen relative w-full flex justify-center items-center text-6xl border-b-2 border-gray-300" >
                 <div className="absolute top-[10%] left-[15%]  bg-red-400">first</div>
                 <div className="absolute top-[45%] left-[60%]  bg-blue-400">second</div>

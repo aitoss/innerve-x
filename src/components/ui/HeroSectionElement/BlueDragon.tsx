@@ -2,6 +2,7 @@ import Image from "next/image";
 import BlueDragonImage from "../../../assets/svg/dragon-2.svg"
 import { motion } from "motion/react";
 
+
 interface BlueDragonProps {
     X?: any;
     Y?: any;

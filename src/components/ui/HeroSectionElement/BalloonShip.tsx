@@ -2,6 +2,7 @@ import Image from "next/image";
 import {motion} from "motion/react"
 import BalloonShipImage from "../../../assets/svg/ship.svg"
 
+
 interface BalloonShipProps {
     X?: any;
     Y?: any;
