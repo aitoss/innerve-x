@@ -6,6 +6,10 @@ import goldStorage4 from "@/assets/svg/storage_gold_4.svg";
 import goldStorage5 from "@/assets/svg/storage_gold_5.svg";
 import axe from "@/assets/svg/axe.svg";
 import rectangle from "@/assets/svg/PrizePoolRectangle.svg";
+import prizepoolCrown from "@/assets/svg/prizePoolCrown.svg";
+import prizepoolHeadingPolygon from "@/assets/svg/prizePoolheadingPolygon.svg";
+import prizepoolBottomForest from "@/assets/svg/Prizepoolforest.svg";
+import hotAirBalloon from "@/assets/svg/PrizePoolHotAirBalloon.svg";
 
 export function GoldStorage1Image() {
   return (
@@ -58,7 +62,39 @@ export function AxeImage() {
 export function Rectangle() {
   return (
     <div>
-      <Image src={rectangle} alt="Axe" />
+      <Image src={rectangle} alt="rectangle" />
+    </div>
+  );
+}
+
+export function PrizepoolCrown() {
+  return (
+    <div>
+      <Image src={prizepoolCrown} alt="prizepoolCrown" />
+    </div>
+  );
+}
+
+export function PrizepoolHeadingPolygon() {
+  return (
+    <div>
+      <Image src={prizepoolHeadingPolygon} alt="prizepoolHeadingPolygon" />
+    </div>
+  );
+}
+
+export function PrizepoolBottomForest() {
+  return (
+    <div>
+      <Image src={prizepoolBottomForest} className="w-screen" alt="BottomForest" />
+    </div>
+  );
+}
+
+export function HotAirBalloon() {
+  return (
+    <div>
+      <Image src={hotAirBalloon} alt="hotAirBalloon" />
     </div>
   );
 }

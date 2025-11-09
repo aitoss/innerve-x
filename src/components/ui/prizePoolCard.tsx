@@ -9,11 +9,11 @@ import {
   GoldStorage4Image,
   GoldStorage5Image,
   Rectangle,
-} from "./prizeCardsImages";
+} from "./prizePoolImages";
 
 export default function PrizePoolCard() {
   return (
-    <div className="space-x-10 space-y-10 flex flex-wrap justify-center items-center">
+    <div className="gap-10 mt-18 mb-18 flex flex-wrap justify-center items-start">
       <Tilt>
         <div className="w-[461px] inline-flex flex-col justify-start items-start">
           <div className="w-96 h-32 relative overflow-hidden">

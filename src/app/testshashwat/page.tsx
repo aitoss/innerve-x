@@ -1,9 +1,12 @@
 import ClockSection from "@/sections/clockSection";
+import EventCardAnimated from "@/components/layout/eventCardTest";
+import HeroSectionAnimation from "@/sections/HeroSectionAnimation";
 import PrizePoolSection from "@/sections/prizePoolSection";
 
 export default function TestShashwatPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 gap-200">
+    <main>
+      <HeroSectionAnimation />
       <ClockSection />
       <PrizePoolSection />
     </main>

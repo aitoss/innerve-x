@@ -2,15 +2,29 @@
 
 import CountdownTimerCard from "@/components/layout/countdownTimerCard";
 import EventCardAnimated from "@/components/layout/eventCardAnimation";
+import { div } from "motion/react-client";
+import Image from "next/image";
+import PrizePoolClouds from "@/assets/svg/PrizePooltopclouds.svg";
 
 export default function ClockSection() {
   return (
-    <div className="mb-20 z-1 flex justify-center">
-      <div className="relative z-50">
-        <CountdownTimerCard />
+    <div className="relative w-screen  bg-[#BFEEFE]">
+      {/* Cloud Background */}
+      <div className="absolute z-5">
+        <Image 
+          src={PrizePoolClouds} 
+          alt="clouds background" 
+          className="w-screen h-auto"
+        />
       </div>
-      <div className="absolute z-0 -top-4">
-        <EventCardAnimated />
+      
+      <div className="relative w-full -top-32 h-full z-20 flex justify-center">
+        <div className="z-50">
+          <CountdownTimerCard />
+        </div>
+        <div className="absolute z-10 -top-4">
+          <EventCardAnimated />
+        </div>
       </div>
     </div>
   );

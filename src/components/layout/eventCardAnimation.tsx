@@ -2,9 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Matter from "matter-js";
-import PlankImage from "@/components/ui/plankImage";
 import EventCard from "@/components/layout/eventCard";
-import CountdownTimerCard from "@/components/layout/countdownTimerCard";
 import RopeImage from "@/components/ui/rope";
 
 export default function EventCardAnimated() {
@@ -33,8 +31,8 @@ export default function EventCardAnimated() {
       element: sceneRef.current,
       engine: engine,
       options: {
-        width: 1300,
-        height: 1200,
+        width: 750,
+        height: 1000,
         wireframes: false,
         background: "transparent", // Make background transparent to see ropes
       },
@@ -159,7 +157,7 @@ export default function EventCardAnimated() {
   }, []);
 
   return (
-    <section className="relative flex flex-col items-center justify-center py-12 min-h-screen">
+    <section className="relative w-full  flex flex-col items-center justify-center">
       <div style={{ 
           zIndex: 10, }}>
 
@@ -193,7 +191,7 @@ export default function EventCardAnimated() {
       {/* Right Rope Image */}
       <div
         ref={rightRopeRef}
-        className="absolute"
+        className="absolute "
         style={{
           left: "970px",
           top: "200px",
@@ -208,7 +206,7 @@ export default function EventCardAnimated() {
       {/* Clean rectangle container - paste your content here */}
       <div
         ref={cardRef}
-        className="absolute select-none"
+        className="absolute select-none "
         style={{ 
           zIndex: 10, 
           pointerEvents: "none",

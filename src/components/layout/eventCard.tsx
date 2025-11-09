@@ -1,11 +1,14 @@
-import PlankImage from "@/components/ui/plankImage";
+import { EventCardShield, PlankImage } from "@/components/ui/eventCardImages";
 
 export default function EventCard() {
   return (
     <>
       <div className="relative">
         <PlankImage />
-        <div className="absolute w-[101px] h-full bg-linear-to-b from-[#8a1b07] via-[#c52119] to-[#6b120c] top-0 left-[132px]">
+        <div className="absolute top-1/5 left-4 z-50">
+          <EventCardShield />
+        </div>
+        <div className="absolute w-[101px] h-full bg-linear-to-b from-[#8a1b07] via-[#c52119] to-[#6b120c] top-0 left-30">
           <div className="absolute w-px h-full bg-[#bf5f5b] left-[9px]"></div>
           <div className="absolute w-px h-full bg-[#bf5f5b] right-[9px]"></div>
         </div>
