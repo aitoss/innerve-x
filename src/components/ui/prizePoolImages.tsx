@@ -86,7 +86,7 @@ export function PrizepoolHeadingPolygon() {
 export function PrizepoolBottomForest() {
   return (
     <div>
-      <Image src={prizepoolBottomForest} className="w-screen" alt="BottomForest" />
+      <Image src={prizepoolBottomForest} className="w-lvw" alt="BottomForest" />
     </div>
   );
 }
