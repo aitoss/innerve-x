@@ -26,7 +26,7 @@ export default function () {
             <div className="h-screen w-full flex justify-center items-center text-6xl border-b-2 border-gray-300" > Test to scroll</div> */}
 
             <TrackSection />
-            <WantToSponsorsUsSection/>
+            {/* <WantToSponsorsUsSection/> */}
 
         </>
     );
