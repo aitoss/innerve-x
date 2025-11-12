@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import PrizePoolCard from "@/components/ui/prizePoolCard";
-import { HotAirBalloon, PrizepoolBottomForest } from "@/components/ui/prizePoolImages";
-import PrizePoolScroll from "@/components/ui/prizePoolScroll";
+import PrizePoolCard from "@/components/ui/PrizepoolElements/prizePoolCard";
+import { HotAirBalloon, PrizepoolBottomForest } from "@/components/ui/PrizepoolElements/prizePoolImages";
+import PrizePoolScroll from "@/components/ui/PrizepoolElements/prizePoolScroll";
 
 export default function PrizePoolSection() {
   const [screenWidth, setScreenWidth] = useState(1200);
@@ -62,7 +62,10 @@ export default function PrizePoolSection() {
         <PrizePoolScroll />
       </div>
       <PrizePoolCard />
+      <div className="-mt-70">
+
       <PrizepoolBottomForest /> 
+      </div>
     </div>
   );
 }

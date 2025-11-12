@@ -1,6 +1,6 @@
-import CountdownTimer from "@/components/ui/countdownTimer";
-import ClockAnimation from "@/components/ui/clockanimation"
-import CountdownArrow from "@/components/ui/countdownArrows";
+import CountdownTimer from "@/components/ui/ClockElements/countdownTimer";
+import ClockAnimation from "@/components/ui/ClockElements/clockanimation";
+import CountdownArrow from "@/components/ui/ClockElements/countdownArrows";
 
 export default function CountdownTimerCard() {
   return (

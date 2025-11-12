@@ -1,4 +1,4 @@
-import { EventCardShield, PlankImage } from "@/components/ui/eventCardImages";
+import { EventCardShield, PlankImage } from "@/components/ui/ClockElements/eventCardImages";
 
 export default function EventCard() {
   return (
