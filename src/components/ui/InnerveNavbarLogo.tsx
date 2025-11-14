@@ -8,7 +8,7 @@ export default function InnerveNavbarLogo() {
             <Image 
                 src={InnerveLogo2} 
                 alt="Innerve Logo 2" 
-                className="w-26 h-auto sm:w-44 md:w-52  lg:w-auto "
+                className="lg:w-auto "
             />
         </div>
     );

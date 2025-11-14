@@ -31,7 +31,7 @@ export default function BalloonShip({ X, Y }: BalloonShipProps) {
 
     return (
         <motion.div
-            className="absolute inline-block top-[-10%] left-[-17%] z-20"
+            className="absolute inline-block max-sm:top-0 max-sm:left-[-20%] top-[-10%] left-[-270px] z-20"
             style={{
                 x: X,
                 y: combinedY, // ✅ single combined Y motion (no conflict)
@@ -40,7 +40,7 @@ export default function BalloonShip({ X, Y }: BalloonShipProps) {
             <Image
                 src={BalloonShipImage}
                 alt="Balloon Ship"
-                className="w-[85%] object-contain"
+                className="w-[85%] max-sm:w-7/10 object-contain"
             />
         </motion.div>
     );

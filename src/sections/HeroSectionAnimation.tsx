@@ -64,7 +64,7 @@ export default function HeroSectionAnimation() {
 
 
     return (
-        <section ref={containerRef} className="relative w-full  h-screen flex justify-center items-center overflow-hidden ">
+        <section ref={containerRef} className="relative w-full  h-screen flex justify-center items-center overflow-x-hidden overflow-y-auto " >
             {/* this is absolute positioning section that is relative to the this hero section */}
 
             {/* this is the bottom zero layer Image */}
@@ -93,22 +93,22 @@ export default function HeroSectionAnimation() {
             <BalloonShip X={BalloonShipX} Y={BalloonShipY} />
             <BlueDragon X={BlueDragonX} Y={BlueDragonY} />
             <GreenDragon X={GreenDragonX} Y={GreenDragonY} />
-            <Balloon position="top-[10%] right-[53%]" X={BalloonX} Y={BalloonY} />
-            <Balloon position="top-[30%] right-[35%]" size="h-[90px] w-[90px]" X={BalloonX} Y={BalloonY} />
+            <Balloon position="top-[40%] right-[15%]" size="max-sm:w-[50px] w-[30px] " X={BalloonX} Y={BalloonY} />
+            <Balloon position="top-[27%] right-[35%]" size="h-[90px] max-sm:w-[50px] w-[90px]" X={BalloonX} Y={BalloonY} />
 
             {/* this is the bat section of positions with random movements */}
-            <Bat1 position="top-[3%] right-[-3.5%]" size="h-[100px] w-auto" X={bat1X} Y={bat1Y} /> {/* the top right bat */}
-            <Bat1 position="top-[30%] right-[16%]" size="h-[50px] w-auto" X={bat2X} Y={bat2Y} />  {/* three bat as a background b3 */}
-            <Bat1 position="top-[36%] right-[20%]" size="h-[50px] w-auto" X={bat3X} Y={bat3Y} /> {/* three bat as a background b2 */}
-            <Bat2 position="top-[30%] right-[22%]" size="h-[60px] w-auto" X={bat4X} Y={bat4Y} /> {/* three bat as a background b1 */}
-            <Bat2 position="top-[38%] right-[25%]" size="h-[100px] w-auto" X={bat5X} Y={bat5Y} /> {/* bat side of innnerve logo */}
-            <Bat2 position="top-[26%] right-[26%]" size="h-[150px] w-auto" X={bat6X} Y={bat6Y} /> {/* bat above innnerve logo */}
-            <Bat1 position="top-[22%] right-[6%]" size="h-[70px] w-auto" X={bat7X} Y={bat7Y} /> {/* right first bat2 */}
-            <Bat2 position="top-[16%] right-[-1.5%]" size="h-[150px] w-auto" X={bat8X} Y={bat8Y} /> {/* right first bat1 */}
+            <Bat1 position="top-[3%] right-[-3.5%]" size="max-sm:h-[30px] h-[50px] w-auto" X={bat1X} Y={bat1Y} /> {/* the top right bat */}
+            <Bat1 position="top-[30%]  right-[16%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat2X} Y={bat2Y} />  {/* three bat as a background b3 */}
+            <Bat1 position="top-[36%] max-sm:left-[10%]  right-[20%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat3X} Y={bat3Y} /> {/* three bat as a background b2 */}
+            <Bat2 position="top-[30%] max-sm:top-[26%] max-sm:left-[40%] right-[22%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat4X} Y={bat4Y} /> {/* three bat as a background b1 */}
+            <Bat2 position="top-[35%] right-[25%]" size="max-sm:h-[30px] h-[50px] w-auto" X={bat5X} Y={bat5Y} /> {/* bat side of innnerve logo */}
+            <Bat2 position="top-[26%] max-sm:top-[16%] max-sm:left-[40%]  right-[26%]" size="max-sm:h-[30px] h-[80px] w-auto" X={bat6X} Y={bat6Y} /> {/* bat above innnerve logo */}
+            <Bat1 position="top-[22%] right-[6%]" size="max-sm:h-[30px] h-[40px] w-auto" X={bat7X} Y={bat7Y} /> {/* right first bat2 */}
+            <Bat2 position="top-[16%] right-[-1.5%]" size="max-sm:h-[30px] h-[80px] w-auto" X={bat8X} Y={bat8Y} /> {/* right first bat1 */}
 
 
-            <Cloud position="bottom-[-10%] left-[-10%]" X={leftCloudX} />
-            <Cloud position="bottom-[-10%] right-[-10%]" X={rightCloudX} />
+            <Cloud position="bottom-[-20%] left-[-200px]" X={leftCloudX} />
+            <Cloud position="bottom-[-20%] right-[-200px]" X={rightCloudX} />
 
             {/* this is layer four */}
             <div className="absolute inset-0 z-40" style={{ background: 'linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0) 29%)' }} />
@@ -116,7 +116,7 @@ export default function HeroSectionAnimation() {
 
             {/* iss mein oo component put karunga jispe mein flex properties apply kar sakta hu */}
 
-            <motion.div className=" z-60 text-center space-y-10 " style={{ y: centerContentY }} >
+            <motion.div className="z-40 flex flex-col items-center space-y-10 " style={{ y: centerContentY }} >
                 <InnerveHeadingLogo />
                 <DevfolioButton />
             </motion.div>

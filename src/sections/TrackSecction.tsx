@@ -92,7 +92,7 @@ const TRACKS_CARDS_DATA = [
 
 export default function TrackSection() {
     return (
-        <section className="relative w-full flex  flex-col items-center justify-center bg-[#010101]" >
+        <section className="relative w-full flex  flex-col items-center justify-center bg-[#010101] pt-60 px-10" >
             <div className="absolute inset-0 bg-linear-to-b from-black from 54% to-black/0 z-10" />``
             <TrackButton />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[164px] z-10 gap-y-16 my-20">

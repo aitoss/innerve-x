@@ -17,7 +17,7 @@ export default function Balloon({ position = "", size = "h-[100px] w-[100px]", X
     let direction = 1;
     let floatPosition = 0;
     let lastTime = 0;
-    const speed = 0.02; // smaller = slower float
+    const speed = 0.01; // smaller = slower float
 
     // Animate the gentle float with `useAnimationFrame`
     useAnimationFrame((t) => {

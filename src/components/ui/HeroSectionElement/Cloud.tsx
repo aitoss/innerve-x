@@ -10,7 +10,7 @@ interface CloudProps {
 
 export default function Cloud({position, X}:CloudProps) {
     return (
-        <motion.div className={`absolute ${position} overflow-hidden z-10 pointer-events-none`} style={{x:X}} >
+        <motion.div className={`absolute ${position}  z-70 pointer-events-none`} style={{x:X}} >
             <Image src={CloudImage} alt="Cloud"  />
         </motion.div>
     );
