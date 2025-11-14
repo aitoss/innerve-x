@@ -2,7 +2,7 @@ import { TimelineHeader, TimelineNiddle } from "./timelineImages";
 
 export default function TimelineHeading() {
   return (
-    <div className="relative w-fit mx-auto flex justify-center">
+    <div className="relative w-fit scale-60 md:scale-80 lg:scale-100 origin-top mx-auto flex justify-center">
       <TimelineHeader />
       <div className="spin-continuous-niddle absolute z-10 left-11/196 top-3">
         <TimelineNiddle />

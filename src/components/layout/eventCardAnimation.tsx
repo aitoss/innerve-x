@@ -21,7 +21,7 @@ export default function EventCardAnimated() {
         setInitialY(400);
         setFinalY(600);
       } else if (width >= 768) {
-        setInitialY(100);
+        setInitialY(200);
         setFinalY(425);
       } else if (width >=640) {
         setInitialY(180);
@@ -46,6 +46,7 @@ export default function EventCardAnimated() {
     <section className="relative w-full flex flex-col items-center justify-center">
       {/* Event Card with Falling Animation */}
       <motion.div
+        key={`${initialY}-${finalY}`}
         className="absolute select-none flex justify-center"
         initial={{ 
           y: initialY,

@@ -1,9 +1,11 @@
+import Footer from "@/components/layout/Footer";
 import ScrollBackToTopButton from "@/components/ui/scrollBackToTopButton";
 import ClockSection from "@/sections/clockSection";
 import HeroSectionAnimation from "@/sections/HeroSectionAnimation";
 import PrizePoolSection from "@/sections/prizePoolSection";
 import TimelineSection from "@/sections/timelineSection";
 import TrackSection from "@/sections/TrackSecction";
+import WantToSponsorsUsSection from "@/sections/WantToSponsorsUsSection";
 
 export default function TestShashwatPage() {
   return (
@@ -13,7 +15,9 @@ export default function TestShashwatPage() {
       <PrizePoolSection />
       <TrackSection />
       <TimelineSection />
-      <ScrollBackToTopButton /> 
+      <ScrollBackToTopButton />
+      {/* <WantToSponsorsUsSection /> */}
+      {/* <Footer /> */}
     </main>
   );
 }

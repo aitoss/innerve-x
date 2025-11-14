@@ -25,16 +25,16 @@ export function TimelineBottomImage() {
 
 export function TimelineHeader() {
   return (
-    <div>
-      <Image src={Header} alt="Timeline Header" />
+    <div className="min-w-max">
+      <Image src={Header} alt="Timeline Header" width={800} height={200} className="w-[800px] h-auto" />
     </div>
   );
 }
 
 export function TimelineNiddle() {
   return (
-    <div>
-      <Image src={Niddle} alt="Timeline Niddle" />
+    <div className="min-w-max">
+      <Image src={Niddle} alt="Timeline Niddle" width={50} height={50} className="w-auto h-auto" />
     </div>
   );
 }
