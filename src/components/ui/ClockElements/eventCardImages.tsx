@@ -4,16 +4,16 @@ import Shield from "@/assets/svg/eventCardShield.svg"
 
 export function PlankImage() {
   return (
-    <div>
-        <Image src={Plank} alt="" />
+    <div className="w-[245px] sm:w-[350px] md:w-[490px] lg:w-[700px]">
+        <Image src={Plank} alt="" className="w-full h-auto" />
     </div>
   );
 }
 
 export function EventCardShield() {
   return (
-    <div>
-        <Image src={Shield} alt="" />
+    <div className="w-[91px] sm:w-[130px] md:w-[182px] lg:w-[260px]">
+        <Image src={Shield} alt="" className="w-full h-auto" />
     </div>
   );
 }

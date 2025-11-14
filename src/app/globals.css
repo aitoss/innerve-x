@@ -86,3 +86,9 @@ body {
   animation: spin-continuous 4s linear infinite;
   will-change: transform;
 }
+
+.spin-continuous-niddle {
+  transform-origin: 51px 80px; /* change pivot if needed */
+  animation: spin-continuous 4s linear infinite;
+  will-change: transform;
+}

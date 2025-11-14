@@ -1,22 +1,40 @@
 import Image from "next/image";
 import BottomImage from "@/assets/svg/timelineBottomImage.svg";
+import Header from "@/assets/svg/TimelineHeading.svg";
+import Niddle from "@/assets/svg/TimelineNiddle.svg";
 
 export function TimelineBottomImage() {
   return (
     <div className="relative w-full">
       {/* Gradient overlay to blend with background */}
-      <div 
+      <div
         className="absolute top-0 left-0 w-full h-122 z-10 pointer-events-none"
         style={{
-          background: 'linear-gradient(to bottom, #2B5497, transparent)'
+          background: "linear-gradient(to bottom, #012A57, transparent)",
         }}
       />
-      <Image 
-        src={BottomImage} 
-        alt="Timeline Bottom" 
+      <Image
+        src={BottomImage}
+        alt="Timeline Bottom"
         className="w-full h-auto"
-        style={{ width: '100%', height: 'auto' }}
+        style={{ width: "100%", height: "auto" }}
       />
+    </div>
+  );
+}
+
+export function TimelineHeader() {
+  return (
+    <div>
+      <Image src={Header} alt="Timeline Header" />
+    </div>
+  );
+}
+
+export function TimelineNiddle() {
+  return (
+    <div>
+      <Image src={Niddle} alt="Timeline Niddle" />
     </div>
   );
 }

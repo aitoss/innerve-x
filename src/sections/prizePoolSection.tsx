@@ -40,7 +40,7 @@ export default function PrizePoolSection() {
   ];
   
   return (
-    <div className="relative flex flex-col pt-200 items-center overflow-visible bg-linear-to-b from-[#CCECF7] to-[#BFEEFE]">
+    <div className="relative flex flex-col pt-70 sm:pt-100 md:pt-150 lg:pt-200 items-center overflow-visible bg-linear-to-b from-[#CCECF7] to-[#BFEEFE]">
       <motion.div 
         className="absolute z-50"
         style={{ left: "0%", top: "-400px" }}

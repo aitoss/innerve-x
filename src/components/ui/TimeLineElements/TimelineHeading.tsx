@@ -1,12 +1,14 @@
+import { TimelineHeader, TimelineNiddle } from "./timelineImages";
+
 export default function TimelineHeading() {
   return (
-    <div className="relative flex justify-center mb-12">
-      <div className="relative bg-[#8B4513] px-12 py-4 rounded-lg border-4 border-[#654321] shadow-2xl">
-        <div className="absolute inset-0 bg-linear-to-r from-[#654321] via-[#8B4513] to-[#654321] opacity-30 rounded-lg" />
-        <h2 className="relative text-5xl font-bold text-white tracking-wider uppercase" 
-            style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}>
-          Timeline
-        </h2>
+    <div className="relative w-fit mx-auto flex justify-center">
+      <TimelineHeader />
+      <div className="spin-continuous-niddle absolute z-10 left-11/196 top-3">
+        <TimelineNiddle />
+      </div>
+      <div className="absolute text-6xl text-white [text-shadow:0px_4px_0px_rgb(0_0_0/1.00)] top-1/3 left-5/12">
+        Timeline
       </div>
     </div>
   );

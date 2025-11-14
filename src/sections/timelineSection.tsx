@@ -28,13 +28,13 @@ export default function TimelineSection() {
     <>
       <div
         ref={sectionRef}
-        className="relative min-h-screen bg-[#2B5497] py-20 overflow-hidden"
+        className="relative min-h-screen bg-[#012A57] py-20 overflow-hidden"
       >
         {/* Timeline Header */}
         <TimelineHeading />
 
         {/* Timeline Container */}
-        <div className="relative">
+        <div className="relative -top-7">
           {/* Timeline Curve Animation */}
           <TimelineCurveAnimation
             gradientProgress={gradientProgress}

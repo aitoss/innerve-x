@@ -8,7 +8,7 @@ import PrizePoolClouds from "@/assets/svg/PrizePooltopclouds.svg";
 
 export default function ClockSection() {
   return (
-    <div className="relative  bg-[#BFEEFE]">
+    <div className="relative  bg-[#CCECF7]">
       {/* Cloud Background */}
       <div className="absolute z-5">
         <Image 
@@ -18,11 +18,11 @@ export default function ClockSection() {
         />
       </div>
       
-      <div className="relative w-full -top-32 h-full z-20 flex justify-center">
+      <div className="relative w-full -top-[45px] sm:-top-[64px] md:-top-[90px] lg:-top-32 h-full z-20 flex justify-center">
         <div className="z-10">
           <CountdownTimerCard />
         </div>
-        <div className="absolute z-5 -top-4">
+        <div className="absolute z-5 -top-[6px] sm:-top-[8px] md:-top-[11px] lg:-top-4 flex justify-center w-full">
           <EventCardAnimated />
         </div>
       </div>

@@ -34,7 +34,7 @@ const CountdownTimer = (props: Props) => {
 
     return (
         <>
-        <div className="text-[34px] text-white [text-shadow:0_3.558px_0_#000]">
+        <div className="text-[12px] sm:text-[17px] md:text-[24px] lg:text-[34px] text-white [text-shadow:0_1.2px_0_#000] sm:[text-shadow:0_1.8px_0_#000] md:[text-shadow:0_2.5px_0_#000] lg:[text-shadow:0_3.558px_0_#000]">
             {days}D : {hours}H : {minutes}M : {seconds}S
         </div>
             

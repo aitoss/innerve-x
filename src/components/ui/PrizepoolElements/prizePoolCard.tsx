@@ -13,7 +13,7 @@ import {
 
 export default function PrizePoolCard() {
   return (
-    <div className="gap-10 mt-18 mb-18 flex flex-wrap justify-center items-start">
+    <div className="gap-10 mt-18 mb-18 flex flex-wrap justify-center items-start p-4 overflow-x-hidden scale-75 md:scale-100">
       <Tilt>
         <div className="w-[461px] inline-flex flex-col justify-start items-start">
           <div className="w-96 h-32 relative overflow-hidden">

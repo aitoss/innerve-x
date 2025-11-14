@@ -152,7 +152,7 @@ export default function TimelineCurveAnimation({ gradientProgress, onCircleScale
               cx="444" 
               cy="102" 
               r="18.5" 
-              stroke="#969494" 
+              stroke="#367498" 
               strokeWidth="5" 
               fill="none"
               style={{
@@ -169,7 +169,7 @@ export default function TimelineCurveAnimation({ gradientProgress, onCircleScale
               cx="331" 
               cy="483" 
               r="18.5" 
-              stroke="#969494" 
+              stroke="#367498" 
               strokeWidth="5" 
               fill="none"
               style={{
@@ -186,7 +186,7 @@ export default function TimelineCurveAnimation({ gradientProgress, onCircleScale
               cx="523" 
               cy="951" 
               r="18.5" 
-              stroke="#969494" 
+              stroke="#367498" 
               strokeWidth="5" 
               fill="none"
               style={{
@@ -203,7 +203,7 @@ export default function TimelineCurveAnimation({ gradientProgress, onCircleScale
               cx="721" 
               cy="1440" 
               r="18.5" 
-              stroke="#969494" 
+              stroke="#367498" 
               strokeWidth="5" 
               fill="none"
               style={{
@@ -220,7 +220,7 @@ export default function TimelineCurveAnimation({ gradientProgress, onCircleScale
               cx="524" 
               cy="1906" 
               r="18.5" 
-              stroke="#969494" 
+              stroke="#367498" 
               strokeWidth="5" 
               fill="none"
               style={{
