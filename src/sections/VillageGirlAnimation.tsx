@@ -3,20 +3,20 @@
 
 // import { useScroll } from "framer-motion";
 
-// export default function SmoothFaceScroll() {
+// export default function SmoothVillageGirlcroll() {
 //     const { scrollYProgress } = useScroll();
 
-//     const faces = [
-//         "/faces/Villager_HV_Villager_1.png",
-//         "/faces/Villager_HV_Villager_2.png",
-//         "/faces/Villager_HV_Villager_3.png",
-//         "/faces/Villager_HV_Villager_4.png",
-//         "/faces/Villager_HV_Villager_5.png",
-//         "/faces/Villager_HV_Villager_6.png",
-//         "/faces/Villager_HV_Villager_7.png",
-//         "/faces/Villager_HV_Villager_8.png",
-//         "/faces/Villager_HV_Villager_9.png",
-//         "/faces/Villager_HV_Villager_10.png"
+//     const VillageGirl = [
+//         "/VillageGirl/Girl_1.png",
+//         "/VillageGirl/Girl_2.png",
+//         "/VillageGirl/Girl_3.png",
+//         "/VillageGirl/Girl_4.png",
+//         "/VillageGirl/Girl_5.png",
+//         "/VillageGirl/Girl_6.png",
+//         "/VillageGirl/Girl_7.png",
+//         "/VillageGirl/Girl_8.png",
+//         "/VillageGirl/Girl_9.png",
+//         "/VillageGirl/Girl_10.png"
 //     ];
 
 //     const style = useSpring({
@@ -27,7 +27,7 @@
 //     return (
 //         <div className="fixed bottom-10 right-10">
 //             <animated.img
-//                 src="/faces/happy.png"
+//                 src="/VillageGirl/happy.png"
 //                 style={style}
 //                 className="absolute w-64 h-auto"
 //             />
@@ -43,24 +43,24 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 
-const faces = [
-  "/faces/Villager_HV_Villager_1.png",
-  "/faces/Villager_HV_Villager_2.png",
-  "/faces/Villager_HV_Villager_3.png",
-  "/faces/Villager_HV_Villager_4.png",
-  "/faces/Villager_HV_Villager_5.png",
-  "/faces/Villager_HV_Villager_6.png",
-  "/faces/Villager_HV_Villager_7.png",
-  "/faces/Villager_HV_Villager_8.png",
-  "/faces/Villager_HV_Villager_9.png",
-  "/faces/Villager_HV_Villager_10.png"
+const VillageGirl = [
+  "/VillageGirl/Girl_1.png",
+  "/VillageGirl/Girl_2.png",
+  "/VillageGirl/Girl_3.png",
+  "/VillageGirl/Girl_4.png",
+  "/VillageGirl/Girl_5.png",
+  "/VillageGirl/Girl_6.png",
+  "/VillageGirl/Girl_7.png",
+  "/VillageGirl/Girl_8.png",
+  "/VillageGirl/Girl_9.png",
+  "/VillageGirl/Girl_10.png"
 ];
 
 export default function CharacterScroll() {
   const { scrollYProgress } = useScroll();
   const [index, setIndex] = useState(0);
 
-  const range = useTransform(scrollYProgress, [0, 1], [0, faces.length - 1]);
+  const range = useTransform(scrollYProgress, [0, 1], [0, VillageGirl.length - 1]);
 
   useEffect(() => {
     const unsubscribe = range.on("change", (val) => {
@@ -71,9 +71,9 @@ export default function CharacterScroll() {
 
   return (
     <motion.img
-      src={faces[index]}
+      src={VillageGirl[index]}
       alt="Character expression"
-      className="fixed bottom-10 right-10 w-64 h-auto"
+      className="fixed z-60 -bottom-30 left-0 w-46 h-auto"
       transition={{ duration: 0.5 }}
     />
   );

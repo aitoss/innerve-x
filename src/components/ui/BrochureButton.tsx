@@ -11,7 +11,7 @@ export default function BrochureButton() {
         //     />
         // </button>
 
-        <button  className="w-full border-2 rounded-xl" >
+        <button className="w-full border-2 rounded-xl" >
             <div className="w-full text-white text-shadow flex justify-center items-end lg:text-xl md:md lg:px-10 md:px-6 lg:pt-2 md:pt-1 shadow-[0_-3px_0_#fff]   border-b-10 border-[#74C138] border-x-2 border-t-2 bor bg-[#9ED952] rounded-xl  ">
                 Brochure
             </div>

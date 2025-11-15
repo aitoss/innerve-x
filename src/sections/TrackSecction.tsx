@@ -14,6 +14,7 @@ import TrackBlockChain from "../assets/svg/Traks/TracksBlockChain.svg"
 import TrackLogistics from "../assets/svg/Traks/TrackLogistics.svg"
 import TrackEcoTech from "../assets/svg/Traks/TrackEcoTech.svg"
 import TrackButton from "@/components/ui/TracksElements/TrackButton";
+import Galaxy from "@/components/ui/TracksElements/Glaxy";
 
 const TRACKS_CARDS_DATA = [
     {
@@ -92,10 +93,20 @@ const TRACKS_CARDS_DATA = [
 
 export default function TrackSection() {
     return (
-        <section className="relative w-full flex  flex-col items-center justify-center bg-[#010101] pt-60 px-10" >
-            <div className="absolute inset-0 bg-linear-to-b from-black from 54% to-black/0 z-10" />``
+        <section className="relative w-full flex  flex-col items-center justify-center bg-[#010101] pt-26 px-10" >
+            {/* <div className="absolute inset-0 bg-linear-to-b from-transparent via-black to-black/0 pointer-events-none z-10" /> */}
+            <div className="absolute inset-0 z-0 w-full/2 h-[]">
+                <Galaxy
+                    mouseRepulsion={true}
+                    mouseInteraction={true}
+                    density={3}
+                    glowIntensity={0.15}
+                    saturation={0}
+                    hueShift={240}
+                />
+            </div>
             <TrackButton />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[164px] z-10 gap-y-16 my-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[164px]  z-10 md:gap-y-16  md:my-20">
                 {TRACKS_CARDS_DATA.map((card, index) => (
                     <div key={index} className="flex justify-center">
                         <TrackCard
@@ -109,10 +120,10 @@ export default function TrackSection() {
                     </div>
                 ))}
             </div>
-            <div className="h-[55vh]" />
+            {/* <div className="h-[10vh]" /> */}
             <div className="absolute w-full z-0 bottom-0 h-[90vh] ">
-                <Image src={TrackBgImg} alt="background image" objectFit="cover" layout="fill" />
-                <div className="absolute inset-0 bg-linear-to-b from-[#0B0D16] via-[#0B0D16]/50 to-transparent" />
+                <Image src={TrackBgImg} alt="background image" objectFit="cover" layout="fill" className="" />
+                <div className="absolute inset-0 bg-linear-to-b from-black via-black/80 to-transparent " />
             </div>
         </section>
     )

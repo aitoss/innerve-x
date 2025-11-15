@@ -92,7 +92,7 @@ export default function HeroSectionAnimation() {
             {/* this is the second layer */}
             <BalloonShip X={BalloonShipX} Y={BalloonShipY} />
             <BlueDragon X={BlueDragonX} Y={BlueDragonY} />
-            <GreenDragon X={GreenDragonX} Y={GreenDragonY} />
+            {/* <GreenDragon X={GreenDragonX} Y={GreenDragonY} /> */}
             <Balloon position="top-[40%] right-[15%]" size="max-sm:w-[50px] w-[30px] " X={BalloonX} Y={BalloonY} />
             <Balloon position="top-[27%] right-[35%]" size="h-[90px] max-sm:w-[50px] w-[90px]" X={BalloonX} Y={BalloonY} />
 
@@ -107,8 +107,8 @@ export default function HeroSectionAnimation() {
             <Bat2 position="top-[16%] right-[-1.5%]" size="max-sm:h-[30px] h-[80px] w-auto" X={bat8X} Y={bat8Y} /> {/* right first bat1 */}
 
 
-            <Cloud position="bottom-[-20%] left-[-200px]" X={leftCloudX} />
-            <Cloud position="bottom-[-20%] right-[-200px]" X={rightCloudX} />
+            {/* <Cloud position="bottom-[-20%] left-[-200px]" X={leftCloudX} /> */}
+            {/* <Cloud position="bottom-[-20%] right-[-200px]" X={rightCloudX} /> */}
 
             {/* this is layer four */}
             <div className="absolute inset-0 z-40" style={{ background: 'linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0) 29%)' }} />

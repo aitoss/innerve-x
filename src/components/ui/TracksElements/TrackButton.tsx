@@ -16,7 +16,7 @@ export default function TrackButton() {
                     </div>
                 </div>
             </div> */}
-            <div className="mb-40 min-w-[310px] z-20" >
+            <div className="mb-16 min-w-[310px] z-20" >
                 <Image src={TrackButtonImage} alt="Track button Img"/>
             </div>
         </>

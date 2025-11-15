@@ -14,8 +14,8 @@ interface TrackCardProps {
 
 export default function TrackCard({ BgColor, BC1, BC2, Logo, CornerImg, Title }: TrackCardProps) {
     return (
-        <div className="inline-block w-fit h-fit  justify-center items-center  ">
-            <div className={`relative w-[270px] h-[338px] mb-5 flex px-2.5 py-[15px] ${BgColor} border-[5px] ${BC1} `}>
+        <div className="inline-block w-fit h-fit  md:scale-100 scale-83 justify-center items-center  ">
+            <div className={`relative w-[270px] h-[338px] mb-10 flex px-2.5 py-[15px] ${BgColor} border-[5px] ${BC1} `}>
                 <div className={`flex flex-1 justify-center items-center bg-transparent border-[6px] ${BC2} `}>
                     <Image src={Logo} alt="TrackHealth" />
                 </div>
