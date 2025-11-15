@@ -59,11 +59,13 @@ export default function TimelineSection() {
         ref={sectionRef}
         className="relative min-h-screen overflow-hidden bg-[#012A57] py-20 "
       >
-        {/* Timeline Header */}
+
+
         <TimelineHeading />
 
+
         {/* Timeline Container */}
-        <div className={isMobile ? "relative scale-100 -ml-10 sm:ml-0 overflow-visible -top-31 sm:-top-22 md:-top-12" : "relative scale-100 md:-top-66 lg:-top-28 xl:-top-7"} style={isMobile ? { left: leftPosition } : {}}>
+        <div className={isMobile ? "z-10 relative scale-100 -ml-10 sm:ml-0 overflow-visible -top-31 sm:-top-22 md:-top-12" : "z-10 relative scale-100 md:-top-66 lg:-top-28 xl:-top-7"} style={isMobile ? { left: leftPosition } : {}}>
           {/* Timeline Curve Animation - Switch based on screen size */}
           {isMounted && (
             isMobile ? (
@@ -87,7 +89,7 @@ export default function TimelineSection() {
           )}
         </div>
       </div>
-      <div className="z-0">
+      <div className="z-0 -mt-50 lg:-mt-150">
         <TimelineBottomImage />
       </div>
     </>
