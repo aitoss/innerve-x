@@ -22,13 +22,13 @@ export default function EventCardAnimated() {
         setFinalY(600);
       } else if (width >= 768) {
         setInitialY(200);
-        setFinalY(425);
+        setFinalY(430);
       } else if (width >=640) {
         setInitialY(180);
-        setFinalY(300);
+        setFinalY(305);
       } else {
         setInitialY(100);
-        setFinalY(200);
+        setFinalY(210);
       }
     };
 

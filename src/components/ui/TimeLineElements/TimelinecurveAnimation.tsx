@@ -65,12 +65,12 @@ export default function TimelineCurveAnimation({ gradientProgress, onCircleScale
   }, [gradientProgress, circle1Scale, circle2Scale, circle3Scale, circle4Scale, circle5Scale]);
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto h-[2197px] pl-4 pr-5">
+    <div className="relative scale-80 lg:scale-90 xl:scale-100 w-full max-w-6xl mx-auto xl:mx-auto ml-0 h-[2197px] pl-4 pr-5">
       {/* SVG Timeline from assets with proper viewBox */}
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 875 2197" fill="none" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+      <svg className="absolute inset-0 w-full h-full xl:mx-0 -ml-[300px]" viewBox="0 0 465 2197" fill="none" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
         <defs>
           {/* Animated gradient for flow effect */}
-          <linearGradient id="animatedFlowGradient" x1="526" y1="0" x2="526" y2="2197" gradientUnits="userSpaceOnUse">
+          <linearGradient id="animatedFlowGradient" x1="223" y1="0" x2="223" y2="2197" gradientUnits="userSpaceOnUse">
             <motion.stop 
               offset="0%" 
               stopColor="#ffffff"
@@ -83,149 +83,149 @@ export default function TimelineCurveAnimation({ gradientProgress, onCircleScale
             />
             <motion.stop 
               offset={useTransform(gradientProgress, (p) => `${Math.min(p, 110)}%`)}
-              stopColor="#979494"
+              stopColor="#7BCAF8"
               stopOpacity="1"
             />
             <motion.stop 
               offset="110%" 
-              stopColor="#979494"
+              stopColor="#7BCAF8"
               stopOpacity="1"
             />
           </linearGradient>
           
           {/* Arrow gradient */}
-          <linearGradient id="paint0_linear_arrow" x1="524" y1="1907" x2="51.5" y2="2216" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#969494"/>
-            <stop offset="1"/>
+          <linearGradient id="paint0_linear_1567_938" x1="222.5" y1="1907" x2="-250" y2="2216" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#7BCAF8"/>
+            <stop offset="1" stopColor="#012956"/>
           </linearGradient>
           
-          <clipPath id="clip0_timeline">
-            <rect width="875" height="2197" fill="white"/>
+          <clipPath id="clip0_1567_938">
+            <rect width="465" height="2197" fill="white"/>
           </clipPath>
-          <clipPath id="clip1_timeline">
-            <rect width="437" height="1910" fill="white" transform="translate(305)"/>
+          <clipPath id="clip1_1567_938">
+            <rect width="437" height="1910" fill="white"/>
           </clipPath>
         </defs>
         
-        <g clipPath="url(#clip0_timeline)">
+        <g clipPath="url(#clip0_1567_938)">
           {/* Arrow at bottom */}
           <path 
-            d="M524.693 1907.72C524.231 1907.24 523.769 1906.76 523.307 1906.28C516.139 1913.19 508.421 1920.38 500.943 1927.17C363.071 2048.1 208.798 2158.86 30.4339 2209.22C20.5659 2211.77 10.4654 2214.07 0.5 2216C10.4717 2214.1 20.5806 2211.83 30.4588 2209.32C209.046 2159.52 363.782 2049.21 502.218 1928.58C509.731 1921.8 517.485 1914.63 524.693 1907.72Z" 
-            fill="url(#paint0_linear_arrow)"
+            d="M223.193 1907.72C222.731 1907.24 222.269 1906.76 221.807 1906.28C214.639 1913.19 206.921 1920.38 199.443 1927.17C61.5709 2048.1 -92.7025 2158.86 -271.066 2209.22C-280.934 2211.77 -291.035 2214.07 -301 2216C-291.028 2214.1 -280.919 2211.83 -271.041 2209.32C-92.4538 2159.52 62.2822 2049.21 200.718 1928.58C208.231 1921.8 215.985 1914.63 223.193 1907.72Z" 
+            fill="url(#paint0_linear_1567_938)"
           />
           
-          <g clipPath="url(#clip1_timeline)">
-            {/* Bottom curve - Gray base */}
+          <g clipPath="url(#clip1_1567_938)">
+            {/* Bottom curve - Base */}
             <path 
-              d="M521.973 1909.97C649.125 1782.82 720.558 1610.37 720.558 1430.55C720.558 1250.73 649.125 1078.27 521.973 951.121" 
-              stroke="#979494" 
-              strokeWidth="2"
+              d="M216.973 1909.97C344.125 1782.82 415.558 1610.37 415.558 1430.55C415.558 1250.73 344.125 1078.27 216.973 951.121" 
+              stroke="#7BCAF8" 
+              strokeWidth="3"
             />
             
             {/* Bottom curve - Animated overlay */}
             <motion.path 
-              d="M521.973 1909.97C649.125 1782.82 720.558 1610.37 720.558 1430.55C720.558 1250.73 649.125 1078.27 521.973 951.121" 
+              d="M216.973 1909.97C344.125 1782.82 415.558 1610.37 415.558 1430.55C415.558 1250.73 344.125 1078.27 216.973 951.121" 
               stroke="url(#animatedFlowGradient)" 
-              strokeWidth="2"
+              strokeWidth="3"
             />
             
-            {/* Top curve - Gray base */}
+            {/* Top curve - Base */}
             <path 
-              d="M529.585 0C402.433 127.152 331 299.606 331 479.426C331 659.246 402.433 831.701 529.585 958.852" 
-              stroke="#979494" 
-              strokeWidth="2"
+              d="M224.585 0C97.4331 127.152 26 299.606 26 479.426C26 659.246 97.4331 831.701 224.585 958.852" 
+              stroke="#7BCAF8" 
+              strokeWidth="3"
             />
             
             {/* Top curve - Animated overlay */}
             <motion.path 
-              d="M529.585 0C402.433 127.152 331 299.606 331 479.426C331 659.246 402.433 831.701 529.585 958.852" 
+              d="M224.585 0C97.4331 127.152 26 299.606 26 479.426C26 659.246 97.4331 831.701 224.585 958.852" 
               stroke="url(#animatedFlowGradient)" 
-              strokeWidth="2"
+              strokeWidth="3"
             />
           </g>
           
           {/* Key point circles on the path */}
           {/* Top start point - y=102 (~4.6% of 2197) */}
           <g>
-            <circle cx="445" cy="102.5" r="4.5" fill="white"/>
+            <circle cx="141" cy="102.5" r="4.5" fill="white"/>
             <motion.circle 
-              cx="444" 
+              cx="140" 
               cy="102" 
               r="18.5" 
-              stroke="#367498" 
+              stroke="#7BCAF8" 
               strokeWidth="5" 
               fill="none"
               style={{
                 scale: circle1Scale,
-                transformOrigin: "444px 102px"
+                transformOrigin: "140px 102px"
               }}
             />
           </g>
           
           {/* Middle point 1 - y=483 (~22% of 2197) */}
           <g>
-            <circle cx="331" cy="483.5" r="4.5" fill="white"/>
+            <circle cx="26" cy="483.5" r="4.5" fill="white"/>
             <motion.circle 
-              cx="331" 
+              cx="26" 
               cy="483" 
               r="18.5" 
-              stroke="#367498" 
+              stroke="#7BCAF8" 
               strokeWidth="5" 
               fill="none"
               style={{
                 scale: circle2Scale,
-                transformOrigin: "331px 483px"
+                transformOrigin: "26px 483px"
               }}
             />
           </g>
           
           {/* Center connection point - y=951 (~43% of 2197) */}
           <g>
-            <circle cx="523" cy="951.5" r="4.5" fill="white"/>
+            <circle cx="215" cy="951.5" r="4.5" fill="white"/>
             <motion.circle 
-              cx="523" 
+              cx="215" 
               cy="951" 
               r="18.5" 
-              stroke="#367498" 
+              stroke="#7BCAF8" 
               strokeWidth="5" 
               fill="none"
               style={{
                 scale: circle3Scale,
-                transformOrigin: "523px 951px"
+                transformOrigin: "215px 951px"
               }}
             />
           </g>
           
           {/* Middle point 2 - y=1440 (~65.5% of 2197) */}
           <g>
-            <circle cx="721.5" cy="1439.5" r="4.5" fill="white"/>
+            <circle cx="415.5" cy="1439.5" r="4.5" fill="white"/>
             <motion.circle 
-              cx="721" 
+              cx="415" 
               cy="1440" 
               r="18.5" 
-              stroke="#367498" 
+              stroke="#7BCAF8" 
               strokeWidth="5" 
               fill="none"
               style={{
                 scale: circle4Scale,
-                transformOrigin: "721px 1440px"
+                transformOrigin: "415px 1440px"
               }}
             />
           </g>
           
           {/* Bottom end point - y=1906 (~86.7% of 2197) */}
           <g>
-            <circle cx="524" cy="1906.5" r="4.5" fill="white"/>
+            <circle cx="221" cy="1906.5" r="4.5" fill="white"/>
             <motion.circle 
-              cx="524" 
+              cx="221" 
               cy="1906" 
               r="18.5" 
-              stroke="#367498" 
+              stroke="#7BCAF8" 
               strokeWidth="5" 
               fill="none"
               style={{
                 scale: circle5Scale,
-                transformOrigin: "524px 1906px"
+                transformOrigin: "221px 1906px"
               }}
             />
           </g>

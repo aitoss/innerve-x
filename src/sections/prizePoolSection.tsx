@@ -16,7 +16,7 @@ export default function PrizePoolSection() {
         <PrizePoolScroll />
       </div>
       <PrizePoolCard />
-      <div className="-mt-70">
+      <div className=" -mt-40 md:-mt-55 lg:-mt-70">
 
       <PrizepoolBottomForest /> 
       </div>

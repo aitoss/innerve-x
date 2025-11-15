@@ -23,7 +23,7 @@ export default function BalloonAnimation() {
   // Adjust balloon width based on scale
   const balloonWidth = screenWidth < 640 ? 75 : screenWidth < 768 ? 90 : screenWidth < 1024 ? 112 : screenWidth < 1280 ? 135 : 150;
   const minX = screenWidth < 640 ? -balloonWidth -90 : screenWidth < 768 ? -balloonWidth -40 : screenWidth < 1024 ? -balloonWidth + 35 : screenWidth < 1280 ? -balloonWidth +80 : -balloonWidth + 120;
-  const maxX = screenWidth < 440 ? screenWidth - 20 : screenWidth < 640 ? screenWidth+180 : screenWidth < 768 ? screenWidth + 160 : screenWidth < 1024 ? screenWidth : screenWidth < 1280 ? screenWidth-135: screenWidth - 260;
+  const maxX = screenWidth < 440 ? screenWidth - 40 : screenWidth < 640 ? screenWidth+160 : screenWidth < 768 ? screenWidth + 140 : screenWidth < 1024 ? screenWidth -20 : screenWidth < 1280 ? screenWidth-125: screenWidth - 250;
 //   const minX = -balloonWidth; // Start off-screen left
 //   const maxX = screenWidth; // End off-screen right
   const midX = (screenWidth / 2 - balloonWidth / 2); // Center position

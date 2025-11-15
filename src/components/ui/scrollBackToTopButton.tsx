@@ -39,13 +39,13 @@ export default function ScrollBackToTopButton() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-100 bg-linear-to-r bg-[#e76c3f] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-shadow"
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-100 bg-linear-to-r bg-[#e76c3f] text-white p-2 sm:p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-shadow"
           aria-label="Scroll to top"
           type="button"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
