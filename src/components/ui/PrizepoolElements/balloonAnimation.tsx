@@ -18,6 +18,7 @@ export default function BalloonAnimation() {
   }, []);
   
   const amplitude = screenWidth < 768 ? 30 : screenWidth < 1024 ? 50 : 75;
+  const center = screenWidth < 440 ? 570 : screenWidth < 640 ? 580 : screenWidth < 768 ? 435 : screenWidth < 1024 ? 400 : screenWidth < 1280 ? 312 : 325;
   
   // Calculate pixel positions based on actual screen width for better constraints
   // Adjust balloon width based on scale
@@ -47,9 +48,7 @@ export default function BalloonAnimation() {
     }
     xPositions.push(x);
     
-    // Vertical movement: smooth wave between 750 and 900
-    // const amplitude = 75; // (900 - 750) / 2
-    const center = 825; // (900 + 750) / 2
+    // Vertical movement: smooth wave
     const y = center + amplitude * Math.sin(progress * Math.PI * 4); // 4 complete waves
     yPositions.push(y);
   }
