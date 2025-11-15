@@ -21,7 +21,7 @@ export default function () {
     return (
         <>
             {/* <HeroSection /> */}
-            <CharacterScroll />
+            {/* <CharacterScroll /> */}
             {/* <div className="h-screen"></div>
             <div className="h-screen"></div>
             <div className="h-screen"></div>
@@ -34,19 +34,7 @@ export default function () {
             <TrackSection />
             <DividerNoArrow />
             <TimelineSection />
-            {/* <div className="z-0 w-full h-screen">
-                <Galaxy />
-            </div> */}
-
-            {/* <div className="flex justify-center absolute top-220 left-[25%] z-50">
-                <ClockSection />
-            </div>
-            <PrizePoolSection /> */}
-
-            {/* <div className="h-screen relative w-full flex justify-center items-center text-6xl border-b-2 border-gray-300" >hii</div>
-            <div className="h-screen w-full flex justify-center items-center text-6xl border-b-2 border-gray-300" > Test to scroll</div>
-            <div className="h-screen w-full flex justify-center items-center text-6xl border-b-2 border-gray-300" > Test to scroll</div> */}
-
+            <Divider />
             <WantToSponsorsUsSection />
             <Divider />
             <FaqSection />

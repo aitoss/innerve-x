@@ -120,7 +120,7 @@ export default function TrackSection() {
                     </div>
                 ))}
             </div>
-            {/* <div className="h-[10vh]" /> */}
+            <div className="h-[50vh]" />
             <div className="absolute w-full z-0 bottom-0 h-[90vh] ">
                 <Image src={TrackBgImg} alt="background image" objectFit="cover" layout="fill" className="" />
                 <div className="absolute inset-0 bg-linear-to-b from-black via-black/80 to-transparent " />

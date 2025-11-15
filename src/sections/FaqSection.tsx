@@ -55,7 +55,7 @@ export default function FaqSection() {
             },
             {
                 question: "What are the dates of Phase 1 & 2?",
-                answer:`Idea Pitching: 15th Dec - 15th Jan & 24hrs Hackathon: 30th -31st Jan`,
+                answer: `Idea Pitching: 15th Dec - 15th Jan & 24hrs Hackathon: 30th -31st Jan`,
             },
         ],
         "STAY & TRAVEL": [
@@ -135,7 +135,7 @@ export default function FaqSection() {
                                 className="md:w-full w-8/10  "
                                 style={{ width: 'full', paddingLeft: 11, paddingRight: 11, paddingTop: 10, paddingBottom: 10, background: 'linear-gradient(0deg, #DB7200 49%, #EDAA4A 50%, #FFE394 100%)', boxShadow: '0px 1.650254726409912px 0px #FBBB31 inset', overflow: 'hidden', borderRadius: 47.86, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex' }}>
                                 <div style={{ alignSelf: 'stretch', paddingLeft: 16, paddingRight: 16, paddingTop: 8, paddingBottom: 8, background: '#FCCC31', boxShadow: '0px -2.0628185272216797px 0px #F8DC47 inset', overflow: 'hidden', borderRadius: 35.29, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex' }}>
-                                    <div style={{ textAlign: 'center', color: 'white',  fontWeight: '400', wordWrap: 'break-word', textShadow: '0px 3px 0px rgba(0, 0, 0, 1.00)' }} className="text-stroke-black md:text-4xl text-xl ">{category}</div>
+                                    <div style={{ textAlign: 'center', color: 'white', fontWeight: '400', wordWrap: 'break-word', textShadow: '0px 3px 0px rgba(0, 0, 0, 1.00)' }} className="text-stroke-black md:text-4xl text-xl ">{category}</div>
                                 </div>
                             </button>
                         ))}
@@ -150,27 +150,17 @@ export default function FaqSection() {
                                     className="border-b  border-gray-600 pb-4 transition-all duration-300 font-sans hover:border-[#FCCC31]"
                                 >
                                     <div
-                                        className="flex justify-between items-center cursor-pointer 
-                    transition-all duration-300 hover:text-[#FCCC31]"
+                                        className="flex justify-between items-center cursor-pointer transition-all duration-300 hover:text-[#FCCC31]"
                                         onClick={() => toggleQuestion(index)}
                                     >
                                         <span className="md:text-[32px] md:mb-6 md:mt-6 text-left text-[1rem] font-semibold font-tthoves">
                                             {faq.question}
                                         </span>
-                                        <span
-                                            className={`text-2xl transform transition-transform duration-600 
-                    ${openQuestion === index ? "rotate-180" : "rotate-0"}`}
-                                        >
+                                        <span className={`text-2xl transform transition-transform duration-600 ${openQuestion === index ? "rotate-180" : "rotate-0"}`}>
                                             {openQuestion === index ? "−" : "+"}
                                         </span>
                                     </div>
-                                    <div
-                                        className={`overflow-hidden transition-all duration-600 transform
-                    ${openQuestion === index
-                                                ? "max-h-96 opacity-100 translate-y-0"
-                                                : "max-h-0 opacity-0 -translate-y-2"
-                                            }`}
-                                    >
+                                    <div className={`overflow-hidden transition-all duration-600 transform ${openQuestion === index ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"}`}>
                                         <div className="mt-2 text-left md:text-[1.5rem] text-gray-300 transition-opacity duration-300">
                                             {faq.answer}
                                         </div>

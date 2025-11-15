@@ -92,7 +92,7 @@ export default function HeroSectionAnimation() {
             {/* this is the second layer */}
             <BalloonShip X={BalloonShipX} Y={BalloonShipY} />
             <BlueDragon X={BlueDragonX} Y={BlueDragonY} />
-            {/* <GreenDragon X={GreenDragonX} Y={GreenDragonY} /> */}
+            <GreenDragon X={GreenDragonX} Y={GreenDragonY} />
             <Balloon position="top-[40%] right-[15%]" size="max-sm:w-[50px] w-[30px] " X={BalloonX} Y={BalloonY} />
             <Balloon position="top-[27%] right-[35%]" size="h-[90px] max-sm:w-[50px] w-[90px]" X={BalloonX} Y={BalloonY} />
 
