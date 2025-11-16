@@ -37,7 +37,7 @@ uniform bool uTransparent;
 
 varying vec2 vUv;
 
-#define NUM_LAYER 4.0
+#define NUM_LAYER 2.0
 #define STAR_COLOR_CUTOFF 0.2
 #define MAT45 mat2(0.7071, -0.7071, 0.7071, 0.7071)
 #define PERIOD 3.0
@@ -86,7 +86,7 @@ vec3 StarLayer(vec2 uv) {
   vec2 gv = fract(uv) - 0.5; 
   vec2 id = floor(uv);
 
-  for (int y = -1; y <= 1; y++) {
+  for (int y = 0; y <= 0; y++) {
     for (int x = -1; x <= 1; x++) {
       vec2 offset = vec2(float(x), float(y));
       vec2 si = id + vec2(float(x), float(y));
@@ -212,6 +212,8 @@ export default function Galaxy({
   const smoothMousePos = useRef({ x: 0.5, y: 0.5 });
   const targetMouseActive = useRef(0.0);
   const smoothMouseActive = useRef(0.0);
+  const isVisibleRef = useRef(true);
+  const animateIdRef = useRef<number>(0);
 
   useEffect(() => {
     if (!ctnDom.current) return;
@@ -277,10 +279,12 @@ export default function Galaxy({
     });
 
     const mesh = new Mesh(gl, { geometry, program });
-    let animateId: number;
 
     function update(t: number) {
-      animateId = requestAnimationFrame(update);
+      if (!isVisibleRef.current) {
+        return;
+      }
+      animateIdRef.current = requestAnimationFrame(update);
       if (!disableAnimation) {
         program.uniforms.uTime.value = t * 0.001;
         program.uniforms.uStarSpeed.value = (t * 0.001 * starSpeed) / 10.0;
@@ -298,7 +302,24 @@ export default function Galaxy({
 
       renderer.render({ scene: mesh });
     }
-    animateId = requestAnimationFrame(update);
+
+    // Intersection Observer to pause animation when off-screen
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          isVisibleRef.current = entry.isIntersecting;
+          if (entry.isIntersecting && !disableAnimation) {
+            animateIdRef.current = requestAnimationFrame(update);
+          } else {
+            cancelAnimationFrame(animateIdRef.current);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(ctn);
+    animateIdRef.current = requestAnimationFrame(update);
     ctn.appendChild(gl.canvas);
 
     function handleMouseMove(e: MouseEvent) {
@@ -319,13 +340,16 @@ export default function Galaxy({
     }
 
     return () => {
-      cancelAnimationFrame(animateId);
+      observer.disconnect();
+      cancelAnimationFrame(animateIdRef.current);
       window.removeEventListener('resize', resize);
       if (mouseInteraction) {
         ctn.removeEventListener('mousemove', handleMouseMove);
         ctn.removeEventListener('mouseleave', handleMouseLeave);
       }
-      ctn.removeChild(gl.canvas);
+      if (ctn.contains(gl.canvas)) {
+        ctn.removeChild(gl.canvas);
+      }
       gl.getExtension('WEBGL_lose_context')?.loseContext();
     };
   }, [
