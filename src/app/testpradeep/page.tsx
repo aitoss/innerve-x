@@ -15,6 +15,7 @@ import TimelineSection from "@/sections/timelineSection";
 import DividerNoArrow from "@/components/ui/DividerNoArrrow";
 import Galaxy from "@/components/ui/TracksElements/Glaxy";
 import FaqSection from "@/sections/FaqSection";
+import ClockBannerSection from "@/sections/ClockBannerSection";
 
 
 export default function () {
@@ -22,16 +23,17 @@ export default function () {
         <>
             {/* <HeroSection /> */}
             {/* <CharacterScroll /> */}
-            {/* <div className="h-screen"></div>
-            <div className="h-screen"></div>
-            <div className="h-screen"></div>
-            <div className="h-screen"></div> */}
             <HeroSectionAnimation />
-            <Divider />
-            <ClockSection />
+            <ClockBannerSection />
+            {/* <div className="h-screen">ghdfghdfghdfg</div>
+            <div className="h-screen">dhdfhgfdgh</div>
+            <div className="h-screen">dhdfhgfdhgdf</div>
+            <div className="h-screen">dghdghgfdhf</div> */}
+            {/* <Divider /> */}
+            {/* <ClockSection /> */}
             <PrizePoolSection />
             <DividerNoArrow />
-            <TrackSection />
+            <TrackSection />    
             <DividerNoArrow />
             <TimelineSection />
             <Divider />

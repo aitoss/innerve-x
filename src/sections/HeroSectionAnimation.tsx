@@ -98,11 +98,11 @@ export default function HeroSectionAnimation() {
 
             {/* this is the bat section of positions with random movements */}
             <Bat1 position="top-[3%] right-[-3.5%]" size="max-sm:h-[30px] h-[50px] w-auto" X={bat1X} Y={bat1Y} /> {/* the top right bat */}
-            <Bat1 position="top-[30%]  right-[16%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat2X} Y={bat2Y} />  {/* three bat as a background b3 */}
+            <Bat1 position="top-[30%]  right-[16%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat2X} Y={bat2Y} />  
             <Bat1 position="top-[36%] max-sm:left-[10%]  right-[20%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat3X} Y={bat3Y} /> {/* three bat as a background b2 */}
-            <Bat2 position="top-[30%] max-sm:top-[26%] max-sm:left-[40%] right-[22%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat4X} Y={bat4Y} /> {/* three bat as a background b1 */}
+            <Bat2 position="top-[30%] max-sm:top-[26%] max-sm:left-[40%] right-[22%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat4X} Y={bat4Y} />
             <Bat2 position="top-[35%] right-[25%]" size="max-sm:h-[30px] h-[50px] w-auto" X={bat5X} Y={bat5Y} /> {/* bat side of innnerve logo */}
-            <Bat2 position="top-[26%] max-sm:top-[16%] max-sm:left-[40%]  right-[26%]" size="max-sm:h-[30px] h-[80px] w-auto" X={bat6X} Y={bat6Y} /> {/* bat above innnerve logo */}
+            {/* <Bat2 position="top-[26%] max-sm:top-[16%] max-sm:left-[40%]  right-[26%]" size="max-sm:h-[30px] h-[80px] w-auto" X={bat6X} Y={bat6Y} />  */}
             <Bat1 position="top-[22%] right-[6%]" size="max-sm:h-[30px] h-[40px] w-auto" X={bat7X} Y={bat7Y} /> {/* right first bat2 */}
             <Bat2 position="top-[16%] right-[-1.5%]" size="max-sm:h-[30px] h-[80px] w-auto" X={bat8X} Y={bat8Y} /> {/* right first bat1 */}
 

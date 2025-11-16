@@ -100,7 +100,7 @@ export default function TrackSection() {
                     mouseRepulsion={true}
                     mouseInteraction={true}
                     density={3}
-                    glowIntensity={0.2}
+                    glowIntensity={0.2 }
                     saturation={0}
                     hueShift={240}
                 />

@@ -7,7 +7,7 @@ import Image from "next/image";
 import PrizePoolClouds from "@/assets/svg/PrizePooltopclouds.svg";
 import RopeImage from "@/components/ui/ClockElements/rope";
 
-export default function ClockSection() {
+export default function   ClockSection() {
   return (
     <div className="relative  bg-[#CCECF7]">
       {/* Cloud Background */}

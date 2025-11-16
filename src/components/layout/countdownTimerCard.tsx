@@ -4,9 +4,9 @@ import CountdownArrow from "@/components/ui/ClockElements/countdownArrows";
 
 export default function CountdownTimerCard() {
   return (
-    <>
+    <div className="relative z-10">
       {/* Mobile: 35% = 301px, SM: 50% = 430px, MD: 70% = 602px, LG: 100% = 860px */}
-      <div className="h-[95px] w-[301px] sm:h-[136px] sm:w-[430px] md:h-[190px] md:w-[602px] lg:h-[272px] lg:w-[860px] text-xs sm:text-base md:text-lg lg:text-2xl border border-black sm:border-2 rounded-2xl md:rounded-4xl">
+      <div className=" h-[95px] w-[301px] sm:h-[136px] sm:w-[430px] md:h-[190px] md:w-[602px] lg:h-[272px] lg:w-[860px] text-xs sm:text-base md:text-lg lg:text-2xl border border-black sm:border-2 rounded-2xl md:rounded-4xl">
         <div className="h-[25%] rounded-tr-2xl rounded-tl-2xl w-full md:rounded-tr-4xl md:rounded-tl-4xl bg-linear-to-b from-[#E7EDFB] to-[#DDDFF8] flex items-center justify-center">
           {/* Mobile: 214px, SM: 306px, MD: 428px, LG: 612px */}
           <div className="h-[47px] w-[214px] sm:h-[67px] sm:w-[306px] md:h-[93px] md:w-[428px] lg:h-[133px] lg:w-[612px] bg-[linear-gradient(180deg,#25aa87_0%,#52f4c0_8%,#0fae7e_17%,#00875f_88%)] rounded-t-[7px] sm:rounded-t-[10px] md:rounded-t-[14px] lg:rounded-t-[20px] rounded-b-xl">
@@ -36,6 +36,6 @@ export default function CountdownTimerCard() {
           </div>
         </div>
       </div>
-    </>
+    </div  >
   );
 }

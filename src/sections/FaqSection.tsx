@@ -112,7 +112,7 @@ export default function FaqSection() {
                     mouseRepulsion={true}
                     mouseInteraction={false}
                     density={3}
-                    glowIntensity={0.1}
+                    glowIntensity={0.2}
                     saturation={0}
                     hueShift={240}
                 />
