@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import TrackBgImg from "../assets/webp/tracks/TrackBgImg.webp"
 import TrackCard from "@/components/ui/TracksElements/TrackCard";

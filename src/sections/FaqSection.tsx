@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect } from "react";
 import Galaxy from "@/components/ui/TracksElements/Glaxy";
 // import Pink_Board from "../assets/Faq_board.png";

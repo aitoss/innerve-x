@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import DevfolioBg from "../../assets/webp/ApplyWDBG.webp"
 import DEvfolioButtonCta from "../../assets/images/cta.png"

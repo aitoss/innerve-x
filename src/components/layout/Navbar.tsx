@@ -1,3 +1,4 @@
+'use client';
 import BrochureButton from "../ui/BrochureButton";
 import InnerveNavbarLogo from "../ui/InnerveNavbarLogo";
 import NavigationBar from "../ui/NavigationBar";

@@ -1,4 +1,4 @@
-'use client';
+
 import Footer from "@/components/layout/Footer";
 import DividerNoArrow from "@/components/ui/DividerNoArrrow";
 import Divider from "@/components/ui/DividerTest";
