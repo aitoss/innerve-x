@@ -41,7 +41,6 @@ export default function () {
             <Divider />
             <FaqSection />
             <DividerNoArrow />
-            {/* <Divider /> */}
             <Footer />
 
         </>
