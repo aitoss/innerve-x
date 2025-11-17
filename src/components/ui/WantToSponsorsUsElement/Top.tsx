@@ -6,7 +6,7 @@ import WTSUglow from "../../../assets/svg/WTSU/WTSUGlow2.svg"
 
 export default function WTSUTop() {
     return (
-        <div className="relative w-8/10 z-10">
+        <div className="relative -top-3 w-8/10 z-10">
             {/* Sponsor Bonus Badge */}
             <div className="absolute -top-7 sm:-top-6 md:-top-8   md:left-2  z-20">
                 <Image 

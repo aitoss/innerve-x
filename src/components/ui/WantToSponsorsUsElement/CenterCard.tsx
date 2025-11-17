@@ -6,34 +6,27 @@ import WTSUglow from "../../../assets/webp/WTSU/WTSUglow.webp"
 
 export default function WTSUCenterCard() {
     return (
-        <div className="w-full max-w-[400px] sm:max-w-[600px] md:max-w-[700px] h-[280px] sm:h-[380px] md:h-[462px] relative z-10 bg-[#FFF] px-3 sm:px-4 md:px-[19px] py-2 sm:py-3 md:py-4 rounded-xl sm:rounded-2xl md:rounded-[19px] mx-auto">
-            <div className="relative w-full h-full bg-[#EABC00] rounded-xl sm:rounded-2xl md:rounded-[19px] p-1 sm:p-1.5">
-                <div className="relative flex justify-center p-1 sm:p-1.5 md:p-2 w-full h-full bg-[#AA5A01] rounded-xl sm:rounded-2xl md:rounded-[19px]">
-                    <Image 
-                        src={WTSUCenterCardBg} 
-                        alt="WTSUCenterCardBg" 
-                        fill
-                        className="z-0 absolute inset-0 object-cover rounded-xl sm:rounded-2xl md:rounded-[19px]" 
-                    />
-                    <div className="relative z-10 w-full px-2 sm:px-3 md:px-4 flex flex-col items-center">
-                        <p className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[60px] text-center leading-tight md:leading-none mt-3 sm:mt-4 md:mt-6 lg:mt-10">
-                            Want To <br /> Sponsor Us?
-                        </p>
-                        
-                        <div className="relative mx-auto w-[220px] h-[190px] sm:w-[300px] sm:h-[250px]  md:w-[400px] md:h-[300px]">
-                            <Image 
-                                src={WTSUglow} 
-                                alt="WTSUglow" 
-                                fill
-                                className="object-contain"
-                            />
-                            <Image 
-                                src={WTSUCentalImg} 
-                                alt="WTSUCentalImg" 
-                                fill
-                                className="relative z-10 object-contain" 
-                            />
-                        </div>
+        <div className="relative w-[90%] max-w-[340px] xs:max-w-[400px] sm:max-w-[480px] md:max-w-[560px] lg:max-w-[659.54px] aspect-[659.54/428.8] z-10 outline-12 xs:outline-[14px] sm:outline-16 md:outline-18 outline-white rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-[19px] mx-auto">
+            <div className="relative w-full h-full outline-4 xs:outline-[5px] sm:outline-[6px] md:outline-[7px] lg:outline-8 outline-[#EABC00] rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-[22px]">
+                <Image src={WTSUCenterCardBg} fill alt="Center image" className="absolute inset-0 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-[22px] " />
+                <div className="relative z-10 w-full h-full px-3 xs:px-4 sm:px-6 md:px-8 py-4 xs:py-5 sm:py-6 md:py-8 flex flex-col items-center justify-between">
+                    <h2 className="text-white text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center leading-tight font-bold">
+                        Want To <br /> Sponsor Us?
+                    </h2>
+
+                    <div className="relative mx-auto w-[35%] aspect-square max-w-[200px] sm:max-w-60 md:max-w-[280px] lg:max-w-[300px]">
+                        <Image
+                            src={WTSUglow}
+                            alt="Glow effect"
+                            fill
+                            className="object-contain"
+                        />
+                        <Image
+                            src={WTSUCentalImg}
+                            alt="Central sponsor image"
+                            fill
+                            className="relative z-10 object-contain"
+                        />
                     </div>
                 </div>
             </div>

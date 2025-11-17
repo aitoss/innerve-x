@@ -61,7 +61,7 @@ function useActiveSection() {
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: "-20% 0px -20% 0px", // Trigger when section is 20% into viewport
+      rootMargin: "-10% 0px -10% 0px", // Trigger when section is 20% into viewport
       threshold: [0, 0.25, 0.5, 0.75, 1]
     };
 
@@ -189,7 +189,7 @@ export default function VillageGirlAnimation() {
   }, []);
 
   return (
-    <div className="fixed -bottom-16 left-4 z-60 pointer-events-none flex ">
+    <div className="fixed -bottom-22 left-4 z-60 pointer-events-none flex ">
       {/* Character Image */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -203,14 +203,14 @@ export default function VillageGirlAnimation() {
             damping: 30,
             duration: 0.3
           }}
-          className="relative"
+          className="relative border-2 "
         >
           <Image
             src={`/VillageGirl/Girl_${currentImage}.png`}
             alt="Village Girl Character"
-            width={184}
-            height={276}
-            className="w-32 h-auto sm:w-40 md:w-46 lg:w-52"
+            width={160}
+            height={320}
+            className=" "
             priority={currentImage === 12}
             quality={100}
           />
@@ -231,7 +231,7 @@ export default function VillageGirlAnimation() {
               damping: 25,
               delay: 0.1
             }}
-            className="relative top-28 -left-12 "
+            className="relative top-8 -left-12 "
           >
             <div className="w-100 h-40 relative flex justify-center items-center " >
               <Image src={TextBubbleBox} alt="Text Bubble Box" fill className="object-contain absolute inset-0 z-0  " quality={100} />
@@ -240,11 +240,7 @@ export default function VillageGirlAnimation() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="relative z-10 text-black text-shadow  text-center w-full h-full flex justify-center items-center px-12 pt-2 pl-14 font-extralight text-[10px] md:text-base    uppercase"
-                style={{
-                  // fontFamily: 'Clash, sans-serif',
-                  textShadow: '0 1px 2px rgba(0,0,0,0.1)'
-                }}
+                className="relative z-10 text-black text-center w-full h-full flex justify-center items-center px-12 pt-2 pl-14  text-[10px] md:text-base    uppercase"
               >
                 {bubbleText}
               </motion.p>

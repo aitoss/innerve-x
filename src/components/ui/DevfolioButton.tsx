@@ -15,14 +15,14 @@ export default function DevfolioButton() {
     }, []);
 
     return (
-        <div className="relative flex justify-center items-center pointer-events-none gap-6 px-6 p-2 text-white  w-fit  shadow-[0_3px_0_#000] text-xl  md:text-2xl  font-medium border-t-4 border-b-4 bg-[#B3CEFF] border-b-[#6198dc]  border-t-[#FFF] text-shadow  rounded-xl " >
-            <div
-                className="apply-button"
-                data-hackathon-slug="innerve-x"
-                data-button-theme="light"
-                style={{ height: '44px', width: '312px' }}
-            ></div>
-        </div>
+
+        <div
+            className="apply-button"
+            data-hackathon-slug="innerve-x"
+            data-button-theme="light"
+            style={{ height: '44px', width: '312px' }}
+        ></div>
+
 
 
 

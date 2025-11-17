@@ -11,10 +11,12 @@ import TrackSection from "@/sections/TrackSecction";
 import WantToSponsorsUsSection from "@/sections/WantToSponsorsUsSection";
 import VillageGirlAnimation from "@/sections/VillageGirlAnimation";
 import Image from "next/image";
+import Audio from "@/components/ui/Audio";
 
 export default function Home() {
   return (
     <main>
+      <Audio />
       <div data-section="hero">
         <HeroSectionAnimation />
       </div>

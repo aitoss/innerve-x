@@ -37,7 +37,7 @@ body {
   }
 
   .text-stroke-black {
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: .5px black;
   }
 
   .text-stroke-white {

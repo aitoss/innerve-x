@@ -89,7 +89,7 @@ const TRACKS_CARDS_DATA = [
         BC2: "border-[#FFBF64]",
         Logo: TrackEcoTech,
         CornerImg: PurpleCornerImg,
-        Title: "EcoTech"
+        Title: "Defence"
     }
 ]
 
