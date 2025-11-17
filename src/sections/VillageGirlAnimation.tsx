@@ -233,16 +233,16 @@ export default function VillageGirlAnimation() {
             }}
             className="relative top-28 -left-12 "
           >
-            <div className="w-100 h-36 relative flex justify-center items-center " >
+            <div className="w-100 h-40 relative flex justify-center items-center " >
               <Image src={TextBubbleBox} alt="Text Bubble Box" fill className="object-contain absolute inset-0 z-0  " quality={100} />
               <motion.p
                 key={bubbleText}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="relative z-10 text-black text-center w-full h-full flex justify-center items-center p-8 pl-12 font-bold text-[10px] md:text-base   uppercase"
+                className="relative z-10 text-black text-shadow  text-center w-full h-full flex justify-center items-center px-12 pt-2 pl-14 font-extralight text-[10px] md:text-base    uppercase"
                 style={{
-                  fontFamily: 'Clash, sans-serif',
+                  // fontFamily: 'Clash, sans-serif',
                   textShadow: '0 1px 2px rgba(0,0,0,0.1)'
                 }}
               >

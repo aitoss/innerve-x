@@ -119,10 +119,10 @@ export default function FaqSection() {
                 />
             </div>
             <div className="relative mb-10 z-10 text-center py-6">
-                <h1 className="text-[8rem] bg-center md:text-5xl lg:text-8xl font-bold font-angrybirds animate-fade-in transition-all duration-300">
+                <h1 className="text-[4rem] bg-center md:text-5xl lg:text-8xl font-bold font-angrybirds animate-fade-in transition-all duration-300">
                     FAQs
                 </h1>
-                <p className="text-gray-300 mt-5 text-[1rem] md:text-[2rem] font-angrybirds">
+                <p className="text-gray-300 px-10 mt-5 text-[36px] md:text-[2rem] font-angrybirds">
                     Quick answers to questions you may have
                 </p>
             </div>

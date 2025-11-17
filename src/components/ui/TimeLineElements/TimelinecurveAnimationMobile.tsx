@@ -67,7 +67,7 @@ export default function TimelineCurveAnimationMobile({ gradientProgress, onCircl
   return (
     <div className="relative w-full h-[1653px] pl-8">
       {/* SVG Timeline Mobile */}
-      <svg className="absolute left-0 top-0 w-full h-full" viewBox="0 0 109 1353" fill="none" preserveAspectRatio="xMinYMid meet" xmlns="http://www.w3.org/2000/svg">
+      <svg className="absolute left-0 -top-5 z-0 w-full h-full" viewBox="0 0 109 1353" fill="none" preserveAspectRatio="xMinYMid meet" xmlns="http://www.w3.org/2000/svg">
         <defs>
           {/* Animated gradient for flow effect */}
           <linearGradient id="animatedFlowGradientMobile" x1="53" y1="0" x2="53" y2="1353" gradientUnits="userSpaceOnUse">

@@ -18,6 +18,7 @@ export default function Home() {
       <div data-section="hero">
         <HeroSectionAnimation />
       </div>
+      <DividerNoArrow />
       <div data-section="clock">
         <ClockBannerSection />
       </div>
@@ -28,7 +29,7 @@ export default function Home() {
       <div data-section="tracks">
         <TrackSection />
       </div>
-      <DividerNoArrow />
+      <Divider />
       <div data-section="timeline">
         <TimelineSection />
       </div>

@@ -7,12 +7,12 @@ import BalloonAnimation from "@/components/ui/PrizepoolElements/balloonAnimation
 
 export default function PrizePoolSection() {
   return (
-    <div className="relative flex flex-col pt-50  items-center  bg-linear-to-b from-[#CCECF7] to-[#BFEEFE]">
+    <div className="relative flex flex-col md:pt-50  items-center  bg-linear-to-b from-[#CCECF7] to-[#BFEEFE]">
       <div className="flex justify-center">
         <PrizePoolScroll />
       </div>
       <PrizePoolCard />
-      <div className=" -mt-40 sm:-mt-60 md:-mt-80 lg:-mt-120">
+      <div className=" -mt-40 sm:-mt-60 md:-mt-80 lg:-mt-100">
         <PrizepoolBottomForest />
       </div>
     </div>

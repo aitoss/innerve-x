@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import TrackBgImg from "../assets/webp/tracks/TrackBgImg.webp"
+import TrackBgImgUpper from "../assets/webp/tracks/TrackBgImgUpper.webp"
 import TrackCard from "@/components/ui/TracksElements/TrackCard";
 import TrackHealthImg from "../assets/svg/Traks/TrackHealth.svg"
 import BlueCornerImg from "../assets/svg/Traks/BlueCorner.svg"
@@ -123,7 +124,8 @@ export default function TrackSection() {
             </div>
             <div className="h-[50vh]" />
             <div className="absolute w-full z-0 bottom-0 h-[90vh] ">
-                <Image src={TrackBgImg} alt="background image" objectFit="cover" layout="fill" className="" />
+                <Image src={TrackBgImg} alt="background image" objectFit="cover" layout="fill" className="z-0" />
+                <Image src={TrackBgImgUpper} alt="background image upper" objectFit="cover" layout="fill" className="z-10" />
                 <div className="absolute inset-0 bg-linear-to-b from-black via-black/80 to-transparent " />
             </div>
         </section>
