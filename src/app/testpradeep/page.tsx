@@ -16,11 +16,13 @@ import DividerNoArrow from "@/components/ui/DividerNoArrrow";
 import Galaxy from "@/components/ui/TracksElements/Glaxy";
 import FaqSection from "@/sections/FaqSection";
 import ClockBannerSection from "@/sections/ClockBannerSection";
+import LoadingScreen from "@/sections/LoadingScreen";
 
 
 export default function () {
     return (
         <>
+            <LoadingScreen />
             {/* <HeroSection /> */}
             {/* <CharacterScroll /> */}
             <HeroSectionAnimation />
@@ -31,7 +33,7 @@ export default function () {
             <div className="h-screen">dghdghgfdhf</div> */}
             {/* <Divider /> */}
             {/* <ClockSection /> */}
-            <PrizePoolSection />
+            {/* <PrizePoolSection />
             <DividerNoArrow />
             <TrackSection />    
             <DividerNoArrow />
@@ -41,7 +43,7 @@ export default function () {
             <Divider />
             <FaqSection />
             <DividerNoArrow />
-            <Footer />
+            <Footer /> */}
 
         </>
     );

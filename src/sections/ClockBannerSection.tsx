@@ -1,13 +1,30 @@
+'use client';
 import Image from "next/image";
 import PrizePoolClouds from "../assets/webp/clockTopCloud.webp"
 import CountdownTimerCard from "@/components/layout/countdownTimerCard";
 import RopeImage from "../assets/svg/rope.svg"
-
+import { motion, useScroll, useTransform } from "motion/react";
+import { useRef } from "react";
 import EventCardAnimated from "@/components/layout/eventCardAnimation";
 import EventCard from "@/components/layout/eventCard";
+import Cloud from "@/components/ui/HeroSectionElement/Cloud";
 export default function ClockBannerSection() {
+
+    const containerRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start end", "end start"]
+    });
+
+    const leftCloudX = useTransform(scrollYProgress, [0, 1], [0, -1200]);
+    const rightCloudX = useTransform(scrollYProgress, [0, 1], [0, 1200]);
+
+
     return (
-        <section className="relative flex justify-center w-full  h-auto bg-[#CCECF7] " >
+        <section ref={containerRef} className="relative flex justify-center w-full  h-auto bg-[#CCECF7] overflow-x-hidden-hidden " >
+            <Cloud position="top-[-30px] left-[350px]" X={leftCloudX} />
+            <Cloud position="top-[-300px] right-[350px]" X={rightCloudX} />
+
             <div className="absolute left-0 right-0 z-0">
                 <Image src={PrizePoolClouds} alt="clouds background" objectFit="fill" className="w-screen h-full" />
             </div>
@@ -21,6 +38,7 @@ export default function ClockBannerSection() {
                     <EventCard />
                 </div>
             </div>
+
         </section>
     )
 }
