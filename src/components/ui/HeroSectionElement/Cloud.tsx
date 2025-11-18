@@ -26,7 +26,7 @@ export default function Cloud({ position, X }: CloudProps) {
                 <Image
                     src={CloudImage2}
                     alt="Clouds"
-                    className="relative  max-sm:scale-130     blur-[0.5px] drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] drop-shadow-[0_0_45px_rgba(255,255,255,0.6)]"
+                    className="relative  max-sm:scale-130     blur-[0.5px] drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] "
                 />
             </div>
         </motion.div>
