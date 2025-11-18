@@ -1,50 +1,107 @@
+"use client";
 
-import Footer from "@/components/layout/Footer";
+import { Suspense, lazy, useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import DividerNoArrow from "@/components/ui/DividerNoArrrow";
 import Divider from "@/components/ui/DividerTest";
 import ClockBannerSection from "@/sections/ClockBannerSection";
-import FaqSection from "@/sections/FaqSection";
 import HeroSectionAnimation from "@/sections/HeroSectionAnimation";
-import PrizePoolSection from "@/sections/prizePoolSection";
-import TimelineSection from "@/sections/timelineSection";
-import TrackSection from "@/sections/TrackSecction";
-import WantToSponsorsUsSection from "@/sections/WantToSponsorsUsSection";
-import VillageGirlAnimation from "@/sections/VillageGirlAnimation";
-import Image from "next/image";
+import LoadingScreen from "@/sections/LoadingScreen";
 import Audio from "@/components/ui/Audio";
 
+// Lazy load below-the-fold sections
+const PrizePoolSection = dynamic(() => import("@/sections/prizePoolSection"), {
+  loading: () => <div className="min-h-screen" />,
+  ssr: false,
+});
+
+const TrackSection = dynamic(() => import("@/sections/TrackSecction"), {
+  loading: () => <div className="min-h-screen" />,
+  ssr: false,
+});
+
+const TimelineSection = dynamic(() => import("@/sections/timelineSection"), {
+  loading: () => <div className="min-h-screen" />,
+  ssr: false,
+});
+
+const WantToSponsorsUsSection = dynamic(
+  () => import("@/sections/WantToSponsorsUsSection"),
+  {
+    loading: () => <div className="min-h-screen" />,
+    ssr: false,
+  }
+);
+
+const FaqSection = dynamic(() => import("@/sections/FaqSection"), {
+  loading: () => <div className="min-h-screen" />,
+  ssr: false,
+});
+
+const Footer = dynamic(() => import("@/components/layout/Footer"), {
+  loading: () => <div className="min-h-[400px]" />,
+  ssr: false,
+});
+
+const VillageGirlAnimation = dynamic(
+  () => import("@/sections/VillageGirlAnimation"),
+  {
+    ssr: false,
+  }
+);
+
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [isContentReady, setIsContentReady] = useState(false);
+
+  useEffect(() => {
+    // Simulate minimum loading time for smooth transition
+    const minLoadTime = setTimeout(() => {
+      setIsLoading(false);
+      // Start revealing content after loading screen exits
+      setTimeout(() => {
+        setIsContentReady(true);
+      }, 300);
+    }, 2000);
+
+    return () => clearTimeout(minLoadTime);
+  }, []);
+
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+
   return (
-    <main>
+    <main className={isContentReady ? "opacity-100" : "opacity-0"} style={{ transition: "opacity 0.5s ease-in" }}>
       <Audio />
-      <div data-section="hero"  >
+      <div data-section="hero">
         <HeroSectionAnimation />
       </div>
       <DividerNoArrow />
-      <div data-section="clock"  >
+      <div data-section="clock">
         <ClockBannerSection />
       </div>
-      <div data-section="prizepool"  >
+      <div data-section="prizepool">
         <PrizePoolSection />
       </div>
       <DividerNoArrow />
-      <div data-section="tracks"  >
+      <div data-section="tracks">
         <TrackSection />
       </div>
       <Divider />
-      <div data-section="timeline"  >
+      <div data-section="timeline">
         <TimelineSection />
       </div>
       <Divider />
-      <div data-section="sponsorus"  >
+      <div data-section="sponsorus">
         <WantToSponsorsUsSection />
       </div>
       <Divider />
-      <div data-section="faq"  >
+      <div data-section="faq">
         <FaqSection />
       </div>
       <DividerNoArrow />
-      <div data-section="contact"  >
+      <div data-section="contact">
         <Footer />
       </div>
       <VillageGirlAnimation />

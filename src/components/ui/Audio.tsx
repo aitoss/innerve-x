@@ -10,32 +10,37 @@ export default function Audio() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    const startAudio = () => {
-      if (audioRef.current && !isPlaying) {
-        audioRef.current.play()
-          .then(() => {
-            setIsPlaying(true);
-          })
-          .catch((error) => {
-            console.log("Audio autoplay failed:", error);
-          });
-      }
-    };
+    // Defer audio initialization to avoid blocking initial render
+    const initTimer = setTimeout(() => {
+      const startAudio = () => {
+        if (audioRef.current && !isPlaying) {
+          audioRef.current.play()
+            .then(() => {
+              setIsPlaying(true);
+            })
+            .catch((error) => {
+              console.log("Audio autoplay failed:", error);
+            });
+        }
+      };
 
-    // Try to play immediately
-    startAudio();
+      // Try to play after delay
+      startAudio();
 
-    // Backup: start on any user interaction
-    const events = ['click', 'scroll', 'keydown', 'touchstart'];
-    events.forEach(event => {
-      window.addEventListener(event, startAudio, { once: true });
-    });
-
-    return () => {
+      // Backup: start on any user interaction
+      const events = ['click', 'scroll', 'keydown', 'touchstart'];
       events.forEach(event => {
-        window.removeEventListener(event, startAudio);
+        window.addEventListener(event, startAudio, { once: true, passive: true });
       });
-    };
+
+      return () => {
+        events.forEach(event => {
+          window.removeEventListener(event, startAudio);
+        });
+      };
+    }, 1000); // Delay audio initialization by 1 second
+
+    return () => clearTimeout(initTimer);
   }, [isPlaying]);
 
   const toggleMute = () => {

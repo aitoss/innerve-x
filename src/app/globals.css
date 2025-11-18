@@ -126,12 +126,34 @@ body {
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
+  will-change: transform;
 }
 
 .animate-float-slow {
   animation: float 4s ease-in-out infinite;
+  will-change: transform;
 }
 
 .animate-float-fast {
   animation: float 2s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Performance optimization for scroll-based animations */
+.scroll-animate {
+  will-change: transform;
+}
+
+/* Performance optimization for content-visibility */
+.lazy-content {
+  content-visibility: auto;
+  contain-intrinsic-size: 500px;
+}
+
+/* Hardware acceleration for common animations */
+.gpu-accelerate {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }

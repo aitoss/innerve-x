@@ -303,19 +303,28 @@ export default function Galaxy({
       renderer.render({ scene: mesh });
     }
 
-    // Intersection Observer to pause animation when off-screen
+    // Optimized Intersection Observer to pause animation when off-screen
+    // Use higher threshold and rootMargin for better performance
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          const wasVisible = isVisibleRef.current;
           isVisibleRef.current = entry.isIntersecting;
-          if (entry.isIntersecting && !disableAnimation) {
+          
+          if (entry.isIntersecting && !wasVisible && !disableAnimation) {
+            // Resume animation when becoming visible
             animateIdRef.current = requestAnimationFrame(update);
-          } else {
+          } else if (!entry.isIntersecting && wasVisible) {
+            // Pause animation when leaving viewport
             cancelAnimationFrame(animateIdRef.current);
+            animateIdRef.current = 0;
           }
         });
       },
-      { threshold: 0.1 }
+      { 
+        threshold: 0.01, // Start/stop when even 1% is visible
+        rootMargin: '50px' // Buffer zone for smoother transitions
+      }
     );
 
     observer.observe(ctn);

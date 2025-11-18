@@ -73,7 +73,7 @@ function useActiveSection() {
     // Initial check
     handleScroll();
 
-    // Throttled scroll listener for better performance
+    // Throttled scroll listener for better performance with passive flag
     let ticking = false;
     const scrollListener = () => {
       if (!ticking) {
@@ -85,8 +85,13 @@ function useActiveSection() {
       }
     };
 
+    // Use passive listener to improve scroll performance
     window.addEventListener("scroll", scrollListener, { passive: true });
-    return () => window.removeEventListener("scroll", scrollListener);
+    
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    };
   }, []);
 
   return activeSection;
@@ -111,21 +116,31 @@ export default function VillageGirlAnimation() {
     return () => clearTimeout(timer);
   }, [activeSection]);
 
-  // Preload all character images
+  // Optimized preloading - only load visible images initially
   useEffect(() => {
-    const imageNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-    let loadedCount = 0;
+    // Load initial image first
+    const initialImg = new window.Image();
+    initialImg.src = `/VillageGirl/Girl_11.png`;
+    initialImg.onload = () => setIsLoaded(true);
 
-    imageNumbers.forEach((num) => {
-      const img = new window.Image();
-      img.src = `/VillageGirl/Girl_${num}.png`;
-      img.onload = () => {
-        loadedCount++;
-        if (loadedCount === imageNumbers.length) {
-          setIsLoaded(true);
-        }
-      };
-    });
+    // Lazy load remaining images in the background
+    const imageNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13];
+    
+    // Use requestIdleCallback if available, otherwise setTimeout
+    const loadRemainingImages = () => {
+      imageNumbers.forEach((num, index) => {
+        setTimeout(() => {
+          const img = new window.Image();
+          img.src = `/VillageGirl/Girl_${num}.png`;
+        }, index * 100); // Stagger loading
+      });
+    };
+
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadRemainingImages);
+    } else {
+      setTimeout(loadRemainingImages, 1000);
+    }
   }, []);
 
   return (
