@@ -17,6 +17,7 @@ import TrackLogistics from "../assets/svg/Traks/TrackLogistics.svg"
 import TrackEcoTech from "../assets/svg/Traks/TrackEcoTech.svg"
 import TrackButton from "@/components/ui/TracksElements/TrackButton";
 import Galaxy from "@/components/ui/TracksElements/Glaxy";
+import { useEffect, useState } from "react";
 
 const TRACKS_CARDS_DATA = [
     {
@@ -94,15 +95,28 @@ const TRACKS_CARDS_DATA = [
 ]
 
 export default function TrackSection() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
     return (
         <section className="relative w-full flex  flex-col items-center justify-center bg-[#010101] pt-26 px-10" >
             {/* <div className="absolute inset-0 bg-linear-to-b from-transparent via-black to-black/0 pointer-events-none z-10" /> */}
             <div className="absolute inset-0 z-0 w-full/2 h-[]">
                 <Galaxy
-                    mouseRepulsion={true}
-                    mouseInteraction={true}
+                    mouseRepulsion={!isMobile}
+                    mouseInteraction={!isMobile}
                     density={3}
-                    glowIntensity={0.2 }
+                    glowIntensity={0.2}
                     saturation={0}
                     hueShift={240}
                 />
