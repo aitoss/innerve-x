@@ -11,9 +11,9 @@ export default function LoadingScreen() {
                     <Image src="/loading/InnerveLoadingLogo.svg" alt="Innerve Logo" fill className="mx-auto z-0 mb-4" />
                     <motion.div
                         animate={{
-                            x: [0, 15, -15, 0],
-                            scale: [1, 1.1, 1],
-                            rotate: [0, 15, -15, 0]
+                            x: [0, 10, -10, 0],
+                            y:[0, -5, 5, 0],
+                            rotate: [0, 5, -5, 0]
                         }}
                         transition={{
                             duration: 2.5,

@@ -16,14 +16,14 @@ export default function ClockBannerSection() {
         offset: ["start end", "end start"]
     });
 
-    const leftCloudX = useTransform(scrollYProgress, [0, 1], [0, -1200]);
-    const rightCloudX = useTransform(scrollYProgress, [0, 1], [0, 1200]);
+    const leftCloudX = useTransform(scrollYProgress, [0, 1], [0, -1500]);
+    const rightCloudX = useTransform(scrollYProgress, [0, 1], [0, 1500]);
 
 
     return (
-        <section ref={containerRef} className="relative flex justify-center w-full  h-auto bg-[#CCECF7] "    >
-            {/* <Cloud position="top-[20%] left-[350px]" X={leftCloudX} />
-            <Cloud position=" top-[-20%] right-[350px]" X={rightCloudX} /> */}
+        <section ref={containerRef} className="relative flex justify-center w-full  h-auto bg-[#CCECF7] overflow-x-clip "    >
+            <Cloud position="top-0  md:left-[100px]" X={leftCloudX} />
+            <Cloud position=" top-[-40%] right-[-150px] md:right-[100px]" X={rightCloudX} />
 
             <div className="absolute left-0 right-0 z-0">
                 <Image src={PrizePoolClouds} alt="clouds background" objectFit="fill" className="w-screen h-full" />
