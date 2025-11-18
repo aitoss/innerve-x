@@ -7,10 +7,10 @@ export default function CountdownTimerCard() {
     <div className="relative z-10">
       {/* Mobile: 35% = 301px, SM: 50% = 430px, MD: 70% = 602px, LG: 100% = 860px */}
       <div className=" h-[95px] w-[301px] sm:h-[136px] sm:w-[430px] md:h-[190px] md:w-[602px] lg:h-[272px] lg:w-[860px] text-xs sm:text-base md:text-lg lg:text-2xl border border-black sm:border-2 rounded-2xl md:rounded-4xl">
-        <div className=" h-[25%] rounded-tr-2xl rounded-tl-2xl w-full md:rounded-tr-4xl md:rounded-tl-4xl bg-linear-to-b from-[#E7EDFB] to-[#DDDFF8] flex items-center justify-center">
+        <div className=" h-[25%]  rounded-tr-2xl rounded-tl-2xl w-full md:rounded-tr-4xl md:rounded-tl-4xl bg-linear-to-b from-[#E7EDFB] to-[#DDDFF8] flex items-center justify-center">
           {/* Mobile: 214px, SM: 306px, MD: 428px, LG: 612px */}
-          <div className="h-[45px] w-[214px] sm:h-[67px] sm:w-[306px] md:h-[93px] md:w-[428px] lg:h-[133px] lg:w-[612px] mb-8 bg-[linear-gradient(180deg,#25aa87_0%,#52f4c0_8%,#0fae7e_17%,#00875f_88%)] rounded-t-[7px] sm:rounded-t-[10px] md:rounded-t-[14px] lg:rounded-t-[20px] rounded-b-xl">
-            <div className="h-10 text-stroke-h3 sm:h-[60px] md:h-[83px] lg:h-[119px] rounded-t-[7px] sm:rounded-t-[10px] md:rounded-t-[14px] lg:rounded-t-[20px] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[36px] text-white [text-shadow:0_1.2px_0_#000] sm:[text-shadow:0_1.8px_0_#000] md:[text-shadow:0_2.5px_0_#000] lg:[text-shadow:0_3.558px_0_#000] flex pt-[8%] justify-center">
+          <div className="h-[45px] w-[214px] sm:h-[67px] sm:w-[306px] md:h-[93px] md:w-[428px] lg:h-[133px] lg:w-[612px] mb-5 md:mb-8 bg-[linear-gradient(180deg,#25aa87_0%,#52f4c0_8%,#0fae7e_17%,#00875f_88%)] rounded-t-[7px] sm:rounded-t-[10px] md:rounded-t-[14px] lg:rounded-t-[20px] rounded-b-xl">
+            <div className="h-10 text-stroke-h4 sm:h-[60px] md:h-[83px] lg:h-[119px] rounded-t-[7px] sm:rounded-t-[10px] md:rounded-t-[14px] lg:rounded-t-[20px] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[36px] text-white [text-shadow:0_1.2px_0_#000] sm:[text-shadow:0_1.8px_0_#000] md:[text-shadow:0_2.5px_0_#000] lg:[text-shadow:0_3.558px_0_#000] flex items-center justify-center">
               Game Starts In
             </div>
             <div className="h-[5px] sm:h-[7px] md:h-2.5 lg:h-3.5 bg-[linear-gradient(180deg,#f2db70_0%,#ffdc77_39%,#a3701f_100%)] rounded-b-xl"></div>
@@ -23,7 +23,7 @@ export default function CountdownTimerCard() {
             <div className="w-[34px] h-8 sm:w-[49px] sm:h-[45px] md:w-[68px] md:h-[63px] lg:w-[97px] lg:h-[90px] rounded-[100px] mb-0.5 sm:mb-1 md:mb-1.5 lg:mb-2">
               <ClockAnimation />
             </div>
-            <div className="text-center pr-8  flex-1">
+            <div className="text-center pr-4  flex-1">
               <CountdownTimer eventdate={new Date(2026, 0, 30, 9, 0, 0)} />
             </div>
             {/* Mobile: 35px, SM: 50px, MD: 70px, LG: 100px */}
