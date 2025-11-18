@@ -1,173 +1,113 @@
 "use client";
 
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import TextBubbleBox from "../assets/webp/TextBubbleBox.webp"
+import TextBubbleBox from "../assets/webp/TextBubbleBox.webp";
 
-// Section to character expression mapping based on mood and context
+// Section to character expression mapping
 const SECTION_CONFIG = {
   hero: {
-    images: [11], // Welcome expression - neutral/happy
+    images: [11],
     description: "Welcome to innerve.tech, chief. We sure have been waiting for you"
   },
   clock: {
-    images: [13], // Neutral/focused
+    images: [13],
     description: "Victory Approaches! Prepare your Wizards"
   },
   prizepool: {
-    images: [3, 8], // Amazed progression - seeing the loot
-    description: "Look at the loot! It's too shiny for my simple eyes",
-    transition: "scroll" // Transition through images as user scrolls through section
+    images: [3],
+    description: "Look at the loot! It's too shiny for my simple eyes"
   },
   tracks: {
-    images: [2, 7], // Ready/determined
-    description: "Ready the troops for deployment!",
-    transition: "scroll"
+    images: [2],
+    description: "Ready the troops for deployment!"
   },
   timeline: {
-    images: [7, 2], // Confident/planning
-    description: "The Grand Battle Plan is Unfolding.",
-    transition: "scroll"
+    images: [7],
+    description: "The Grand Battle Plan is Unfolding."
   },
-  // sponsors: {
-  //   images: [13], // Using Girl_13 instead of Girl_15 (happy/grateful) - only 13 images exist
-  //   description: "Our Providers of Gold and Elixir."
-  // },
   sponsorus: {
-    images: [6], // Inviting/persuasive
-    description: "Petition the Chiefs! Send your resources so the defenses can be upgraded!",
-    transition: "scroll"
+    images: [6],
+    description: "Petition the Chiefs! Send your resources so the defenses can be upgraded!"
   },
   faq: {
-    images: [12], // Helpful/explaining
+    images: [4  ],
     description: "Read it before you bother the Elders."
   },
   contact: {
-    images: [11], // Friendly/communicative
+    images: [11],
     description: "Send a Message to the War Chief."
-  },
-  // victory: {
-  //   images: [11], // Victory expression (used when scrolled to very bottom)
-  //   description: "I helped! Victory for the Village!"
-  // }
+  }
 };
 
-// Custom hook to detect which section is currently in view
+// Simplified hook using scroll position
 function useActiveSection() {
   const [activeSection, setActiveSection] = useState<string>("hero");
-  const [sectionProgress, setSectionProgress] = useState<number>(0);
 
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: "-10% 0px -10% 0px", // Trigger when section is 20% into viewport
-      threshold: [0, 0.25, 0.5, 0.75, 1]
-    };
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("[data-section]");
+      const scrollPosition = window.scrollY + window.innerHeight / 2; // Middle of viewport
 
-    const observerCallback = (entries: IntersectionObserverEntry[]) => {
-      // Find the section with highest intersection ratio
-      let maxRatio = 0;
-      let mostVisibleSection = activeSection;
+      let currentSection = "hero";
 
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio > maxRatio) {
-          maxRatio = entry.intersectionRatio;
-          const sectionName = entry.target.getAttribute("data-section");
+      sections.forEach((section) => {
+        const element = section as HTMLElement;
+        const sectionTop = element.offsetTop;
+        const sectionHeight = element.offsetHeight;
+        const sectionBottom = sectionTop + sectionHeight;
+
+        // Check if scroll position is within this section
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          const sectionName = element.getAttribute("data-section");
           if (sectionName) {
-            mostVisibleSection = sectionName;
+            currentSection = sectionName;
           }
         }
       });
 
-      if (mostVisibleSection !== activeSection) {
-        setActiveSection(mostVisibleSection);
-        setSectionProgress(0); // Reset progress when entering new section
+      setActiveSection(currentSection);
+    };
+
+    // Initial check
+    handleScroll();
+
+    // Throttled scroll listener for better performance
+    let ticking = false;
+    const scrollListener = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    window.addEventListener("scroll", scrollListener, { passive: true });
+    return () => window.removeEventListener("scroll", scrollListener);
+  }, []);
 
-    // Observe all sections with data-section attribute
-    const sections = document.querySelectorAll("[data-section]");
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect();
-  }, [activeSection]);
-
-  // Track scroll progress within active section for multi-image sections
-  useEffect(() => {
-    const handleScroll = () => {
-      const section = document.querySelector(`[data-section="${activeSection}"]`);
-      if (!section) return;
-
-      const rect = section.getBoundingClientRect();
-      const sectionHeight = rect.height;
-      const windowHeight = window.innerHeight;
-
-      // Calculate how far through the section we've scrolled (0 to 1)
-      const scrolledIntoView = windowHeight - rect.top;
-      const progress = Math.max(0, Math.min(1, scrolledIntoView / (sectionHeight + windowHeight)));
-
-      setSectionProgress(progress);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // Initial calculation
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [activeSection]);
-
-  return { activeSection, sectionProgress };
-}
-
-// Get current image index based on section and progress
-function getCurrentImage(sectionKey: string, progress: number): number {
-  const config = SECTION_CONFIG[sectionKey as keyof typeof SECTION_CONFIG];
-  if (!config) return 12; // Default neutral expression
-
-  const { images } = config;
-  const transition = "transition" in config ? config.transition : undefined;
-
-  // Single image sections - just return the image
-  if (images.length === 1) {
-    return images[0];
-  }
-
-  // Multi-image sections with scroll-based transitions
-  if (transition === "scroll") {
-    const index = Math.floor(progress * images.length);
-    return images[Math.min(index, images.length - 1)];
-  }
-
-  // Default to first image
-  return images[0];
+  return activeSection;
 }
 
 export default function VillageGirlAnimation() {
-  const { activeSection, sectionProgress } = useActiveSection();
-  const [currentImage, setCurrentImage] = useState(12); // Start with neutral/welcome
+  const activeSection = useActiveSection();
   const [isLoaded, setIsLoaded] = useState(false);
   const [showBubble, setShowBubble] = useState(false);
 
-  // Get current section config for text display
+  // Get current section config
   const currentConfig = SECTION_CONFIG[activeSection as keyof typeof SECTION_CONFIG];
+  const currentImage = currentConfig?.images[0] || 12;
   const bubbleText = currentConfig?.description || "";
-
-  // Update current image when section or progress changes
-  useEffect(() => {
-    const newImage = getCurrentImage(activeSection, sectionProgress);
-    if (newImage !== currentImage) {
-      setCurrentImage(newImage);
-    }
-  }, [activeSection, sectionProgress, currentImage]);
 
   // Show bubble with delay after section change
   useEffect(() => {
     setShowBubble(false);
     const timer = setTimeout(() => {
       setShowBubble(true);
-    }, 300); // Delay to sync with character transition
+    }, 300);
     return () => clearTimeout(timer);
   }, [activeSection]);
 
@@ -189,7 +129,7 @@ export default function VillageGirlAnimation() {
   }, []);
 
   return (
-    <div className="fixed -bottom-22 left-4 z-60 pointer-events-none flex ">
+    <div className="fixed -bottom-[2.5%]  left-0 z-60 pointer-events-none flex ">
       {/* Character Image */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -203,13 +143,14 @@ export default function VillageGirlAnimation() {
             damping: 30,
             duration: 0.3
           }}
-          className="relative border-2 "
+          className="relative min-h-40 min-w-20 md:h-80 md:w-40 "
         >
           <Image
             src={`/VillageGirl/Girl_${currentImage}.png`}
             alt="Village Girl Character"
-            width={160}
-            height={320}
+            // width={160}
+            // height={320}
+            fill
             className=" "
             priority={currentImage === 12}
             quality={100}
@@ -231,16 +172,16 @@ export default function VillageGirlAnimation() {
               damping: 25,
               delay: 0.1
             }}
-            className="relative top-8 -left-12 "
+            className="relative md:top-8  md:-left-12 top-4 -left-6 "
           >
-            <div className="w-100 h-40 relative flex justify-center items-center " >
+            <div className="md:w-100 md:h-40 h-24 w-60 relative flex justify-center items-center " >
               <Image src={TextBubbleBox} alt="Text Bubble Box" fill className="object-contain absolute inset-0 z-0  " quality={100} />
               <motion.p
                 key={bubbleText}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="relative z-10 text-black text-center w-full h-full flex justify-center items-center px-12 pt-2 pl-14  text-[10px] md:text-base    uppercase"
+                className="relative z-10 text-black text-center w-full h-full flex justify-center items-center px-12 pt-2 pl-14  text-[9px] md:text-base    uppercase"
               >
                 {bubbleText}
               </motion.p>

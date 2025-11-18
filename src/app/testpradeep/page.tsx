@@ -25,8 +25,8 @@ export default function () {
             <LoadingScreen />
             {/* <HeroSection /> */}
             {/* <CharacterScroll /> */}
-            <HeroSectionAnimation />
-            <ClockBannerSection />
+            {/* <HeroSectionAnimation />
+            <ClockBannerSection /> */}
             {/* <div className="h-screen">ghdfghdfghdfg</div>
             <div className="h-screen">dhdfhgfdgh</div>
             <div className="h-screen">dhdfhgfdhgdf</div>

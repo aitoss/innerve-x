@@ -17,34 +17,34 @@ export default function Home() {
   return (
     <main>
       <Audio />
-      <div data-section="hero">
+      <div data-section="hero"  >
         <HeroSectionAnimation />
       </div>
       <DividerNoArrow />
-      <div data-section="clock">
+      <div data-section="clock"  >
         <ClockBannerSection />
       </div>
-      <div data-section="prizepool">
+      <div data-section="prizepool"  >
         <PrizePoolSection />
       </div>
       <DividerNoArrow />
-      <div data-section="tracks">
+      <div data-section="tracks"  >
         <TrackSection />
       </div>
       <Divider />
-      <div data-section="timeline">
+      <div data-section="timeline"  >
         <TimelineSection />
       </div>
       <Divider />
-      <div data-section="sponsorus">
+      <div data-section="sponsorus"  >
         <WantToSponsorsUsSection />
       </div>
       <Divider />
-      <div data-section="faq">
+      <div data-section="faq"  >
         <FaqSection />
       </div>
       <DividerNoArrow />
-      <div data-section="contact">
+      <div data-section="contact"  >
         <Footer />
       </div>
       <VillageGirlAnimation />
