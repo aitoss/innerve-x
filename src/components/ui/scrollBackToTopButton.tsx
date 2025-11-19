@@ -37,7 +37,7 @@ export default function ScrollBackToTopButton() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0 }}
           onClick={scrollToTop}
-          className="fixed bottom-20 right-6 z-100 bg-linear-to-r bg-[#EAA908] border border-white/50 text-white p-4 rounded-full  hover:bg-white/20 transition-all duration-300 shadow-lg"
+          className="fixed bottom-20 cursor-pointer right-6 z-100 bg-linear-to-r bg-[#EAA908] border border-white/50 text-white p-4 rounded-full  hover:bg-white/20 transition-all duration-300 shadow-lg"
           aria-label="Scroll to top"
           type="button"
         >

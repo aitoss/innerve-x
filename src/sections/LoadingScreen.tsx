@@ -52,7 +52,7 @@ export default function LoadingScreen() {
                     </motion.div>
                 </div>
                 <div className="mt-10 text-center " >
-                    <p className="text-white text-stroke-h2 md:text-stroke-h4 text-[28px] " >Searching for <br /> participatants...</p>
+                    <p className="text-white text-stroke-h2 md:text-stroke-h4 text-[28px] " >Searching for <br /> participants...</p>
                 </div>
                 {/* Progress Bar */}
                 <div className="w-[400px] relative  max-w-[85vw] mt-16">

@@ -156,9 +156,9 @@ export default function VillageGirlAnimation() {
             type: "spring",
             stiffness: 300,
             damping: 30,
-            duration: 0.3
+            duration: 0.2
           }}
-          className="relative min-h-40 min-w-20 md:h-80 md:w-40 "
+          className="relative w-32 md:w-40 aspect-1/2 "
         >
           <Image
             src={`/VillageGirl/Girl_${currentImage}.png`}

@@ -1,8 +1,9 @@
 import Image from "next/image";
 import broucherButton from "../../assets/svg/brouchureButton.svg"
-
+import ButtonSound from "../../utils/ButtonClickedSound"
 export default function BrochureButton() {
 const handleClick = () => {
+    ButtonSound();
     window.open('https://drive.google.com/file/d/1xgfTyfjEJfmIoMgGp2zUEdE2co_8POUp/view', '_blank');
 }
 

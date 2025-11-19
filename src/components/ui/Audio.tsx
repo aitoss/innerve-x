@@ -64,7 +64,7 @@ export default function Audio() {
       {/* Custom Audio Control Button */}
       <button
           onClick={toggleMute}
-          className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-[#EAA908]  border border-white/50 flex items-center justify-center hover:bg-white/20 transition-all duration-300 shadow-lg"
+          className="fixed cursor-pointer bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-[#EAA908]  border border-white/50 flex items-center justify-center hover:bg-white/20 transition-all duration-300 shadow-lg"
           aria-label={isMuted ? "Unmute audio" : "Mute audio"}
         >
           {isMuted ? (

@@ -5,8 +5,8 @@ import Niddle from "@/assets/svg/TimelineNiddle.svg";
 
 export function TimelineBottomImage() {
   return (
-    <div className="relative w-full">
-      <div className="absolute  inset-0 bg-linear-to-t from-transparent to-[#012A57] pointer-events-none" />
+    <div className="relative mt-40 w-full">
+      <div className="absolute mt- inset-0 bg-linear-to-t from-transparent via-[#012A57]/10 to-[#012A57]  pointer-events-none" />
       <Image
         src={BottomImage}
         alt="Timeline Bottom"

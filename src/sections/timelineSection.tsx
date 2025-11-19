@@ -89,7 +89,7 @@ export default function TimelineSection() {
           )}
         </div>
       </div>
-      <div className="z-0 -mt-50 lg:-mt-150">
+      <div className="z-0">
         <TimelineBottomImage />
       </div>
     </>

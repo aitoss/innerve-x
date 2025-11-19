@@ -14,10 +14,10 @@ export default function   PrizePoolScroll() {
         <div className="sm:hidden absolute -top-[29px]  scale-55 -left-[13px] z-10 w-[84px] scale-x-[-0.6] ">
           <PrizepoolHeadingPolygon />
         </div>
-        <div className="relative sm:text-stroke-h text-stroke-h text-[26px] sm:text-[28px] md:text-4xl ml-7 md:ml-10 p-4 md:p-5 xl:text-6xl xl:p-8 text-white text-center tracking-wider bg-[#041E8F] border-t-4 border-b-4 md:border-t-4 md:border-b-4 xl:border-t-8 xl:border-b-[7px] border-t-[#002395] border-b-[#014ECB] z-20">
+        <div className="relative sm:text-stroke-h text-stroke-h text-[22px] sm:text-[28px] md:text-4xl ml-7 md:ml-10 p-4 md:p-5 xl:text-6xl xl:p-8 text-white text-center tracking-wider bg-[#041E8F] border-t-4 border-b-4 md:border-t-4 md:border-b-4 xl:border-t-8 xl:border-b-[7px] border-t-[#002395] border-b-[#014ECB] z-20">
           Prize Pool: 12 Lacs+
         </div>
       </div>
     </div>
   );
-}
+}   

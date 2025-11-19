@@ -21,7 +21,7 @@ export default function ClockBannerSection() {
 
 
     return (
-        <section ref={containerRef} className="relative flex justify-center w-full  h-auto bg-[#CCECF7] overflow-x-clip "    >
+        <section ref={containerRef} className="relative flex justify-center w-full max-sm:pb-10 h-auto bg-[#CCECF7] overflow-x-clip "    >
             <Cloud position="top-0  md:left-[100px]" X={leftCloudX} />
             <Cloud position=" top-[-40%] right-[-150px] md:right-[100px]" X={rightCloudX} />
 
