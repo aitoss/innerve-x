@@ -28,11 +28,11 @@ const SECTION_CONFIG = {
     description: "The Grand Battle Plan is Unfolding."
   },
   sponsorus: {
-    images: [6],
+    images: [12],
     description: "Petition the Chiefs! Send your resources so the defenses can be upgraded!"
   },
   faq: {
-    images: [4  ],
+    images: [5],
     description: "Read it before you bother the Elders."
   },
   contact: {
