@@ -75,9 +75,6 @@ export default function Home() {
 
   return (
     <motion.main
-      initial={{  scale: .996 }}
-      animate={{  scale: 1 }}
-      transition={{ duration: 0.2 }}
       className="relative w-full overflow-x-hidden bg-black"
     >
       <Audio />
