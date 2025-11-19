@@ -5,7 +5,12 @@ import { motion } from "motion/react";
 
 export default function NavigationBar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const navItems = ["Prizes", "Tracks", "Timeline", "Sponsor"];
+    const navItems = [
+        { label: "Prizes", href: "#prizepool-section" },
+        { label: "Tracks", href: "#track-section" },
+        { label: "Timeline", href: "#timeline-section" },
+        { label: "Sponsor", href: "#wtsu-section" }
+    ];
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -16,9 +21,9 @@ export default function NavigationBar() {
             {/* Desktop Navigation */}
             <ul className="hidden md:flex gap-4 mx-5 lg:gap-[4vw]">
                 {navItems.map((item) => (
-                    <li key={item}>
-                        <a href="#" className="text-white text-xl lg:text-2xl hover:text-gray-300 text-shadow transition-colors duration-200">
-                            {item}
+                    <li key={item.label}>
+                        <a href={item.href} className="text-white text-xl lg:text-2xl hover:text-gray-300 text-shadow transition-colors duration-200">
+                            {item.label}
                         </a>
                     </li>
                 ))}
@@ -58,18 +63,18 @@ export default function NavigationBar() {
                         <ul className="flex flex-col justify-center items-center gap-6">
                             {navItems.map((item) => (
                                 <motion.li 
-                                    key={item}
+                                    key={item.label}
                                     variants={{
                                         hidden: { opacity: 0, y: 20 },
                                         visible: { opacity: 1, y: 0 }
                                     }}
                                 >
                                     <a
-                                        href="#"
+                                        href={item.href}
                                         className="text-white text-4xl hover:text-gray-300 [text-shadow:0px_3px_0px_rgb(0_0_0/1.00)] block transition-colors duration-200"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
-                                        {item}
+                                        {item.label}
                                     </a>
                                 </motion.li>
                             ))}

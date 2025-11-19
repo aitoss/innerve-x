@@ -13,13 +13,13 @@ export default function Footer() {
                 <div className="space-y-6 md:space-y-8 lg:space-y-12 text-xl sm:text-2xl md:text-3xl lg:text-[36px]">
                     <div className='flex flex-col items-center'>
                         <p className="mb-2 md:mb-3">Mohit Sharma</p>
-                        <button className="relative flex justify-center items-center  gap-6 px-6 p-2 text-white  w-fit  shadow-[0_3px_0_#000] text-xl  md:text-2xl  font-medium border-t-4 border-b-4 border-b-[#EC8F01]  border-t-[#FFF] text-shadow  rounded-xl " style={{ background: 'linear-gradient(180deg, #FFEA92 1%, #FFFABC 20%, #FFE673 65%, #FFC610 94%)' }} >
+                        <button className="relative flex justify-center items-center  gap-6 px-6 p-2 text-white  w-fit  shadow-[0_3px_0_#000] text-xl  md:text-2xl  font-medium border-t-4 border-b-4 border-b-[#EC8F01]  border-t-[#FFF] text-shadow  rounded-xl cursor-pointer transition-transform duration-200 hover:scale-110 active:scale-90" style={{ background: 'linear-gradient(180deg, #FFEA92 1%, #FFFABC 20%, #FFE673 65%, #FFC610 94%)' }} >
                             +91 90123 01175
                         </button>
                     </div>
                     <div className='flex flex-col items-center'>
                         <p className="mb-2 md:mb-3">Jyoti Mishra</p>
-                        <button className="relative flex justify-center items-center  gap-6 px-6 p-2 text-white  w-fit  shadow-[0_3px_0_#000] text-xl  md:text-2xl  font-medium border-t-4 border-b-4 border-b-[#EC8F01]  border-t-[#FFF] text-shadow  rounded-xl " style={{ background: 'linear-gradient(180deg, #FFEA92 1%, #FFFABC 20%, #FFE673 65%, #FFC610 94%)' }} >
+                        <button className="relative flex justify-center items-center  gap-6 px-6 p-2 text-white  w-fit  shadow-[0_3px_0_#000] text-xl  md:text-2xl  font-medium border-t-4 border-b-4 border-b-[#EC8F01]  border-t-[#FFF] text-shadow  rounded-xl cursor-pointer transition-transform duration-200 hover:scale-110 active:scale-90" style={{ background: 'linear-gradient(180deg, #FFEA92 1%, #FFFABC 20%, #FFE673 65%, #FFC610 94%)' }} >
                             +91 95697 95669
                         </button>
                     </div>

@@ -74,34 +74,34 @@ export default function Home() {
   return (
     <main className={isContentReady ? "opacity-100" : "opacity-0"} style={{ transition: "opacity 0.5s ease-in" }}>
       <Audio />
-      <div data-section="hero">
+      <div id="hero-section" data-section="hero">
         <HeroSectionAnimation />
       </div>
       <DividerNoArrow />
-      <div data-section="clock">
+      <div id="clock-section"  data-section="clock">
         <ClockBannerSection />
       </div>
-      <div data-section="prizepool">
+      <div id="prizepool-section"  data-section="prizepool">
         <PrizePoolSection />
       </div>
       <DividerNoArrow />
-      <div data-section="tracks">
+      <div id="track-section"  data-section="tracks">
         <TrackSection />
       </div>
       <Divider />
-      <div data-section="timeline">
+      <div id="timeline-section"  data-section="timeline">
         <TimelineSection />
       </div>
       <Divider />
-      <div data-section="sponsorus">
+      <div id="wtsu-section"  data-section="sponsorus">
         <WantToSponsorsUsSection />
       </div>
       <Divider />
-      <div data-section="faq">
+      <div id="faq-section"  data-section="faq">
         <FaqSection />
       </div>
       <DividerNoArrow />
-      <div data-section="contact">
+      <div id="footer-section"  data-section="contact">
         <Footer />
       </div>
       <VillageGirlAnimation />

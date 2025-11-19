@@ -17,7 +17,7 @@ export default function DevfolioButton() {
     return (
 
         <div
-            className="apply-button"
+            className="apply-button cursor-pointer transition-transform duration-200 hover:scale-110 active:scale-90"
             data-hackathon-slug="innerve-x"
             data-button-theme="light"
             style={{ height: '44px', width: '312px' }}

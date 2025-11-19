@@ -133,7 +133,7 @@ export default function FaqSection() {
                             <button
                                 key={category}
                                 onClick={() => setSelectedCategory(category)}
-                                className="md:w-full w-7/10  "
+                                className="md:w-full w-7/10 cursor-pointer transition-transform duration-200 hover:scale-110 active:scale-90"
                                 style={{ width: 'full', paddingLeft: 11, paddingRight: 11, paddingTop: 10, paddingBottom: 10, background: 'linear-gradient(0deg, #DB7200 49%, #EDAA4A 50%, #FFE394 100%)', boxShadow: '0px 1.650254726409912px 0px #FBBB31 inset', overflow: 'hidden', borderRadius: 47.86, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex' }}>
                                 <div style={{ alignSelf: 'stretch', paddingLeft: 16, paddingRight: 16, paddingTop: 8, paddingBottom: 8, background: '#FCCC31', boxShadow: '0px -2.0628185272216797px 0px #F8DC47 inset', overflow: 'hidden', borderRadius: 35.29, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex' }}>
                                     <div style={{ textAlign: 'center', color: 'white', fontWeight: '400', wordWrap: 'break-word', textShadow: '0px 3px 0px rgba(0, 0, 0, 1.00)' }} className="text-stroke-black md:text-4xl text-lg ">{category}</div>
