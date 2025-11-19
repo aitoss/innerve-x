@@ -60,7 +60,7 @@ export default function NavigationBar() {
                     transition={{ duration: 0.3 }} 
                     className="md:hidden h-screen flex justify-center items-center absolute top-full z-60 left-0 right-0 bg-white/10 backdrop-blur-md border border-white/20 shadow-lg rounded-xl">
                     <motion.div 
-                        className="flex flex-col py-4 px-6 space-y-4"
+                        className="flex flex-col relative -top-8 space-y-4"
                         initial="hidden"
                         animate="visible"
                         variants={{
@@ -73,7 +73,7 @@ export default function NavigationBar() {
                             }
                         }}
                     >
-                        <ul className="flex flex-col justify-center items-center gap-6">
+                        <ul className="flex flex-col  justify-center items-center gap-6">
                             {navItems.map((item) => (
                                 <motion.li 
                                     key={item.label}
