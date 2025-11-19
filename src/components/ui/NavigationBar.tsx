@@ -16,13 +16,26 @@ export default function NavigationBar() {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
+    const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        const element = document.querySelector(href);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        setIsMobileMenuOpen(false);
+    };
+
     return (
         <>
             {/* Desktop Navigation */}
             <ul className="hidden md:flex gap-4 mx-5 lg:gap-[4vw]">
                 {navItems.map((item) => (
                     <li key={item.label}>
-                        <a href={item.href} className="text-white text-xl lg:text-2xl hover:text-gray-300 text-shadow transition-colors duration-200">
+                        <a 
+                            href={item.href} 
+                            onClick={(e) => handleSmoothScroll(e, item.href)}
+                            className="text-white text-xl lg:text-2xl hover:text-gray-300 text-shadow transition-colors duration-200"
+                        >
                             {item.label}
                         </a>
                     </li>
@@ -71,8 +84,8 @@ export default function NavigationBar() {
                                 >
                                     <a
                                         href={item.href}
+                                        onClick={(e) => handleSmoothScroll(e, item.href)}
                                         className="text-white text-4xl hover:text-gray-300 [text-shadow:0px_3px_0px_rgb(0_0_0/1.00)] block transition-colors duration-200"
-                                        onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         {item.label}
                                     </a>
