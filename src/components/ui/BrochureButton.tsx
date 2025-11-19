@@ -2,6 +2,11 @@ import Image from "next/image";
 import broucherButton from "../../assets/svg/brouchureButton.svg"
 
 export default function BrochureButton() {
+const handleClick = () => {
+    window.open('https://drive.google.com/file/d/1xgfTyfjEJfmIoMgGp2zUEdE2co_8POUp/view', '_blank');
+}
+
+
     return (
         // <button className="transition-transform duration-200 hover:scale-105 active:scale-95">
         //     <Image 
@@ -11,7 +16,7 @@ export default function BrochureButton() {
         //     />
         // </button>
 
-        <button className="w-full border-2 rounded-xl cursor-pointer transition-transform duration-200 hover:scale-[1.01] active:scale-95" >
+        <button onClick={handleClick} className="w-full border-2 rounded-xl cursor-pointer transition-transform duration-200 hover:scale-[1.01] active:scale-95" >
             <div className="w-full text-white text-shadow flex justify-center items-end text-4xl lg:text-xl md:md lg:px-10 md:px-6 lg:pt-2 md:pt-1 p-1 px-8 shadow-[0_-3px_0_#fff]   border-b-10 border-[#74C138] border-x-2 border-t-2 bor bg-[#9ED952] rounded-xl  ">
                 Brochure
             </div>

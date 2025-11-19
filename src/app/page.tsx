@@ -9,6 +9,7 @@ import HeroSectionAnimation from "@/sections/HeroSectionAnimation";
 import LoadingScreen from "@/sections/LoadingScreen";
 import Audio from "@/components/ui/Audio";
 import ScrollBackToTopButton from "@/components/ui/scrollBackToTopButton";
+import { motion } from "motion/react"
 
 // Lazy load below-the-fold sections
 const PrizePoolSection = dynamic(() => import("@/sections/prizePoolSection"), {
@@ -73,40 +74,45 @@ export default function Home() {
   }
 
   return (
-    <main className={isContentReady ? "opacity-100" : "opacity-0"} style={{ transition: "opacity 0.5s ease-in" }}>
+    <motion.main
+      initial={{  scale: .996 }}
+      animate={{  scale: 1 }}
+      transition={{ duration: 0.2 }}
+      className="relative w-full overflow-x-hidden bg-black"
+    >
       <Audio />
       <div id="hero-section" data-section="hero">
         <HeroSectionAnimation />
       </div>
       <DividerNoArrow />
-      <div id="clock-section"  data-section="clock">
+      <div id="clock-section" data-section="clock">
         <ClockBannerSection />
       </div>
-      <div id="prizepool-section"  data-section="prizepool">
+      <div id="prizepool-section" data-section="prizepool">
         <PrizePoolSection />
       </div>
       <DividerNoArrow />
-      <div id="track-section"  data-section="tracks">
+      <div id="track-section" data-section="tracks">
         <TrackSection />
       </div>
       <Divider />
-      <div id="timeline-section"  data-section="timeline">
+      <div id="timeline-section" data-section="timeline">
         <TimelineSection />
       </div>
       <Divider />
-      <div id="wtsu-section"  data-section="sponsorus">
+      <div id="wtsu-section" data-section="sponsorus">
         <WantToSponsorsUsSection />
       </div>
       <Divider />
-      <div id="faq-section"  data-section="faq">
+      <div id="faq-section" data-section="faq">
         <FaqSection />
       </div>
       <DividerNoArrow />
-      <div id="footer-section"  data-section="contact">
+      <div id="footer-section" data-section="contact">
         <Footer />
       </div>
       <VillageGirlAnimation />
       <ScrollBackToTopButton />
-    </main>
+    </motion.main>
   );
 }
