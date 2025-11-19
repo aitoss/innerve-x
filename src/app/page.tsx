@@ -88,7 +88,7 @@ export default function Home() {
       <div id="prizepool-section" data-section="prizepool">
         <PrizePoolSection />
       </div>
-      <DividerNoArrow />
+      <Divider />
       <div id="track-section" data-section="tracks">
         <TrackSection />
       </div>

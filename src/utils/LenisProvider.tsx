@@ -23,7 +23,7 @@ export default function LenisProvider({
     if (!isReady) return;
 
     const lenis = new Lenis({
-      duration: 1.2, // Scroll duration (higher = slower)
+      duration: 1.4, // Scroll duration (higher = slower)
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
       orientation: "vertical",
       smoothWheel: true,

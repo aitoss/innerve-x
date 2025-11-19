@@ -67,9 +67,9 @@ export default function LoadingScreen() {
                             transition={{ duration: 0.1, ease: "linear" }}
                         />
                     </div>
-                    <div className="text-white text-center mt-2 text-sm font-medium">
+                    {/* <div className="text-white text-center mt-2 text-sm font-medium">
                         {Math.round(progress)}%
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
