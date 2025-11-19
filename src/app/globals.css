@@ -5,6 +5,16 @@ body {
   /* font-family: var(--font-supercell), sans-serif; */
 }
 
+/* Hide scrollbars but keep functionality */
+::-webkit-scrollbar {
+  display: none;
+}
+
+*{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 
 @layer utilities {
   .text-3d {

@@ -8,6 +8,7 @@ import ClockBannerSection from "@/sections/ClockBannerSection";
 import HeroSectionAnimation from "@/sections/HeroSectionAnimation";
 import LoadingScreen from "@/sections/LoadingScreen";
 import Audio from "@/components/ui/Audio";
+import ScrollBackToTopButton from "@/components/ui/scrollBackToTopButton";
 
 // Lazy load below-the-fold sections
 const PrizePoolSection = dynamic(() => import("@/sections/prizePoolSection"), {
@@ -105,6 +106,7 @@ export default function Home() {
         <Footer />
       </div>
       <VillageGirlAnimation />
+      <ScrollBackToTopButton />
     </main>
   );
 }
