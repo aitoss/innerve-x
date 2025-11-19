@@ -73,29 +73,29 @@ export default function TimelineCurveAnimation({ gradientProgress, onCircleScale
           <linearGradient id="animatedFlowGradient" x1="223" y1="0" x2="223" y2="2197" gradientUnits="userSpaceOnUse">
             <motion.stop 
               offset="0%" 
-              stopColor="#ffffff"
+              stopColor="#7BCAF8"
               stopOpacity="1"
             />
             <motion.stop 
               offset={useTransform(gradientProgress, (p) => `${Math.max(0, p - 0.5)}%`)}
-              stopColor="#ffffff"
+              stopColor="#7BCAF8"
               stopOpacity="1"
             />
             <motion.stop 
               offset={useTransform(gradientProgress, (p) => `${Math.min(p, 110)}%`)}
-              stopColor="#7BCAF8"
+              stopColor="#ffffff"
               stopOpacity="1"
             />
             <motion.stop 
               offset="110%" 
-              stopColor="#7BCAF8"
+              stopColor="#ffffff"
               stopOpacity="1"
             />
           </linearGradient>
           
           {/* Arrow gradient */}
           <linearGradient id="paint0_linear_1567_938" x1="222.5" y1="1907" x2="-250" y2="2216" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#7BCAF8"/>
+            <stop stopColor="#ffffff"/>
             <stop offset="1" stopColor="#012956"/>
           </linearGradient>
           

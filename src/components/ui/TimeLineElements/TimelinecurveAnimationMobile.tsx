@@ -73,22 +73,22 @@ export default function TimelineCurveAnimationMobile({ gradientProgress, onCircl
           <linearGradient id="animatedFlowGradientMobile" x1="53" y1="0" x2="53" y2="1353" gradientUnits="userSpaceOnUse">
             <motion.stop 
               offset="0%" 
-              stopColor="#ffffff"
+              stopColor="#7BCAF8"
               stopOpacity="1"
             />
             <motion.stop 
               offset={useTransform(gradientProgress, (p) => `${Math.max(0, p - 0.5)}%`)}
-              stopColor="#ffffff"
+              stopColor="#7BCAF8"
               stopOpacity="1"
             />
             <motion.stop 
               offset={useTransform(gradientProgress, (p) => `${Math.min(p, 110)}%`)}
-              stopColor="#7BCAF8"
+              stopColor="#ffffff"
               stopOpacity="1"
             />
             <motion.stop 
               offset="110%" 
-              stopColor="#7BCAF8"
+              stopColor="#ffffff"
               stopOpacity="1"
             />
           </linearGradient>
@@ -130,13 +130,13 @@ export default function TimelineCurveAnimationMobile({ gradientProgress, onCircl
           {/* Key point circles on the path */}
           {/* Circle 1 - y=65 (~4.8% of 1353) */}
           <g>
-            <circle cx="59.468" cy="65.3449" r="1.11834" fill="white"/>
+            <circle cx="59.468" cy="65.3449" r="2.11834" fill="white"/>
             <motion.circle 
               cx="59.2189" 
               cy="65.2189" 
-              r="4.59763" 
+              r="9.59763" 
               stroke="#7BCAF8" 
-              strokeWidth="1.2426" 
+              strokeWidth="2.2426" 
               fill="none"
               style={{
                 scale: circle1Scale,
@@ -147,13 +147,13 @@ export default function TimelineCurveAnimationMobile({ gradientProgress, onCircl
           
           {/* Circle 2 - y=334 (~24.7% of 1353) */}
           <g>
-            <circle cx="67.2129" cy="334.349" r="1.11834" fill="white" transform="rotate(1 67.2129 334.349)"/>
+            <circle cx="67.2129" cy="334.349" r="2.11834" fill="white" transform="rotate(1 67.2129 334.349)"/>
             <motion.circle 
               cx="67.215" 
               cy="334.223" 
-              r="4.59763" 
+              r="9.59763" 
               stroke="#7BCAF8" 
-              strokeWidth="1.2426" 
+              strokeWidth="2.2426" 
               fill="none"
               transform="rotate(1 67.215 334.223)"
               style={{
@@ -165,13 +165,13 @@ export default function TimelineCurveAnimationMobile({ gradientProgress, onCircl
           
           {/* Circle 3 - y=597 (~44.1% of 1353) */}
           <g>
-            <circle cx="50.2189" cy="597.341" r="1.11834" fill="white"/>
+            <circle cx="50.2189" cy="597.341" r="2.11834" fill="white"/>
             <motion.circle 
               cx="50.2189" 
               cy="597.219" 
-              r="4.59763" 
+              r="9.59763" 
               stroke="#7BCAF8" 
-              strokeWidth="1.2426" 
+              strokeWidth="2.2426" 
               fill="none"
               style={{
                 scale: circle3Scale,
@@ -182,13 +182,13 @@ export default function TimelineCurveAnimationMobile({ gradientProgress, onCircl
           
           {/* Circle 4 - y=867 (~64.1% of 1353) */}
           <g>
-            <circle cx="38.466" cy="867.681" r="1.11834" fill="white"/>
+            <circle cx="38.466" cy="867.681" r="2.11834" fill="white"/>
             <motion.circle 
               cx="38.467" 
               cy="867.555" 
-              r="4.59763" 
+              r="9.59763" 
               stroke="#7BCAF8" 
-              strokeWidth="1.2426" 
+              strokeWidth="2.2426" 
               fill="none"
               style={{
                 scale: circle4Scale,
@@ -199,13 +199,13 @@ export default function TimelineCurveAnimationMobile({ gradientProgress, onCircl
           
           {/* Circle 5 - y=1135 (~83.9% of 1353) */}
           <g>
-            <circle cx="43.2184" cy="1135.34" r="1.11834" fill="white"/>
+            <circle cx="43.2184" cy="1135.34" r="2.11834" fill="white"/>
             <motion.circle 
               cx="43.2189" 
               cy="1135.22" 
-              r="4.59763" 
+              r="9.59763" 
               stroke="#7BCAF8" 
-              strokeWidth="1.2426" 
+              strokeWidth="2.2426" 
               fill="none"
               style={{
                 scale: circle5Scale,
