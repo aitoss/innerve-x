@@ -33,7 +33,7 @@ export default function TimelineCard({
       <div className={`text-white text-xl sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:0px_4px_0px_rgb(0_0_0/1.00)] wrap-break-word overflow-wrap-anywhere w-full ${numberClassName}`}>
         {cardNumber}.
       </div>
-      <div className={`text-[16px] sm:text-2xl md:text-3xl lg:text-4xl text-gray-300 [text-shadow:0px_4px_0px_rgb(0_0_0/1.00)] wrap-break-word overflow-wrap-anywhere w-full ${headingClassName}`}>
+      <div className={`text-[16px] sm:text-2xl md:text-3xl lg:text-4xl text-[#7BCAF8] [text-shadow:0px_4px_0px_rgb(0_0_0/1.00)] wrap-break-word overflow-wrap-anywhere w-full ${headingClassName}`}>
         {cardHeading}
       </div>
       <div className={`text-white text-[12px] sm:text-[18px] md:text-xl lg:text-2xl [text-shadow:0px_4px_0px_rgb(0_0_0/1.00)] wrap-break-word overflow-wrap-anywhere ${descriptionClassName}`}>
