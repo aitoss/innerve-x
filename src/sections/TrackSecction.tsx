@@ -15,6 +15,7 @@ import TrackCyberSec from "../assets/svg/Traks/TrackCyber.svg"
 import TrackBlockChain from "../assets/svg/Traks/TracksBlockChain.svg"
 import TrackLogistics from "../assets/svg/Traks/TrackLogistics.svg"
 import TrackEcoTech from "../assets/svg/Traks/TrackEcoTech.svg"
+import DefenceLogo from "../assets/svg/Traks/Defence.svg"
 import TrackButton from "@/components/ui/TracksElements/TrackButton";
 import Galaxy from "@/components/ui/TracksElements/Glaxy";
 import { useEffect, useState } from "react";
@@ -88,7 +89,7 @@ const TRACKS_CARDS_DATA = [
         BgColor: "bg-[#CA4CFA]",
         BC1: "border-[#E6ADFD]",
         BC2: "border-[#FFBF64]",
-        Logo: TrackEcoTech,
+        Logo: DefenceLogo,
         CornerImg: PurpleCornerImg,
         Title: "Defence"
     }

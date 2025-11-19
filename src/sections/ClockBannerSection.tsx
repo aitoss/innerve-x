@@ -16,8 +16,8 @@ export default function ClockBannerSection() {
         offset: ["start end", "end start"]
     });
 
-    const leftCloudX = useTransform(scrollYProgress, [0, 1], [0, -1500]);
-    const rightCloudX = useTransform(scrollYProgress, [0, 1], [0, 1500]);
+    const leftCloudX = useTransform(scrollYProgress, [0, 1], [0, -2500]);
+    const rightCloudX = useTransform(scrollYProgress, [0, 1], [0, 2500]);
 
 
     return (

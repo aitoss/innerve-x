@@ -126,7 +126,7 @@ export default function FaqSection() {
                     Quick answers to questions you may have
                 </p>
             </div>
-            <div className="relative  flex max-md:flex-col  z-10 justify-between items-center px-10 " >
+            <div className="relative flex max-md:flex-col  z-10 justify-between items-center px-3 md:px-10 " >
                 <div className=" w-full  md:w-1/3 " >
                     <div className="flex flex-col items-center gap-y-6 w-full" >
                         {categories.map((category) => (
