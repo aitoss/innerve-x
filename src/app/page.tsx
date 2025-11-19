@@ -62,7 +62,7 @@ export default function Home() {
       setTimeout(() => {
         setIsContentReady(true);
       }, 300);
-    }, 2000);
+    }, 2500);
 
     return () => clearTimeout(minLoadTime);
   }, []);

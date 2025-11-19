@@ -7,8 +7,8 @@ export default function LoadingScreen() {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
-        const duration = 2000; // 2 seconds to match the loading time
-        const interval = 20; // Update every 20ms for smooth animation
+        const duration = 2500; // 2 seconds to match the loading time
+        const interval = 25; // Update every 20ms for smooth animation
         const increment = 100 / (duration / interval);
 
         const timer = setInterval(() => {
@@ -33,7 +33,7 @@ export default function LoadingScreen() {
                     <motion.div
                         animate={{
                             x: [0, 10, -10, 0],
-                            y:[0, -5, 5, 0],
+                            y: [0, -5, 5, 0],
                             rotate: [0, 5, -5, 0]
                         }}
                         transition={{
@@ -54,13 +54,14 @@ export default function LoadingScreen() {
                 <div className="mt-10" >
                     <p className="text-white text-stroke-h4 text-[2rem] " >Searching for <br /> participatants...</p>
                 </div>
-                <div className="text-white text-center text-xl animate-pulse">Loading...</div>
-                
                 {/* Progress Bar */}
-                <div className="w-[400px] max-w-[90vw] mt-8">
-                    <div className="w-full h-8 bg-gray-800 rounded-full overflow-hidden border-2 border-gray-700">
+                <div className="w-[400px] relative  max-w-[85vw] mt-8">
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20 text-white text-center text-2xl [text-shadow:2px_3px_0px_rgb(0,0,0)]">Loading...</div>
+                    <div className="w-full relative h-8 bg-gray-800 rounded-md overflow-hidden border-black">
+                        <div className="w-[98%] h-1/2 rounded-md absolute top-1 left-1/2 -translate-x-1/2 z-10 bg-white opacity-30 " />
+
                         <motion.div
-                            className="h-full bg-linear-to-r from-purple-500 to-pink-500 rounded-full"
+                            className="h-full bg-[#BC14C5] rounded-md"
                             initial={{ width: "0%" }}
                             animate={{ width: `${progress}%` }}
                             transition={{ duration: 0.1, ease: "linear" }}
