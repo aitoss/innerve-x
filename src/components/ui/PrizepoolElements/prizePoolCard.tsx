@@ -164,7 +164,7 @@ export default function PrizePoolCard() {
           <div className="w-72 md:w-96 h-24 md:h-32 relative overflow-hidden">
             <div className="w-60 md:w-80 px-2 md:px-2.5 py-3 md:py-4 left-9 md:left-12 top-[50px] md:top-[66px] absolute bg-linear-to-r from-violet-900 to-violet-950 rounded-tl-md rounded-tr-md border-l-4 md:border-l-[5px] border-r-4 md:border-r-[5px] border-t-4 md:border-t-[5px] border-yellow-500 inline-flex justify-center items-center gap-2">
               <div className="text-center text-stroke-h4 justify-start text-white text-lg md:text-2xl font-normal [[text-shadow:0px_1.5px_0px_rgb(0_0_0/1.00)] md:[text-shadow:0px_2px_0px_rgb(0_0_0/1.00)]]">
-                4th PRIZE
+                Ingenious Spark
               </div>
             </div>
             <div className="w-60  ml-3 md:ml-4  md:w-80 h-15 md:h-20 left-0 top-0 absolute overflow-hidden">
@@ -208,7 +208,7 @@ export default function PrizePoolCard() {
           <div className="w-72 md:w-96 h-24 md:h-32 relative overflow-hidden">
             <div className="w-60 md:w-80 px-2 md:px-2.5 py-3 md:py-4 left-9 md:left-12 top-[50px] md:top-[66px] absolute bg-linear-to-r from-violet-900 to-violet-950 rounded-tl-md rounded-tr-md border-l-4 md:border-l-[5px] border-r-4 md:border-r-[5px] border-t-4 md:border-t-[5px] border-yellow-500 inline-flex justify-center items-center gap-2">
               <div className="text-center text-stroke-h4 justify-start text-white text-lg md:text-2xl font-normal [[text-shadow:0px_1.5px_0px_rgb(0_0_0/1.00)] md:[text-shadow:0px_2px_0px_rgb(0_0_0/1.00)]]">
-                5th PRIZE
+                Visionary Spark
               </div>
             </div>
             <div className="w-60  ml-3 md:ml-4 md:w-80 h-15 md:h-20 left-0 top-0 absolute overflow-hidden">

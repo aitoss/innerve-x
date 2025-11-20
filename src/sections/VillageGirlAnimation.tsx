@@ -101,6 +101,27 @@ export default function VillageGirlAnimation() {
   const activeSection = useActiveSection();
   const [isLoaded, setIsLoaded] = useState(false);
   const [showBubble, setShowBubble] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Check if mobile menu is open
+  useEffect(() => {
+    const checkMenuState = () => {
+      const menuOpen = document.body.hasAttribute('data-menu-open');
+      setIsMenuOpen(menuOpen);
+    };
+
+    // Initial check
+    checkMenuState();
+
+    // Watch for changes using MutationObserver
+    const observer = new MutationObserver(checkMenuState);
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ['data-menu-open']
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   // Get current section config
   const currentConfig = SECTION_CONFIG[activeSection as keyof typeof SECTION_CONFIG];
@@ -143,10 +164,15 @@ export default function VillageGirlAnimation() {
     }
   }, []);
 
+  // Don't render if menu is open
+  if (isMenuOpen) {
+    return null;
+  }
+
   return (
     <div className="fixed -bottom-[2.5%]  left-0 z-60 pointer-events-none flex ">
       {/* Character Image */}
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" >
         <motion.div
           key={currentImage}
           initial={{ opacity: 0, scale: 0.9 }}
