@@ -38,7 +38,7 @@ export default function Footer() {
               className="relative flex justify-center items-center  gap-6 px-6 p-2 text-white  w-fit  shadow-[0_3px_0_#000] text-xl  md:text-2xl  font-medium border-t-4 border-b-4 border-b-[#EC8F01]  border-t-[#FFF] text-shadow  rounded-xl cursor-pointer transition-transform duration-200 hover:scale-[1.01] active:scale-95"
               style={{
                 background:
-                  "linear-gradient(180deg, #FFEA92 1%, #FFFABC 20%, #FFE673 65%, #FFC610 94%)",
+                  "linear-gradient(180deg, #FFEA92 0%, #FFFABC 24%, #FFE673 50%, #FFC610 80%)",
               }}
             >
               +91 95697 95669
