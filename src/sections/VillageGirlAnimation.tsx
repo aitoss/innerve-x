@@ -9,31 +9,31 @@ import TextBubbleBox from "../assets/webp/TextBubbleBox.webp";
 const SECTION_CONFIG = {
   hero: {
     images: [11],
-    description: "Welcome to innerve.tech, chief. We sure have been waiting for you"
+    description: "Welcome to the battlefield, Tech Chief - deploy brains not barbarians!"
   },
   clock: {
     images: [13],
-    description: "Victory Approaches! Prepare your Wizards"
+    description: "Step in, Code Knight, your quest begins here!"
   },
   prizepool: {
     images: [3],
-    description: "Look at the loot! It's too shiny for my simple eyes"
+    description: "Win prize big enough to make Goblins jealous!"
   },
   tracks: {
     images: [2],
-    description: "Ready the troops for deployment!"
+    description: "Choose wisely - This isn't a friendly clan war practice."
   },
   timeline: {
     images: [7],
-    description: "The Grand Battle Plan is Unfolding."
+    description: "The journey map is revealed, follow the path to glory!"
   },
   sponsorus: {
     images: [12],
-    description: "Petition the Chiefs! Send your resources so the defenses can be upgraded!"
+    description: "Calling all mighty allies, power our event with your resources / partener with us and power the mission."
   },
   faq: {
     images: [5],
-    description: "Read it before you bother the Elders."
+    description: "Wisdon scroll, read it before you bother the Elders."
   },
   contact: {
     images: [11],
