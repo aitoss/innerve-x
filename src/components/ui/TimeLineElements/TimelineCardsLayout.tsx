@@ -53,9 +53,9 @@ const timelineData: TimelineCardData[] = [
   },
   {
     cardNumber: 3,
-    cardHeading: "Offline Idea Pitching",
-    cardLine1: "On January 16,2026 come to our college campus to pitch your ideas.",
-    cardLine2: "Get better chance of Selection.",
+    cardHeading: "Announcement of Shortlisted Teams",
+    cardLine1: "Shortlisted teams will be announced on January 16, 2026.",
+    cardLine2: "Check back to see if your team advances.",
     position: "right",
     yPosition: { base: 1100, xs: 1140, sm: 1120, md: 1160, lg: 1180, xl: 1180 },
     containerClassName: "mr-[15%] ml-[15%] sm:ml-[12%] lg:mr-[10%] pl-4 sm:pl-4 pr-12",
