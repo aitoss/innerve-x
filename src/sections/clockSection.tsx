@@ -16,6 +16,7 @@ export default function   ClockSection() {
           src={PrizePoolClouds}
           alt="clouds background"
           className="w-screen h-full"
+          draggable={false}
         />
       </div>
 

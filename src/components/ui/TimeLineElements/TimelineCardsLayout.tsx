@@ -42,8 +42,8 @@ const timelineData: TimelineCardData[] = [
   {
     cardNumber: 2,
     cardHeading: "Registration Ends",
-    cardLine1: "Registration closes on December 31, 2025, at 11:59 PM IST.",
-    cardLine2: "Start new year with the prepration for hackathon!",
+    cardLine1: "Registration closes on December 15, 2025, at 11:59 PM IST.",
+    cardLine2: "Don't miss your chance to be part of this incredible event!",
     position: "left",
     yPosition: { base: 670, xs: 630, sm: 710, md: 700, lg: 720, xl: 680 },
     containerClassName: "mr-[17%] ml-[22%] md:ml-[7%] pl-4 pr-8",

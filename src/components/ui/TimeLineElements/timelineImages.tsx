@@ -15,6 +15,7 @@ export function TimelineBottomImage() {
           width: "100%", 
           height: "auto"
         }}
+        draggable={false}
       />
     </div>
   );
@@ -23,7 +24,7 @@ export function TimelineBottomImage() {
 export function TimelineHeader() {
   return (
     <div className="min-w-max">
-      <Image src={Header} alt="Timeline Header" width={800} height={200} className="w-[800px] h-auto" />
+      <Image src={Header} alt="Timeline Header" width={800} height={200} className="w-[800px] h-auto" draggable={false}/>
     </div>
   );
 }
@@ -31,7 +32,7 @@ export function TimelineHeader() {
 export function TimelineNiddle() {
   return (
     <div className="min-w-max">
-      <Image src={Niddle} alt="Timeline Niddle" width={50} height={50} className="w-auto h-auto" />
+      <Image src={Niddle} alt="Timeline Niddle" width={50} height={50} className="w-auto h-auto" draggable={false}/>
     </div>
   );
 }

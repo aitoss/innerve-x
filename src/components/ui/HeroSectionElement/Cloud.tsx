@@ -27,6 +27,7 @@ export default function Cloud({ position, X }: CloudProps) {
                     src={CloudImage2}
                     alt="Clouds"
                     className="relative  max-sm:scale-130     blur-[0.5px] drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] "
+                    draggable={false}
                 />
             </div>
         </motion.div>

@@ -24,6 +24,7 @@ export default function BalloonShip({ X, Y }: BalloonShipProps) {
                     src={BalloonShipImage}
                     alt="Balloon Ship"
                     className="w-[85%] max-sm:w-7/10 object-contain"
+                    draggable={false}
                 />
             </div>
         </motion.div>

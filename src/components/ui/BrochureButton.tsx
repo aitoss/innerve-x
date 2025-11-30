@@ -14,6 +14,7 @@ const handleClick = () => {
         //         src={broucherButton} 
         //         alt="Brochure Button" 
         //         className="w-3/4 h-auto   md:w-9/10 lg:w-auto "
+        //         draggable={false}
         //     />
         // </button>
 

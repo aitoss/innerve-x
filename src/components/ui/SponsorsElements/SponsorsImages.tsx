@@ -15,6 +15,7 @@ export function Planks() {
         src={planks}
         alt="planks"
         className="min-w-max h-36"
+        draggable={false}
       />
     </div>
   );
@@ -23,7 +24,7 @@ export function Planks() {
 export function SponsorCardBorder() {
   return (
     <div>
-      <Image src={sponsorCard} alt="sponsor card" />
+      <Image src={sponsorCard} alt="sponsor card" draggable={false}/>
     </div>
   );
 }
@@ -31,7 +32,7 @@ export function SponsorCardBorder() {
 export function UdchaloImage() {
   return (
     <div>
-      <Image src={udchalo} alt="sponsor card" />
+      <Image src={udchalo} alt="sponsor card" draggable={false}/>
     </div>
   );
 }
@@ -39,7 +40,7 @@ export function UdchaloImage() {
 export function BackgroundImage() {
   return (
     <div className='overflow-hidden'>
-      <Image className="min-w-max h-auto w-screen" src={backgroundImage} alt="sponsor card" />
+      <Image className="min-w-max h-auto w-screen" src={backgroundImage} alt="sponsor card" draggable={false}/>
     </div>
   );
 }
@@ -47,7 +48,7 @@ export function BackgroundImage() {
 export function HeadingEndLeft() {
   return (
     <div>
-      <Image src={headingEnds} alt="sponsor card" />
+      <Image src={headingEnds} alt="sponsor card" draggable={false}/>
     </div>
   );
 }
@@ -55,15 +56,15 @@ export function HeadingEndLeft() {
 export function HeadingEndRight() {
   return (
     <div className='scale-x-[-1]'>
-      <Image src={headingEnds} alt="sponsor card" />
+      <Image src={headingEnds} alt="sponsor card" draggable={false}/>
     </div>
   );
 }
 
 export function SparkGif() {
   return (
-    <div className="w-full h-full">
-      <Image src={sparkgif} alt="sparks background" fill className="object-cover w-full h-full" priority />
+    <div className="">
+      <Image src={sparkgif} alt="sparks background" fill className='h-full w-full min-w-4xl' draggable={false}/>
     </div>
   );
 }
@@ -71,7 +72,7 @@ export function SparkGif() {
 export function DevfolioImage() {
   return (
     <div>
-      <Image src={devfolioImage} alt="Devfolio Sponsor" />
+      <Image src={devfolioImage} alt="Devfolio Sponsor" draggable={false}/>
     </div>
   );
 }
@@ -79,7 +80,7 @@ export function DevfolioImage() {
 export function ETHIndiaImage() {
   return (
     <div>
-      <Image src={ethIndiaImage} alt="ETHIndia Sponsor" />
+      <Image src={ethIndiaImage} alt="ETHIndia Sponsor" draggable={false}/>
     </div>
   );
 }

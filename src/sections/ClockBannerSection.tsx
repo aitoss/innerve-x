@@ -26,13 +26,13 @@ export default function ClockBannerSection() {
             <Cloud position=" top-[-40%] right-[-150px] md:right-[100px]" X={rightCloudX} />
 
             <div className="absolute left-0 right-0 z-0">
-                <Image src={PrizePoolClouds} alt="clouds background" objectFit="fill" className="w-screen h-full" />
+                <Image src={PrizePoolClouds} alt="clouds background" objectFit="fill" className="w-screen h-full" draggable={false}/>
             </div>
             <div className="w-fit  relative -top-8 md:-top-20 z-20" >
                 <CountdownTimerCard />
                 <div className="relative flex  z-0 justify-around  md:px-10" >
-                    <Image src={RopeImage} alt="rope image" className="md:w-3 md:h-full h-14  " />
-                    <Image src={RopeImage} alt="rope image" className="md:w-3 md:h-full h-14 " />
+                    <Image src={RopeImage} alt="rope image" className="md:w-3 md:h-full h-14  " draggable={false}/>
+                    <Image src={RopeImage} alt="rope image" className="md:w-3 md:h-full h-14 " draggable={false}/>
                 </div>
                 <div className="flex justify-center ">
                     <EventCard />

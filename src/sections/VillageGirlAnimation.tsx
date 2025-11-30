@@ -29,7 +29,7 @@ const SECTION_CONFIG = {
   },
   sponsorus: {
     images: [12],
-    description: "Calling all mighty allies, power our event with your resources / partener with us and power the mission."
+    description: "Calling all mighty allies, power our event with your resources!"
   },
   faq: {
     images: [5],
@@ -195,6 +195,7 @@ export default function VillageGirlAnimation() {
             className=" "
             priority={currentImage === 12}
             quality={100}
+            draggable={false}
           />
         </motion.div>
       </AnimatePresence>
@@ -216,7 +217,7 @@ export default function VillageGirlAnimation() {
             className="relative md:top-8  md:-left-12 top-4 -left-6 "
           >
             <div className="md:w-100 md:h-40 h-24 w-60 relative flex justify-center items-center " >
-              <Image src={TextBubbleBox} alt="Text Bubble Box" fill className="object-contain absolute inset-0 z-0  " quality={100} />
+              <Image src={TextBubbleBox} alt="Text Bubble Box" fill className="object-contain absolute inset-0 z-0  " quality={100} draggable={false}/>
               <motion.p
                 key={bubbleText}
                 initial={{ opacity: 0 }}

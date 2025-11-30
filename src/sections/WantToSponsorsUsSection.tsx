@@ -18,8 +18,8 @@ export default function WantToSponsorsUsSection() {
                 <WTSUTop />
                 <WTSUCenterCard />
                 <div className="flex justify-between w-full px-20 sm:px-10 md:px-14 mx-auto">
-                    <Image src={WTSURod} alt="Rod" className="md:w-8 h-auto" />
-                    <Image src={WTSURod} alt="Rod" className="md:w-8 h-auto" />
+                    <Image src={WTSURod} alt="Rod" className="md:w-8 h-auto" draggable={false}/>
+                    <Image src={WTSURod} alt="Rod" className="md:w-8 h-auto" draggable={false}/>
                 </div>
                 <WTSUButton />
             </div>

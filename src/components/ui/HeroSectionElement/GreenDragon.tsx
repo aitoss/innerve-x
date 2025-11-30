@@ -20,7 +20,7 @@ export default function GreenDragon({ X, Y }: GreenDragonProps) {
             }}
         >
             <div className="animate-float-fast">
-                <Image src={GreenDragonImage} alt="GreenDragonImage" className="lg:w-auto md:w-8/10 sm:w-7/10 w-6/10" />
+                <Image src={GreenDragonImage} alt="GreenDragonImage" className="lg:w-auto md:w-8/10 sm:w-7/10 w-6/10" draggable={false}/>
             </div>
         </motion.div>
     );

@@ -9,6 +9,7 @@ export default function InnerveNavbarLogo() {
                 src={InnerveLogo2} 
                 alt="Innerve Logo 2" 
                 className="w-30 md:w-auto "
+                draggable={false}
             />
         </div>
     );

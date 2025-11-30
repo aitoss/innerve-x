@@ -17,7 +17,7 @@ export default function BordAnimation() {
                 viewport={{ once: true, amount: 0.4 }}       // triggers when visible
                 className="animate-bounce-slow"               // your bounce effect after
             >
-                <Image src={BordImage} alt="Board" />
+                <Image src={BordImage} alt="Board"  draggable={false}/>
             </motion.div>
         </div>
     );

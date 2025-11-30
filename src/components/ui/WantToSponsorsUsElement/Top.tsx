@@ -12,7 +12,8 @@ export default function WTSUTop() {
                 <Image 
                     src={WTSUSponsorsBonusSvg} 
                     alt="WTSUSponsorsBonus" 
-                    className="w-36 h-auto sm:w-40 md:w-48" 
+                    className="w-36 h-auto sm:w-40 md:w-48"
+                    draggable={false} 
                 />
             </div>
 
@@ -34,6 +35,7 @@ export default function WTSUTop() {
                         className="absolute inset-0 z-10 w-full h-full object-contain" 
                         fill
                         sizes="(max-width: 640px) 32px, (max-width: 768px) 40px, (max-width: 1024px) 48px, 64px"
+                        draggable={false}
                     />
                     <Image 
                         src={WSTUChampionCard} 
@@ -41,6 +43,7 @@ export default function WTSUTop() {
                         className="relative z-20 w-full h-full object-contain" 
                         fill
                         sizes="(max-width: 640px) 32px, (max-width: 768px) 40px, (max-width: 1024px) 48px, 64px"
+                        draggable={false}
                     />
                 </div>
             </div>

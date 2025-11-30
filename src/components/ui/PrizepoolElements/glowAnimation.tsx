@@ -8,6 +8,6 @@ export default function GlowAnimation() {
           animate={{ rotate: 360 }}
           transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
         >
-        <Image src={Glow} alt="" />
+        <Image src={Glow} alt="" draggable={false}/>
         </motion.div>
  )}

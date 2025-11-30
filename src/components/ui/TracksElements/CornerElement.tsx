@@ -11,7 +11,7 @@ interface CornerElementProps{
 export default function CornerElement({Position="top-0 left-0", Rotation="0deg", ImageSrc}:CornerElementProps){
     return(
         <div className={`absolute ${Position}`} style={{transform: `rotate(${Rotation})`}}>
-            <Image src={ImageSrc} alt="Corner Img" />
+            <Image src={ImageSrc} alt="Corner Img" draggable={false}/>
         </div>
     )
 }

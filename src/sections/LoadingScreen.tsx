@@ -26,10 +26,10 @@ export default function LoadingScreen() {
 
     return (
         <div className="relative flex items-center justify-center h-screen bg-black">
-            <Image src="/loading/loadingscreen.svg" alt="Loading Screen" fill className=" absolute inset-0 object-cover " />
+            <Image src="/loading/loadingscreen.svg" alt="Loading Screen" fill className=" absolute inset-0 object-cover " draggable={false}/>
             <div className="relative flex flex-col items-center  z-10 " >
                 <div className="relative  md:h-52 md:w-32 w-26 h-42 " >
-                    <Image src="/loading/InnerveLoadingLogo.svg" alt="Innerve Logo" fill className="mx-auto z-0 mb-4" />
+                    <Image src="/loading/InnerveLoadingLogo.svg" alt="Innerve Logo" fill className="mx-auto z-0 mb-4" draggable={false}/>
                     <motion.div
                         animate={{
                             x: [0, 10, -10, 0],
@@ -48,6 +48,7 @@ export default function LoadingScreen() {
                             alt="Lens"
                             width={70}
                             height={70}
+                            draggable={false}
                         />
                     </motion.div>
                 </div>

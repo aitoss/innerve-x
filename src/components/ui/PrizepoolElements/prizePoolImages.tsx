@@ -14,7 +14,7 @@ import hotAirBalloon from "@/assets/svg/PrizePoolHotAirBalloon.svg";
 export function GoldStorage1Image() {
   return (
     <div>
-      <Image src={goldStorage1} alt="Gold Storage 1" />
+      <Image src={goldStorage1} alt="Gold Storage 1" draggable={false}/>
     </div>
   );
 }
@@ -22,7 +22,7 @@ export function GoldStorage1Image() {
 export function GoldStorage2Image() {
   return (
     <div>
-      <Image src={goldStorage2} alt="Gold Storage 2" />
+      <Image src={goldStorage2} alt="Gold Storage 2" draggable={false}/>
     </div>
   );
 }
@@ -30,7 +30,7 @@ export function GoldStorage2Image() {
 export function GoldStorage3Image() {
   return (
     <div>
-      <Image src={goldStorage3} alt="Gold Storage 3" />
+      <Image src={goldStorage3} alt="Gold Storage 3" draggable={false}/>
     </div>
   );
 }
@@ -38,7 +38,7 @@ export function GoldStorage3Image() {
 export function GoldStorage4Image() {
   return (
     <div>
-      <Image src={goldStorage4} alt="Gold Storage 4" />
+      <Image src={goldStorage4} alt="Gold Storage 4" draggable={false}/>
     </div>
   );
 }
@@ -46,7 +46,7 @@ export function GoldStorage4Image() {
 export function GoldStorage5Image() {
   return (
     <div>
-      <Image src={goldStorage5} alt="Gold Storage 5" />
+      <Image src={goldStorage5} alt="Gold Storage 5" draggable={false}/>
     </div>
   );
 }
@@ -54,7 +54,7 @@ export function GoldStorage5Image() {
 export function AxeImage() {
   return (
     <div>
-      <Image src={axe} alt="Axe" />
+      <Image src={axe} alt="Axe" draggable={false}/>
     </div>
   );
 }
@@ -62,7 +62,7 @@ export function AxeImage() {
 export function Rectangle() {
   return (
     <div>
-      <Image src={rectangle} alt="rectangle" />
+      <Image src={rectangle} alt="rectangle" draggable={false}/>
     </div>
   );
 }
@@ -70,7 +70,7 @@ export function Rectangle() {
 export function PrizepoolCrown() {
   return (
     <div>
-      <Image src={prizepoolCrown} alt="prizepoolCrown" />
+      <Image src={prizepoolCrown} alt="prizepoolCrown" draggable={false}/>
     </div>
   );
 }
@@ -78,7 +78,7 @@ export function PrizepoolCrown() {
 export function PrizepoolHeadingPolygon() {
   return (
     <div>
-      <Image src={prizepoolHeadingPolygon} alt="prizepoolHeadingPolygon" />
+      <Image src={prizepoolHeadingPolygon} alt="prizepoolHeadingPolygon" draggable={false}/>
     </div>
   );
 }
@@ -86,7 +86,7 @@ export function PrizepoolHeadingPolygon() {
 export function PrizepoolBottomForest() {
   return (
     <div>
-      <Image src={prizepoolBottomForest} className="w-lvw" alt="BottomForest" />
+      <Image src={prizepoolBottomForest} className="w-lvw" alt="BottomForest" draggable={false}/>
     </div>
   );
 }
@@ -94,7 +94,7 @@ export function PrizepoolBottomForest() {
 export function HotAirBalloon() {
   return (
     <div>
-      <Image src={hotAirBalloon} alt="hotAirBalloon" />
+      <Image src={hotAirBalloon} alt="hotAirBalloon" draggable={false}/>
     </div>
   );
 }
