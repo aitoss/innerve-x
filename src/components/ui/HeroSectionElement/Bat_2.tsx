@@ -14,7 +14,7 @@ interface Bat2Props {
 export default function Bat2({ position = "", size = "", X, Y }: Bat2Props) {
     return (
         <motion.div className={`absolute ${position} z-20`} style={{ x: X, y: Y }}>
-            <Image src={Bat2Gif} alt="Bat2" className={size} draggable={false}/>
+            <Image src={Bat2Gif} alt="Bat2" className={size} draggable={false} unoptimized />
         </motion.div>
     )
 }
