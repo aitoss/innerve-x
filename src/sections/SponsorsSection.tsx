@@ -22,14 +22,14 @@ export default function Sponsors() {
         <SponsorHeading />
       </div>
       <div className="relative z-10">
-        <SponsorSubHeading  />
+        <SponsorSubHeading heading='TITLE SPONSORS' />
         <SponsorCardLayout1 />
-        <SponsorSubHeading  />
+        <SponsorSubHeading  heading='PLATFORM SPONSORS'/>
         <SponsorCardLayout2 />
-        <SponsorSubHeading  />
+        <SponsorSubHeading  heading='GENERAL SPONSORS'/>
         <SponsorCardLayout3 />
-        <SponsorSubHeading  />
-        <SponsorCardLayout4 />
+        {/* <SponsorSubHeading  heading='TITLE SPONSORS'/>
+        <SponsorCardLayout4 /> */}
       </div>
       <div className="relative z-10 scale-y-[-1] pb-20">
         <Planks />

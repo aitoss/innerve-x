@@ -7,6 +7,10 @@ import headingEnds from '@/assets/svg/SponsorHeadingEnds.svg'
 import sparkgif from '@/assets/gif/sparks.gif'
 import ethIndiaImage from '@/assets/svg/ETHIndiaLogo.png'
 import devfolioImage from '@/assets/svg/DevfolioLogo.svg'
+import codeCraftersImage from '@/assets/images/CodeCraftersLogo.png';
+import keychainlogo from '@/assets/svg/keyChainLogo.svg';
+import keplologo from "@/assets/images/keploLogo.png"
+import givemycertificate from "@/assets/images/givemycertficateLogo.png";
 
 export function Planks() {
   return (
@@ -81,6 +85,39 @@ export function ETHIndiaImage() {
   return (
     <div>
       <Image src={ethIndiaImage} alt="ETHIndia Sponsor" draggable={false}/>
+    </div>
+  );
+}
+
+
+export function Keychainlogo() {
+  return (
+    <div>
+      <Image src={keychainlogo} alt="ETHIndia Sponsor" draggable={false}/>
+    </div>
+  );
+}
+
+export function Keplologo() {
+  return (
+    <div>
+      <Image src={keplologo} alt="ETHIndia Sponsor" draggable={false}/>
+    </div>
+  );
+}
+
+export function CodeCraftersLogo() {
+  return (
+    <div>
+      <Image src={codeCraftersImage} alt="ETHIndia Sponsor" draggable={false}/>
+    </div>
+  );
+}
+
+export function Givemycertificate() {
+  return (
+    <div>
+      <Image src={givemycertificate} alt="ETHIndia Sponsor" draggable={false}/>
     </div>
   );
 }
