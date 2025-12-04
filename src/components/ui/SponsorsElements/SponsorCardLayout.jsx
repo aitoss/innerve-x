@@ -2,7 +2,7 @@ import SponsorCard from './SponsorCard';
 import { DevfolioImage, ETHIndiaImage, UdchaloImage , Givemycertificate , Keplologo , Keychainlogo, CodeCraftersLogo } from '@/components/ui/SponsorsElements/SponsorsImages';
 
 const sponsors1 = [
-  { image: UdchaloImage, alt: 'Udchalo Sponsor' },
+  // { image: UdchaloImage, alt: 'Udchalo Sponsor' },
   { image: Keychainlogo, alt: 'Sponsor 2' },
   // { image: DevfolioImage, alt: 'Sponsor 3' },
 ];
@@ -30,7 +30,7 @@ export function SponsorCardLayout1() {
   return (
     <div className="flex flex-wrap gap-x-6 gap-y-4 justify-center items-center scale-50 sm:scale-75 lg:scale-100 mx-[10%] -my-25 sm:-my-10 md:-my-8 lg:-my-4 xl:my-0">
       {sponsors1.map((sponsor, idx) => (
-        <div key={idx} className="w-full sm:w-1/2 lg:w-1/4 flex justify-center">
+        <div key={idx} className="w-full sm:w-1/2 lg:w-1/4 flex items-center justify-center">
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </div>
       ))}
