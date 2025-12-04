@@ -18,7 +18,7 @@ export function Planks() {
       <Image
         src={planks}
         alt="planks"
-        className="min-w-max h-36"
+        className="min-w-max h-30"
         draggable={false}
       />
     </div>
