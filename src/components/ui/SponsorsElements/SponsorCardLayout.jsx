@@ -2,7 +2,7 @@ import SponsorCard from './SponsorCard';
 import { DevfolioImage, ETHIndiaImage, UdchaloImage , Givemycertificate , Keplologo , Keychainlogo, CodeCraftersLogo } from '@/components/ui/SponsorsElements/SponsorsImages';
 
 const sponsors1 = [
-  { image: UdchaloImage, alt: 'Udchalo Sponsor' },
+  // { image: UdchaloImage, alt: 'Udchalo Sponsor' },
   { image: Keychainlogo, alt: 'Sponsor 2' },
   // { image: DevfolioImage, alt: 'Sponsor 3' },
 ];
