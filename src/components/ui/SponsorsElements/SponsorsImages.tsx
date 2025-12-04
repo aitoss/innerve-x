@@ -93,7 +93,7 @@ export function ETHIndiaImage() {
 export function Keychainlogo() {
   return (
     <div>
-      <Image src={keychainlogo} alt="ETHIndia Sponsor" draggable={false}/>
+      <Image src={keychainlogo} alt="ETHIndia Sponsor" draggable={false} className='scale-140' />
     </div>
   );
 }
