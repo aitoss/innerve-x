@@ -6,7 +6,7 @@ export default function SponsorCard({ image: ImageComponent, alt }) {
     <div className="relative w-fit m-4 flex items-center justify-center">
       <SponsorCardBorder />
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-3/4 max-w-[220px] flex justify-center items-center mx-auto">
+        <div className="w-73/80 flex justify-center items-center mx-auto">
           {ImageComponent ? <ImageComponent alt={alt} /> : null}
         </div>
       </div>

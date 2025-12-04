@@ -21,7 +21,7 @@ export default function Sponsors() {
       <div className='relative z-10 flex justify-center mb-4 md:mb-8 lg:mb-12'>
         <SponsorHeading />
       </div>
-      <div className="relative z-10">
+      <div className="z-10 grid grid-cols-1 gap-4 ">
         <SponsorSubHeading heading='TITLE SPONSORS' />
         <SponsorCardLayout1 />
         <SponsorSubHeading  heading='PLATFORM SPONSORS'/>

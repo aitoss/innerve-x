@@ -27,7 +27,7 @@ export function Planks() {
 
 export function SponsorCardBorder() {
   return (
-    <div>
+    <div >
       <Image src={sponsorCard} alt="sponsor card" draggable={false}/>
     </div>
   );
@@ -35,7 +35,7 @@ export function SponsorCardBorder() {
 
 export function UdchaloImage() {
   return (
-    <div>
+    <div className='max-w-[220px]'>
       <Image src={udchalo} alt="sponsor card" draggable={false}/>
     </div>
   );
@@ -75,7 +75,7 @@ export function SparkGif() {
 
 export function DevfolioImage() {
   return (
-    <div>
+    <div className='max-w-[220px]'>
       <Image src={devfolioImage} alt="Devfolio Sponsor" draggable={false}/>
     </div>
   );
@@ -83,7 +83,7 @@ export function DevfolioImage() {
 
 export function ETHIndiaImage() {
   return (
-    <div>
+    <div className='max-w-[220px]'>
       <Image src={ethIndiaImage} alt="ETHIndia Sponsor" draggable={false}/>
     </div>
   );
@@ -92,7 +92,7 @@ export function ETHIndiaImage() {
 
 export function Keychainlogo() {
   return (
-    <div>
+    <div className='flex px-[25%] py-[13%] mt-0.5 rounded-lg justify-center items-center bg-yellow-300'>
       <Image src={keychainlogo} alt="ETHIndia Sponsor" draggable={false} className='scale-140' />
     </div>
   );
@@ -100,7 +100,7 @@ export function Keychainlogo() {
 
 export function Keplologo() {
   return (
-    <div>
+    <div className='max-w-[220px]'>
       <Image src={keplologo} alt="ETHIndia Sponsor" draggable={false}/>
     </div>
   );
@@ -108,7 +108,7 @@ export function Keplologo() {
 
 export function CodeCraftersLogo() {
   return (
-    <div>
+    <div className='max-w-[220px]'>
       <Image src={codeCraftersImage} alt="ETHIndia Sponsor" draggable={false}/>
     </div>
   );
@@ -116,7 +116,7 @@ export function CodeCraftersLogo() {
 
 export function Givemycertificate() {
   return (
-    <div>
+    <div className='max-w-[220px]'>
       <Image src={givemycertificate} alt="ETHIndia Sponsor" draggable={false}/>
     </div>
   );
