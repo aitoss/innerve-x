@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import planks from '@/assets/svg/WoodPlanks.svg';
+import planks from '@/assets/svg/WoodPlanks.png';
 import sponsorCard from '@/assets/svg/SponsorCard.svg';
 import udchalo from '@/assets/images/UdChalo.png'
 import backgroundImage from '@/assets/images/SponsorsBackground.png'
@@ -76,7 +76,7 @@ export function SparkGif() {
 
 export function DevfolioImage() {
   return (
-    <div className='max-w-[220px]'>
+    <div className='max-w-[80%]'>
       <Image src={devfolioImage} alt="Devfolio Sponsor" draggable={false}/>
     </div>
   );
@@ -84,7 +84,7 @@ export function DevfolioImage() {
 
 export function ETHIndiaImage() {
   return (
-    <div className='max-w-[220px]'>
+    <div className='max-w-[85%]'>
       <Image src={ethIndiaImage} alt="ETHIndia Sponsor" draggable={false}/>
     </div>
   );
@@ -93,7 +93,7 @@ export function ETHIndiaImage() {
 
 export function Keychainlogo() {
   return (
-    <div className='flex px-[25%] py-[13%] mt-0.5 rounded-lg justify-center items-center '>
+    <div className='max-w-[80%]'>
       <Image src={keychainlogo} alt="ETHIndia Sponsor" draggable={false} className='scale-140' />
     </div>
   );
@@ -101,7 +101,7 @@ export function Keychainlogo() {
 
 export function Keplologo() {
   return (
-    <div className='max-w-[220px]'>
+    <div className='max-w-[80%]'>
       <Image src={keplologo} alt="ETHIndia Sponsor" draggable={false}/>
     </div>
   );
@@ -109,7 +109,7 @@ export function Keplologo() {
 
 export function CodeCraftersLogo() {
   return (
-    <div className='max-w-[220px]'>
+    <div className='max-w-[80%]'>
       <Image src={codeCraftersImage} alt="ETHIndia Sponsor" draggable={false}/>
     </div>
   );
