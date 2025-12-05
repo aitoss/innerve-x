@@ -11,6 +11,7 @@ import Audio from "@/components/ui/Audio";
 import ScrollBackToTopButton from "@/components/ui/scrollBackToTopButton";
 import { motion } from "motion/react"
 import Sponsors from "@/sections/SponsorsSection";
+import Testimonials from "@/sections/Testimonials";
 
 // Lazy load below-the-fold sections
 const PrizePoolSection = dynamic(() => import("@/sections/prizePoolSection"), {
@@ -96,6 +97,10 @@ export default function Home() {
       <Divider />
       <div id="timeline-section" data-section="timeline">
         <TimelineSection />
+      </div>
+      <Divider />
+      <div id="testimonials-section" data-section="testimonials">
+        <Testimonials />
       </div>
       <Divider />
       <div className="sponsor-section">
