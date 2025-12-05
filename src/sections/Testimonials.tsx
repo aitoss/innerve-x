@@ -26,7 +26,7 @@ export default function Testimonials() {
     ];
 
     return (
-        <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-12 sm:py-18 md:py-24 lg:py-32 ">
+        <div className="relative bg-black px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-12 sm:py-18 md:py-24 lg:py-32 ">
             <div className="relative font-angrybirds leading-[100%] mb-8 sm:mb-10 md:mb-12 lg:mb-16 text-center flex justify-center items-center">
                 <TestimonialsHeading />
             </div>
