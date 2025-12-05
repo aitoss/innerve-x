@@ -9,6 +9,7 @@ import ethIndiaImage from '@/assets/svg/ETHIndiaLogo.png'
 import devfolioImage from '@/assets/svg/DevfolioLogo.svg'
 import codeCraftersImage from '@/assets/images/CodeCraftersLogo.png';
 import keychainlogo from '@/assets/svg/keyChainLogo.svg';
+import keychainlogo2 from '@/assets/svg/keyChainLogo2.svg';
 import keplologo from "@/assets/images/keploLogo.png"
 import givemycertificate from "@/assets/images/givemycertficateLogo.png";
 
@@ -18,9 +19,9 @@ export function Planks() {
       <Image
         src={planks}
         alt="planks"
-        className="min-w-max h-30"
+        className="min-w-max md:h-30 h-18"
         draggable={false}
-      />
+      />  
     </div>
   );
 }
@@ -92,7 +93,7 @@ export function ETHIndiaImage() {
 
 export function Keychainlogo() {
   return (
-    <div className='flex px-[25%] py-[13%] mt-0.5 rounded-lg justify-center items-center bg-yellow-300'>
+    <div className='flex px-[25%] py-[13%] mt-0.5 rounded-lg justify-center items-center '>
       <Image src={keychainlogo} alt="ETHIndia Sponsor" draggable={false} className='scale-140' />
     </div>
   );

@@ -22,9 +22,9 @@ export default function Sponsors() {
         <SponsorHeading />
       </div>
       <div className="z-10 grid grid-cols-1 gap-4 ">
-        <SponsorSubHeading heading='TITLE SPONSORS' />
+        <SponsorSubHeading heading='TITLE SPONSOR' />
         <SponsorCardLayout1 />
-        <SponsorSubHeading  heading='PLATFORM SPONSORS'/>
+        <SponsorSubHeading  heading='PLATFORM SPONSOR'/>
         <SponsorCardLayout2 />
         <SponsorSubHeading  heading='GENERAL SPONSORS'/>
         <SponsorCardLayout3 />
