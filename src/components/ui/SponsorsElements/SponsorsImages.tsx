@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import planks from '@/assets/svg/WoodPlanks.png';
+import planks from '@/assets/images/WoodPlanks.png';
 import sponsorCard from '@/assets/svg/SponsorCard.svg';
 import udchalo from '@/assets/images/UdChalo.png'
 import backgroundImage from '@/assets/images/SponsorsBackground.png'
@@ -9,7 +9,6 @@ import ethIndiaImage from '@/assets/svg/ETHIndiaLogo.png'
 import devfolioImage from '@/assets/svg/DevfolioLogo.svg'
 import codeCraftersImage from '@/assets/images/CodeCraftersLogo.png';
 import keychainlogo from '@/assets/svg/keyChainLogo.svg';
-import keychainlogo2 from '@/assets/svg/keyChainLogo2.svg';
 import keplologo from "@/assets/images/keploLogo.png"
 import givemycertificate from "@/assets/images/givemycertficateLogo.png";
 
@@ -117,8 +116,8 @@ export function CodeCraftersLogo() {
 
 export function Givemycertificate() {
   return (
-    <div className='max-w-[220px]'>
-      <Image src={givemycertificate} alt="ETHIndia Sponsor" draggable={false}/>
+    <div className='max-w-[76%]'>
+      <Image src={givemycertificate} alt="ETHIndia Sponsor" draggable={false} className='scale-130' />
     </div>
   );
 }

@@ -106,7 +106,7 @@ export default function Home() {
       <div className="sponsor-section">
         <Sponsors />
       </div>
-      <Divider />
+      <DividerNoArrow />
       <div id="wtsu-section" data-section="sponsorus">
         <WantToSponsorsUsSection />
       </div>
