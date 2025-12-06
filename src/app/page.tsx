@@ -10,6 +10,8 @@ import LoadingScreen from "@/sections/LoadingScreen";
 import Audio from "@/components/ui/Audio";
 import ScrollBackToTopButton from "@/components/ui/scrollBackToTopButton";
 import { motion } from "motion/react"
+import Testimonials from "@/sections/Testimonials";
+import Sponsors from "@/sections/SponsorsSection";
 
 // Lazy load below-the-fold sections
 const PrizePoolSection = dynamic(() => import("@/sections/prizePoolSection"), {
@@ -97,6 +99,14 @@ export default function Home() {
         <TimelineSection />
       </div>
       <Divider />
+      <div id="testimonials-section" data-section="testimonials">
+        <Testimonials />
+      </div>
+      <Divider />
+      <div className="sponsor-section" data-section="sponsors">
+        <Sponsors />
+      </div>
+      <DividerNoArrow />
       <div id="wtsu-section" data-section="sponsorus">
         <WantToSponsorsUsSection />
       </div>

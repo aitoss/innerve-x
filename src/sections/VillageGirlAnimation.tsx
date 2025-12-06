@@ -27,6 +27,14 @@ const SECTION_CONFIG = {
     images: [7],
     description: "The journey map is revealed, follow the path to glory!"
   },
+  testimonials: {
+    images: [13],
+    description: "Hear the legends of past Code Warriors!"
+  },
+  sponsors: {
+    images: [11],
+    description: "Join forces with us, mighty Sponsor!"
+  },
   sponsorus: {
     images: [12],
     description: "Calling all mighty allies, power our event with your resources!"

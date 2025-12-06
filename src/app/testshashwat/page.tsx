@@ -103,7 +103,7 @@ export default function Home() {
         <Testimonials />
       </div>
       <Divider />
-      <div className="sponsor-section">
+      <div className="sponsor-section" data-section="sponsors">
         <Sponsors />
       </div>
       <DividerNoArrow />
