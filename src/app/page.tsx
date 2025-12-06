@@ -102,7 +102,7 @@ export default function Home() {
       <div id="testimonials-section" data-section="testimonials">
         <Testimonials />
       </div>
-      <Divider />
+      <DividerNoArrow />
       <div className="sponsor-section" data-section="sponsors">
         <Sponsors />
       </div>

@@ -70,7 +70,7 @@ export default function Footer() {
           <span className="whitespace-nowrap">Registration Open</span>
         </div>
         <div className="text-white font-sans text-xs sm:text-sm md:text-base lg:text-xl text-center order-3 md:order-2">
-          Made with ❤️ by Open Source Software Club
+          Made with ❤️ by Open Source Software Club 
         </div>
         <div className="text-white font-sans flex text-lg sm:text-xl md:text-2xl lg:text-xl gap-3 sm:gap-4 md:gap-5 order-2 md:order-3">
           <Link

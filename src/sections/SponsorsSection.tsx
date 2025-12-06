@@ -26,7 +26,7 @@ export default function Sponsors() {
         <SponsorCardLayout1 />
         <SponsorSubHeading  heading='PLATFORM SPONSOR'/>
         <SponsorCardLayout2 />
-        <SponsorSubHeading  heading='GENERAL SPONSORS'/>
+        <SponsorSubHeading  heading='Supporting SPONSORS'/>
         <SponsorCardLayout3 />
         {/* <SponsorSubHeading  heading='TITLE SPONSORS'/>
         <SponsorCardLayout4 /> */}
