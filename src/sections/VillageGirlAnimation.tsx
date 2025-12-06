@@ -110,6 +110,7 @@ export default function VillageGirlAnimation() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showBubble, setShowBubble] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAtBottom, setIsAtBottom] = useState(false);
 
   // Check if mobile menu is open
   useEffect(() => {
@@ -129,6 +130,40 @@ export default function VillageGirlAnimation() {
     });
 
     return () => observer.disconnect();
+  }, []);
+
+  // Check if user has scrolled to the bottom
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight;
+      const clientHeight = window.innerHeight;
+      
+      // Check if user is within 100px of the bottom
+      const isBottom = scrollTop + clientHeight >= scrollHeight - 100;
+      setIsAtBottom(isBottom);
+    };
+
+    // Initial check
+    handleScroll();
+
+    // Throttled scroll listener
+    let ticking = false;
+    const scrollListener = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", scrollListener, { passive: true });
+    
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    };
   }, []);
 
   // Get current section config
@@ -178,22 +213,35 @@ export default function VillageGirlAnimation() {
   }
 
   return (
-    <div className="fixed -bottom-[2.5%]  left-0 z-60 pointer-events-none flex ">
-      {/* Character Image */}
-      <AnimatePresence mode="wait" >
+    <AnimatePresence>
+      {!isAtBottom && (
         <motion.div
-          key={currentImage}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: isLoaded ? 1 : 0, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.9 }}
+          initial={{ y: 0, opacity: 1 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 200, opacity: 0 }}
           transition={{
             type: "spring",
-            stiffness: 300,
-            damping: 30,
-            duration: 0.2
+            stiffness: 100,
+            damping: 20,
+            duration: 0.5
           }}
-          className="relative w-32 md:w-40 aspect-1/2 "
+          className="fixed -bottom-[2.5%]  left-0 z-60 pointer-events-none flex "
         >
+          {/* Character Image */}
+          <AnimatePresence mode="wait" >
+            <motion.div
+              key={currentImage}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: isLoaded ? 1 : 0, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 30,
+                duration: 0.2
+              }}
+              className="relative w-32 md:w-40 aspect-1/2 "
+            >
           <Image
             src={`/VillageGirl/Girl_${currentImage}.png`}
             alt="Village Girl Character"
@@ -240,6 +288,8 @@ export default function VillageGirlAnimation() {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }

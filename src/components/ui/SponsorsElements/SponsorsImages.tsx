@@ -11,6 +11,7 @@ import codeCraftersImage from '@/assets/images/CodeCraftersLogo.png';
 import keychainlogo from '@/assets/svg/keyChainLogo.svg';
 import keplologo from "@/assets/images/keploLogo.png"
 import givemycertificate from "@/assets/images/givemycertficateLogo.png";
+import MlhLogoSponsers from '@/assets/svg/MlhLogo1.svg';
 
 export function Planks() {
   return (
@@ -94,6 +95,13 @@ export function Keychainlogo() {
   return (
     <div className='max-w-[80%]'>
       <Image src={keychainlogo} alt="ETHIndia Sponsor" draggable={false} className='scale-140' />
+    </div>
+  );
+}
+export function MlhLogoSponser() {
+  return (
+    <div className='max-w-[80%]'>
+      <Image src={MlhLogoSponsers} alt="ETHIndia Sponsor" draggable={false} className='scale-80' />
     </div>
   );
 }

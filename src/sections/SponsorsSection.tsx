@@ -3,7 +3,7 @@ import {
   Planks,
   SparkGif,
 } from '@/components/ui/SponsorsElements/SponsorsImages';
-import { SponsorCardLayout1 , SponsorCardLayout2 , SponsorCardLayout3 , SponsorCardLayout4  }  from '@/components/ui/SponsorsElements/SponsorCardLayout';
+import { SponsorCardLayout1 , SponsorCardLayout2 , SponsorCardLayout3 , SponsorCardLayout4, SponsorCardLayout5  }  from '@/components/ui/SponsorsElements/SponsorCardLayout';
 import SponsorHeading from '@/components/ui/SponsorsElements/SponsorHeading';
 import SponsorSubHeading from '@/components/ui/SponsorsElements/SponsorsSubHeading';
 
@@ -24,6 +24,8 @@ export default function Sponsors() {
       <div className="z-10 grid grid-cols-1 gap-4 ">
         <SponsorSubHeading heading='TITLE SPONSOR' />
         <SponsorCardLayout1 />
+        <SponsorSubHeading  heading='EVENT SPONSOR'/>
+        <SponsorCardLayout5 />
         <SponsorSubHeading  heading='PLATFORM SPONSOR'/>
         <SponsorCardLayout2 />
         <SponsorSubHeading  heading='Supporting SPONSORS'/>

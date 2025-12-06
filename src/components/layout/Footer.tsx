@@ -37,13 +37,13 @@ export default function Footer() {
           <div className="flex flex-col items-center">
             <p className="mb-2 md:mb-3">Jyoti Mishra</p>
             <a
-            href={`tel:9569795669`}
+              href={`tel:9569795669`}
               className="relative flex justify-center items-center  gap-6 px-6 p-2 text-white  w-fit  shadow-[0_3px_0_#000] text-xl  md:text-2xl  font-medium border-t-4 border-b-4 border-b-[#EC8F01]  border-t-[#FFF] text-shadow  rounded-xl cursor-pointer transition-transform duration-200 hover:scale-[1.01] active:scale-95"
               style={{
                 background:
                   "linear-gradient(180deg, #FFEA92 0%, #FFFABC 24%, #FFE673 50%, #FFC610 80%)",
               }}
-              
+
             >
               +91 95697 95669
             </a>
@@ -66,11 +66,14 @@ export default function Footer() {
       </div>
       <div className="w-full absolute bottom-0 px-4 sm:px-8 md:px-12 lg:px-20 py-3 md:py-4 border-t-2 border-[#FFFFFF1F] z-10 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2 bg-black/20 backdrop-blur-sm">
         <div className="text-white font-sans flex gap-2 items-center text-sm sm:text-base md:text-lg lg:text-xl order-1 md:order-1">
-          <div className="h-6 w-6 md:h-8 md:w-8 border-10 bg-[#3AFFA3] border-[#3A614F] rounded-full" />
-          <span className="whitespace-nowrap">Registration Open</span>
+          {/* <div className="h-6 w-6 md:h-8 md:w-8 border-10 bg-[#3AFFA3] border-[#3A614F] rounded-full" /> */}
+          <Link href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" target="_blank" rel="noopener noreferrer" className=" hover:text-yellow-300 transition-colors ">
+            MLH Code of Conduct
+          </Link>
         </div>
         <div className="text-white font-sans text-xs sm:text-sm md:text-base lg:text-xl text-center order-3 md:order-2">
-          Made with ❤️ by Open Source Software Club 
+          Made with ❤️ by Open Source Software Club
+
         </div>
         <div className="text-white font-sans flex text-lg sm:text-xl md:text-2xl lg:text-xl gap-3 sm:gap-4 md:gap-5 order-2 md:order-3">
           <Link
