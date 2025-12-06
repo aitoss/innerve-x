@@ -13,6 +13,7 @@ import Bat2 from "@/components/ui/HeroSectionElement/Bat_2";
 import Balloon from "@/components/ui/HeroSectionElement/Ballon";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
+import MlhLogo from "@/components/ui/HeroSectionElement/MlhLogo";
 
 
 export default function HeroSectionAnimation() {
@@ -68,7 +69,7 @@ export default function HeroSectionAnimation() {
             {/* this is absolute positioning section that is relative to the this hero section */}
 
             {/* this is the bottom zero layer Image */}
-            <Image src={heroImage} alt="Hero Image" layout="fill" objectFit="cover" className="absolute inset-0 z-0" draggable={false}/>
+            <Image src={heroImage} alt="Hero Image" layout="fill" objectFit="cover" className="absolute inset-0 z-0" draggable={false} />
             {/* <video
                 src="/videos/output_loop.webm"
                 className="absolute inset-0 w-full h-full object-cover z-0"
@@ -88,6 +89,7 @@ export default function HeroSectionAnimation() {
             <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.50) 100%)' }} />
 
 
+            <MlhLogo position="-top-8 right-[10%] md:top-0 md:right-[20%]" />
 
             {/* this is the second layer */}
             <BalloonShip X={BalloonShipX} Y={BalloonShipY} />
@@ -98,7 +100,7 @@ export default function HeroSectionAnimation() {
 
             {/* this is the bat section of positions with random movements */}
             <Bat1 position="top-[3%] right-[-3.5%]" size="max-sm:h-[30px] h-[50px] w-auto" X={bat1X} Y={bat1Y} /> {/* the top right bat */}
-            <Bat1 position="top-[30%]  right-[16%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat2X} Y={bat2Y} />  
+            <Bat1 position="top-[30%]  right-[16%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat2X} Y={bat2Y} />
             <Bat1 position="top-[36%] max-sm:left-[10%]  right-[20%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat3X} Y={bat3Y} /> {/* three bat as a background b2 */}
             <Bat2 position="top-[30%] max-sm:top-[26%] max-sm:left-[40%] right-[22%]" size="max-sm:h-[30px] h-[30px] w-auto" X={bat4X} Y={bat4Y} />
             <Bat2 position="top-[35%] right-[25%]" size="max-sm:h-[30px] h-[50px] w-auto" X={bat5X} Y={bat5Y} /> {/* bat side of innnerve logo */}
