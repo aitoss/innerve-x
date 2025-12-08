@@ -20,7 +20,7 @@ export default function BlueDragon({ X, Y }: BlueDragonProps) {
             }}
         >
             <div className="animate-float">
-                <Image src={BlueDragonImage} alt="Blue dragon" className="lg:w-auto md:w-8/10 sm:w-7/10 w-6/10" draggable={false}/>
+                <Image src={BlueDragonImage} alt="Blue dragon" className="lg:w-auto md:w-8/10 sm:w-7/10 w-6/10" draggable={false} priority />
             </div>
         </motion.div>
     );

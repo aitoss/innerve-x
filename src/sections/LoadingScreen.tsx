@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 
 export default function LoadingScreen() {
     const [progress, setProgress] = useState(0);
-    const rafRef = useRef<number>();
+    const rafRef = useRef<number | null>(null);
 
     useEffect(() => {
         const startTime = Date.now();
@@ -24,7 +24,9 @@ export default function LoadingScreen() {
 
         rafRef.current = requestAnimationFrame(animate);
         return () => {
-            if (rafRef.current) cancelAnimationFrame(rafRef.current);
+            if (rafRef.current !== null) {
+                cancelAnimationFrame(rafRef.current);
+            }
         };
     }, []);
 

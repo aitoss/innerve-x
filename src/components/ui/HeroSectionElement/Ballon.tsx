@@ -22,7 +22,7 @@ export default function Balloon({ position = "", size = "h-[100px] w-[100px]", X
             }}
         >
             <div className="animate-float-slow">
-                <Image src={BalloonImage} alt="Balloon" className={`${size}`} draggable={false}/>
+                <Image src={BalloonImage} alt="Balloon" className={`${size}`} draggable={false} priority/>
             </div>
         </motion.div>
     );
