@@ -114,7 +114,7 @@ export default function TrackSection() {
             {/* <div className="absolute inset-0 bg-linear-to-b from-transparent via-black to-black/0 pointer-events-none z-10" /> */}
             <div className="absolute inset-0 z-0 w-full/2 h-[]">
                 <Galaxy
-                    mouseRepulsion={!isMobile}
+                    mouseRepulsion={true}
                     mouseInteraction={!isMobile}
                     density={3}
                     glowIntensity={0.2}
