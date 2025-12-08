@@ -15,12 +15,14 @@ export default function Cloud({ position, X }: CloudProps) {
         <motion.div
             className={`absolute ${position} min-w-1/2 z-70 pointer-events-none gpu-accelerate`}
             style={{ 
-                x: X,
-                willChange: 'transform' // Add performance hint
+                x: X
             }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ 
+                duration: 1,
+                ease: "easeOut"
+            }}
         >
             <div className="relative">
                 {/* Reduce blur intensity on mobile */}
@@ -31,7 +33,7 @@ export default function Cloud({ position, X }: CloudProps) {
                     alt="Clouds"
                     className="relative max-sm:scale-130 blur-[0.5px] drop-shadow-[0_0_25px_rgba(255,255,255,0.9)]"
                     draggable={false}
-                    priority // Preload since it's above the fold
+                    priority
                 />
             </div>
         </motion.div>
