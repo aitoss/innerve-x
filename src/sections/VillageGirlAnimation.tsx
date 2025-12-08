@@ -184,7 +184,7 @@ export default function VillageGirlAnimation() {
   useEffect(() => {
     // Load initial image first
     const initialImg = new window.Image();
-    initialImg.src = `/VillageGirl/Girl_11.png`;
+    initialImg.src = `/VillageGirl/Girl_11.webp`;
     initialImg.onload = () => setIsLoaded(true);
 
     // Lazy load remaining images in the background
@@ -195,7 +195,7 @@ export default function VillageGirlAnimation() {
       imageNumbers.forEach((num, index) => {
         setTimeout(() => {
           const img = new window.Image();
-          img.src = `/VillageGirl/Girl_${num}.png`;
+          img.src = `/VillageGirl/Girl_${num}.webp`;
         }, index * 100); // Stagger loading
       });
     };
@@ -243,7 +243,7 @@ export default function VillageGirlAnimation() {
               className="relative w-32 md:w-40 aspect-1/2 "
             >
           <Image
-            src={`/VillageGirl/Girl_${currentImage}.png`}
+            src={`/VillageGirl/Girl_${currentImage}.webp`}
             alt="Village Girl Character"
             // width={160}
             // height={320}
