@@ -81,7 +81,7 @@ export function SponsorCardLayout4() {
 }
 export function SponsorCardLayout5() {
   return (
-    <div className="flex flex-wrap gap-x-6 gap-y-4 justify-center items-center scale-50 sm:scale-75 lg:scale-100 mx-[10%] -my-25 sm:-mt-2 md:-mt-15 lg:-my-4 xl:my-0">
+    <div className="flex flex-wrap gap-x-6 gap-y-10 justify-center items-start scale-50 sm:scale-75 lg:scale-100 mx-[10%] -my-5 lg:-my-4 xl:my-0">
       {sponsors5.map((sponsor, idx) => (
         <div key={idx} className="w-full sm:w-1/2 lg:w-1/4 flex justify-center">
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
