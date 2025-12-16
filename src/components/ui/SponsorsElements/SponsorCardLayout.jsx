@@ -1,5 +1,5 @@
 import SponsorCard from './SponsorCard';
-import { DevfolioImage, ETHIndiaImage, UdchaloImage , Givemycertificate , Keplologo , Keychainlogo, CodeCraftersLogo, MlhLogoSponser } from '@/components/ui/SponsorsElements/SponsorsImages';
+import { DevfolioImage, ETHIndiaImage, UdchaloImage , Givemycertificate , Keplologo , Keychainlogo, CodeCraftersLogo, MlhLogoSponser,AccopsLogoImage } from '@/components/ui/SponsorsElements/SponsorsImages';
 
 const sponsors1 = [
   // { image: UdchaloImage, alt: 'Udchalo Sponsor' },
@@ -28,6 +28,11 @@ const sponsors4 = [
 
 const sponsors5 = [
   { image: MlhLogoSponser, alt: 'Mlh Logo Sponsor' },
+  // { image: UdchaloImage, alt: 'Sponsor 2' },
+  // { image: UdchaloImage, alt: 'Sponsor 3' },
+];
+const sponsors6 = [
+  { image: AccopsLogoImage, alt: 'Accops Logo Sponsor' },
   // { image: UdchaloImage, alt: 'Sponsor 2' },
   // { image: UdchaloImage, alt: 'Sponsor 3' },
 ];
@@ -83,6 +88,17 @@ export function SponsorCardLayout5() {
   return (
     <div className="flex flex-wrap gap-x-6 gap-y-10 justify-center items-start scale-50 sm:scale-75 lg:scale-100 mx-[10%] -my-5 lg:-my-4 xl:my-0">
       {sponsors5.map((sponsor, idx) => (
+        <div key={idx} className="w-full sm:w-1/2 lg:w-1/4 flex justify-center">
+          <SponsorCard image={sponsor.image} alt={sponsor.alt} />
+        </div>
+      ))}
+    </div>
+  );
+}
+export function SponsorCardLayout6() {
+  return (
+    <div className="flex flex-wrap gap-x-6 gap-y-10 justify-center items-start scale-50 sm:scale-75 lg:scale-100 mx-[10%] -my-5 lg:-my-4 xl:my-0">
+      {sponsors6.map((sponsor, idx) => (
         <div key={idx} className="w-full sm:w-1/2 lg:w-1/4 flex justify-center">
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </div>

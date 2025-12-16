@@ -12,6 +12,8 @@ import keychainlogo from '@/assets/svg/keyChainLogo.svg';
 import keplologo from "@/assets/images/keploLogo.png"
 import givemycertificate from "@/assets/images/givemycertficateLogo.png";
 import MlhLogoSponsers from '@/assets/svg/MlhLogo1.svg';
+import AccopsLogo from '@/assets/svg/Accops_Logo.svg';
+import AccopsLogo2 from '@/assets/images/Accops_Systems.png';
 
 export function Planks() {
   return (
@@ -126,6 +128,14 @@ export function Givemycertificate() {
   return (
     <div className='max-w-[76%]'>
       <Image src={givemycertificate} alt="ETHIndia Sponsor" draggable={false} className='scale-130' />
+    </div>
+  );
+}
+
+export function AccopsLogoImage() {
+  return (
+    <div className='max-w-[80%]'>
+      <Image src={AccopsLogo2} alt="Accops Sponsor" draggable={false} className='scale-110 ' />
     </div>
   );
 }
