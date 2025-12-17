@@ -3,7 +3,7 @@ import {
   Planks,
   SparkGif,
 } from '@/components/ui/SponsorsElements/SponsorsImages';
-import { SponsorCardLayout1 , SponsorCardLayout2 , SponsorCardLayout3 , SponsorCardLayout4, SponsorCardLayout5, SponsorCardLayout6  }  from '@/components/ui/SponsorsElements/SponsorCardLayout';
+import { SponsorCardLayout1 , SponsorCardLayout2 , SponsorCardLayout3 , SponsorCardLayout4, SponsorCardLayout5, SponsorCardLayout6, SponsorCardLayout7  }  from '@/components/ui/SponsorsElements/SponsorCardLayout';
 import SponsorHeading from '@/components/ui/SponsorsElements/SponsorHeading';
 import SponsorSubHeading from '@/components/ui/SponsorsElements/SponsorsSubHeading';
 
@@ -30,6 +30,8 @@ export default function Sponsors() {
         <SponsorCardLayout6 />
         <SponsorSubHeading  heading='PLATFORM SPONSOR'/>
         <SponsorCardLayout2 />
+        <SponsorSubHeading  heading='MEDIA PARTNER'/>
+        <SponsorCardLayout7 />
         <SponsorSubHeading  heading='SUPPORTING SPONSORS'/>
         <SponsorCardLayout3 />
         {/* <SponsorSubHeading  heading='TITLE SPONSORS'/>

@@ -16,6 +16,7 @@ import AccopsLogo from '@/assets/svg/Accops_Logo.svg';
 import AccopsLogo2 from '@/assets/images/Accops_Systems.png';
 import MongoDbImage from '@/assets/svg/MongoDB_Fores-Green.svg';
 import MastraLogo from '@/assets/svg/MastraAi.svg';
+import Eventopia from '@/assets/svg/eventopia.svg';
 
 
 
@@ -155,6 +156,14 @@ export function MastraAiLogo() {
   return (
     <div className='max-w-[80%]'>
       <Image src={MastraLogo} alt="MastraAi Sponsor" draggable={false} width={300} className=' ' />
+    </div>
+  );
+}
+
+export function EventopiaLogo() {
+  return (
+    <div className='max-w-[80%]'>
+      <Image src={Eventopia} alt="Eventopia Sponsor" draggable={false} className='scale-110 ' />
     </div>
   );
 }
