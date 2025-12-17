@@ -1,5 +1,5 @@
 import SponsorCard from './SponsorCard';
-import { DevfolioImage, ETHIndiaImage, UdchaloImage , Givemycertificate , Keplologo , Keychainlogo, CodeCraftersLogo, MlhLogoSponser,AccopsLogoImage } from '@/components/ui/SponsorsElements/SponsorsImages';
+import { DevfolioImage, ETHIndiaImage, UdchaloImage , Givemycertificate , Keplologo , Keychainlogo, CodeCraftersLogo, MlhLogoSponser,AccopsLogoImage, MastraAiLogo, MongoDbLogo } from '@/components/ui/SponsorsElements/SponsorsImages';
 
 const sponsors1 = [
   // { image: UdchaloImage, alt: 'Udchalo Sponsor' },
@@ -14,10 +14,12 @@ const sponsors2 = [
 ];
 
 const sponsors3 = [
+  { image: MongoDbLogo, alt: 'mongodb' },
   { image: ETHIndiaImage, alt: 'Udchalo Sponsor' },
   { image: Givemycertificate, alt: 'Sponsor 2' },
   { image: Keplologo, alt: 'Sponsor 3' },
   { image: CodeCraftersLogo, alt: 'Sponsor 4' },
+  { image: MastraAiLogo, alt: 'mastra' },
 ];
 
 const sponsors4 = [
