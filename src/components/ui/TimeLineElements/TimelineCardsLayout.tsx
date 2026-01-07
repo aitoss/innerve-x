@@ -54,7 +54,7 @@ const timelineData: TimelineCardData[] = [
   {
     cardNumber: 3,
     cardHeading: "Announcement of Shortlisted Teams",
-    cardLine1: "Shortlisted teams will be announced on January 7, 2026.",
+    cardLine1: "Shortlisted teams will be announced on January 9, 2026.",
     cardLine2: "Check back to see if your team advances.",
     position: "right",
     yPosition: { base: 1100, xs: 1140, sm: 1120, md: 1160, lg: 1180, xl: 1180 },
