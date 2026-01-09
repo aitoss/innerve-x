@@ -39,7 +39,7 @@ export default function PrizePoolCard() {
           <div className="self-stretch px-2 md:px-3 pt-10 md:pt-14 pb-2 md:pb-3 bg-linear-to-b from-[#fdd05c] via-[#e9a907] to-[#e9a907] rounded-2xl md:rounded-3xl shadow-[0px_10px_0px_0px_rgba(0,0,0,0.25)] md:shadow-[0px_14px_0px_0px_rgba(0,0,0,0.25)] outline-8 md:outline-10 -outline-offset-8 md:outline-offset-[-10px] outline-[#e9a907] flex flex-col justify-start items-center gap-1.5 md:gap-2 overflow-hidden">
             <div className="self-stretch relative flex flex-col justify-center items-center">
               <div className="self-stretch text-stroke-h text-center justify-start text-white text-6xl md:text-8xl font-normal [text-shadow:0px_3px_0px_rgb(0_0_0/1.00)] md:[text-shadow:0px_4px_0px_rgb(0_0_0/1.00)]">
-                125K+
+                Rs.125K+
               </div>
               <div className="w-72 md:w-96 h-72 md:h-96 left-6 md:left-8 top-18 md:top-24 absolute">
                 <GlowAnimation />
@@ -83,7 +83,7 @@ export default function PrizePoolCard() {
           <div className="self-stretch px-2 md:px-3 pt-10 md:pt-14 pb-2 md:pb-3 bg-linear-to-b from-violet-500 via-purple-800 to-fuchsia-950 rounded-2xl md:rounded-3xl shadow-[0px_10px_0px_0px_rgba(0,0,0,0.25)] md:shadow-[0px_14px_0px_0px_rgba(0,0,0,0.25)] outline-8 md:outline-10 -outline-offset-8 md:outline-offset-[-10px] outline-[#452A76] flex flex-col justify-start items-center gap-1.5 md:gap-2 overflow-hidden">
             <div className="self-stretch relative flex flex-col justify-center items-center">
               <div className="self-stretch text-stroke-h text-center justify-start text-white text-6xl md:text-8xl font-normal [text-shadow:0px_3px_0px_rgb(0_0_0/1.00)] md:[text-shadow:0px_4px_0px_rgb(0_0_0/1.00)]">
-                75K+
+                Rs.75K+
               </div>
               <div className="w-72 md:w-96 h-72 md:h-96 left-6 md:left-8 top-18 md:top-24 absolute">
                 <GlowAnimation />
@@ -140,7 +140,7 @@ export default function PrizePoolCard() {
           <div className="self-stretch px-2 md:px-3 pt-10 md:pt-14 pb-2 md:pb-3 bg-[linear-gradient(180deg,#bd5341_0%,#A52D1C_36%,#62180f_71%)] rounded-2xl md:rounded-3xl shadow-[0px_10px_0px_0px_rgba(0,0,0,0.25)] md:shadow-[0px_14px_0px_0px_rgba(0,0,0,0.25)] outline-8 md:outline-10 -outline-offset-8 md:outline-offset-[-10px] outline-[#802b1e] flex flex-col justify-start items-center gap-1.5 md:gap-2 overflow-hidden">
             <div className="self-stretch relative flex flex-col justify-center items-center">
               <div className="self-stretch text-stroke-h text-center justify-start text-white text-6xl md:text-8xl font-normal [text-shadow:0px_3px_0px_rgb(0_0_0/1.00)] md:[text-shadow:0px_4px_0px_rgb(0_0_0/1.00)]">
-                50K+
+                Rs.50K+
               </div>
               <div className="w-72 md:w-96 h-72 md:h-96 left-6 md:left-8 top-18 md:top-24 absolute">
                 <GlowAnimation />
@@ -184,7 +184,7 @@ export default function PrizePoolCard() {
           <div className="self-stretch px-2 md:px-3 pt-10 md:pt-14 pb-2 md:pb-3 bg-[linear-gradient(180deg,#443E3F_0%,#33302F_40%,#131314_80%)] rounded-2xl md:rounded-3xl shadow-[0px_10px_0px_0px_rgba(0,0,0,0.25)] md:shadow-[0px_14px_0px_0px_rgba(0,0,0,0.25)] outline-8 md:outline-10 -outline-offset-8 md:outline-offset-[-10px] outline-[#5B524A] flex flex-col justify-start items-center gap-1.5 md:gap-2 overflow-hidden">
             <div className="self-stretch relative flex flex-col justify-center items-center">
               <div className="self-stretch text-stroke-h text-center justify-start text-white text-6xl md:text-8xl font-normal [text-shadow:0px_3px_0px_rgb(0_0_0/1.00)] md:[text-shadow:0px_4px_0px_rgb(0_0_0/1.00)]">
-                25K+
+                Rs.25K+
               </div>
               <div className="w-72 md:w-96 h-72 md:h-96 left-6 md:left-8 top-18 md:top-24 absolute">
                 <GlowAnimation />
@@ -228,7 +228,7 @@ export default function PrizePoolCard() {
           <div className="self-stretch px-2 md:px-3 pt-10 md:pt-14 pb-2 md:pb-3 bg-[linear-gradient(180deg,#BF90D8_11%,#9E4BB0_38%,#602C87_71%,#602C87_87%)] rounded-2xl md:rounded-3xl shadow-[0px_10px_0px_0px_rgba(0,0,0,0.25)] md:shadow-[0px_14px_0px_0px_rgba(0,0,0,0.25)] outline-8 md:outline-10 -outline-offset-8 md:outline-offset-[-10px] outline-[#8A41B5] flex flex-col justify-start items-center gap-1.5 md:gap-2 overflow-hidden">
             <div className="self-stretch relative flex flex-col justify-center items-center">
               <div className="self-stretch text-stroke-h text-center justify-start text-white text-6xl md:text-8xl font-normal [text-shadow:0px_3px_0px_rgb(0_0_0/1.00)] md:[text-shadow:0px_4px_0px_rgb(0_0_0/1.00)]">
-                15K+
+                Rs.15K+
               </div>
               <div className="w-72 md:w-96 h-72 md:h-96 left-6 md:left-8 top-18 md:top-24 absolute">
                 <GlowAnimation />
