@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Galaxy from "@/components/ui/TracksElements/Glaxy";
 // import Pink_Board from "../assets/Faq_board.png";
 
-type CategoryType = "GENERAL" | "REGISTRATION" | "STAY & TRAVEL" | "EXPENSES";
+type CategoryType = "GENERAL" | "REGISTRATION" | "STAY & TRAVEL" ;
 
 interface FAQ {
     question: string;
@@ -16,23 +16,23 @@ export default function FaqSection() {
     const [selectedCategory, setSelectedCategory] = useState<CategoryType>("GENERAL");
     const [openQuestion, setOpenQuestion] = useState<number | null>(null);
 
-    const categories: CategoryType[] = ["GENERAL", "REGISTRATION", "STAY & TRAVEL", "EXPENSES"];
+    const categories: CategoryType[] = ["GENERAL", "REGISTRATION", "STAY & TRAVEL"];
     const faqsData: FAQsData = {
         GENERAL: [
             {
-                question: "What are the highlights of Innerve 10?",
+                question: "What is Innerve?",
                 answer:
-                    "A 24-hour hackathon with challenging problems, exciting swags and goodies for participants. We also conduct seminars and interactions with industry experts.",
+                    "A 24-hour offline hackathon with challenging problems, exciting swags and goodies for participants. We also conduct seminars and interactions with industry experts.",
             },
             {
                 question: "What are the different phases of the hackathon?",
                 answer:
-                    "Phase 1, the Idea Submission Round, will be conducted online, while Phase 2, the Building Round, will take place offline at the AIT Campus.",
+                    "Phase 1, the Idea Submission Round, will be conducted online, while Phase 2, the prototype Building Round, will take place offline at the AIT Campus.",
             },
             {
                 question: "Who is eligible to participate?",
                 answer:
-                    "Innerve 10 welcomes participants passionate about coding with keen interest in problem-solving.",
+                    "Innerve 10 welcomes participants passionate about coding with keen interest in problem-solving, i.e., students, professionals, and hobbyists from diverse backgrounds.",
             },
             {
                 question: "What kind of prizes can participants expect?",
@@ -42,27 +42,27 @@ export default function FaqSection() {
         ],
         REGISTRATION: [
             {
-                question: "How do I apply for Innerve 10",
+                question: "How do I apply for Innerve 10?",
                 answer:
-                    "Our registration forms are out. Kindly refer to the filling instructions available on the website.",
+                    "Our registration forms are out. Kindly refer to the filling instructions available on the website. The deadline is 8 January 2026.",
             },
             {
                 question: "Is there a registration fee for Innerve?",
-                answer: "There is no registration fee. It's open for all.",
+                answer: "There is no registration fee. It is open for all.",
             },
             {
                 question: "Is there a minimum or maximum size for the team?",
-                answer: "Yes, 2-4 participants are allowed per team.",
+                answer: "Yes, minimum 2 and maximum 4 participants are allowed per team.",
             },
             {
                 question: "What are the dates of Phase 1 & 2?",
-                answer: `Idea Pitching: 15th Dec - 15th Jan & 24hrs Hackathon: 30th -31st Jan`,
+                answer: `Idea Pitching: 15th Dec 2025 - 8th Jan 2026 & 24-hrs Hackathon: 30th - 31st Jan 2026`,
             },
         ],
         "STAY & TRAVEL": [
             {
-                question: "Where can participants find accommodation during Innerve 10?",
-                answer: "Lodging is available at the AIT Campus itself.",
+                question: "Where can participants find accommodation during the hackthon?",
+                answer: "Lodging is available at the AIT Campus itself. Mess and stay will be provided to all participants.",
             },
             // {
             //     question: "How do I book accommodation?",
@@ -70,32 +70,37 @@ export default function FaqSection() {
             //         "We will be providing accomodation for participants on our own, there will be no hassle from your side. All finalists will be provided with lodging.",
             // },
             {
-                question: "How to reach the venue?",
+                question: "How do we reach the venue?",
                 answer:
-                    "Please contact the OSS Club, our team will be available to assist you with the location and travel details.",
+                    "Location is available below. For any further assistance please contact the OSS Club.",
+            },
+            {
+                question: "Will there be any travel reimbursements provided?",
+                answer:
+                    "Travel reimbursements will not be provided to participants. Participants are advised to plan their travel accordingly.",
             },
             {
                 question: "What to bring during in-person reporting at the venue?",
                 answer:
                     "Carry your documents and devices. Stay on the lookout for further updates.",
             },
-        ],
-        EXPENSES: [
-            {
-                question: "What expenses does Innerve 10 cover for participants?",
-                answer:
-                    "Innerve 10 covers the registration fees for all participants, ensuring a seamless experience for attendees.",
-            },
-            {
-                question: "Are travel-related expenses reimbursable for participants?",
-                answer:
-                    "The OSS Club will not cover  travel expenses for participants.",
-            },
-            {
-                question: "Is there any additional cost for mess and lodgings?",
-                answer: "There will be no additional expenses.",
-            },
-        ],
+        ]
+        // EXPENSES: [
+        //     {
+        //         question: "What expenses does Innerve 10 cover for participants?",
+        //         answer:
+        //             "Innerve 10 covers the registration fees for all participants, ensuring a seamless experience for attendees.",
+        //     },
+        //     {
+        //         question: "Are travel-related expenses reimbursable for participants?",
+        //         answer:
+        //             "The OSS Club will not cover  travel expenses for participants.",
+        //     },
+        //     {
+        //         question: "Is there any additional cost for mess and lodgings?",
+        //         answer: "There will be no additional expenses.",
+        //     },
+        // ],
     };
 
     useEffect(() => {
@@ -133,10 +138,10 @@ export default function FaqSection() {
                             <button
                                 key={category}
                                 onClick={() => setSelectedCategory(category)}
-                                className="md:w-full w-7/10 cursor-pointer transition-transform duration-200 hover:scale-[1.01] active:scale-95"
+                                className={`md:w-full w-7/10 cursor-pointer transition-transform duration-200 hover:scale-[1.01] active:scale-95  `}
                                 style={{ width: 'full', paddingLeft: 11, paddingRight: 11, paddingTop: 10, paddingBottom: 10, background: 'linear-gradient(0deg, #DB7200 49%, #EDAA4A 50%, #FFE394 100%)', boxShadow: '0px 1.650254726409912px 0px #FBBB31 inset', overflow: 'hidden', borderRadius: 47.86, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex' }}>
-                                <div style={{ alignSelf: 'stretch', paddingLeft: 16, paddingRight: 16, paddingTop: 8, paddingBottom: 8, background: '#FCCC31', boxShadow: '0px -2.0628185272216797px 0px #F8DC47 inset', overflow: 'hidden', borderRadius: 35.29, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex' }}>
-                                    <div style={{ textAlign: 'center', color: 'white', fontWeight: '400', wordWrap: 'break-word', textShadow: '0px 3px 0px rgba(0, 0, 0, 1.00)' }} className="text-stroke-black md:text-4xl text-lg ">{category}</div>
+                                <div className={`${selectedCategory === category ? "bg-amber-500" : "bg-[#FCCC31]"}`} style={{ alignSelf: 'stretch', paddingLeft: 16, paddingRight: 16, paddingTop: 8, paddingBottom: 8, boxShadow: '0px -2.0628185272216797px 0px #F8DC47 inset', overflow: 'hidden', borderRadius: 35.29, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex' }}>
+                                    <div  style={{ textAlign: 'center', color: 'white', fontWeight: '400', wordWrap: 'break-word', textShadow: '0px 3px 0px rgba(0, 0, 0, 1.00)' }} className="text-stroke-black md:text-4xl text-lg ">{category}</div>
                                 </div>
                             </button>
                         ))}
