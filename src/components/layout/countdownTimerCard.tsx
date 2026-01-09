@@ -11,7 +11,7 @@ export default function CountdownTimerCard() {
           {/* Mobile: 214px, SM: 306px, MD: 428px, LG: 612px */}
           <div className="h-[45px] w-[214px] sm:h-[67px] sm:w-[306px] md:h-[93px] md:w-[428px] lg:h-[133px] lg:w-[612px] mb-5 md:mb-8 bg-[linear-gradient(180deg,#25aa87_0%,#52f4c0_8%,#0fae7e_17%,#00875f_88%)] rounded-t-[7px] sm:rounded-t-[10px] md:rounded-t-[14px] lg:rounded-t-[20px] rounded-b-xl">
             <div className="h-10 text-stroke-h4 sm:h-[60px] md:h-[83px] lg:h-[119px] rounded-t-[7px] sm:rounded-t-[10px] md:rounded-t-[14px] lg:rounded-t-[20px] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[36px] text-white [text-shadow:0_1.2px_0_#000] sm:[text-shadow:0_1.8px_0_#000] md:[text-shadow:0_2.5px_0_#000] lg:[text-shadow:0_3.558px_0_#000] flex items-center justify-center">
-              Game Starts In
+              War Starts In
             </div>
             <div className="h-[5px] sm:h-[7px] md:h-2.5 lg:h-3.5 bg-[linear-gradient(180deg,#f2db70_0%,#ffdc77_39%,#a3701f_100%)] rounded-b-xl"></div>
           </div>
