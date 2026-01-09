@@ -27,7 +27,7 @@ export default function LenisProvider({
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
       orientation: "vertical",
       smoothWheel: true,
-      wheelMultiplier: 0.7, // Lower value = slower scroll (default is 1)
+      wheelMultiplier: 1, // Lower value = slower scroll (default is 1)
     });
 
     let rafId: number;
