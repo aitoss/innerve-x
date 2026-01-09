@@ -33,10 +33,10 @@ const SECTION_CONFIG = {
   },
   sponsors: {
     images: [11],
-    description: "Join forces with us, mighty Sponsor!"
+    description: "Join forces with us, mighty Sponsors!"
   },
   sponsorus: {
-    images: [12],
+    images: [4],
     description: "Calling all mighty allies, power our event with your resources!"
   },
   faq: {
