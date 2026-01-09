@@ -7,7 +7,7 @@ import { MdOutlineMail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="relative flex justify-center items-center w-full min-h-screen py-8 md:py-10">
+    <footer className="relative flex justify-center items-center w-full min-h-screen mt-8 py-8 md:py-10">
       <Image
         src={FooterImg}
         alt="Footer Image"
@@ -84,7 +84,7 @@ export default function Footer() {
             <MdOutlineMail className="hover:text-pink-500 transition-colors cursor-pointer" />
           </Link>
           <Link
-            href="https://www.instagram.com/ossclub.ait/?igsh=aGJka2VnaHZjaXg5#"
+            href="https://www.instagram.com/innerve.tech/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -98,14 +98,14 @@ export default function Footer() {
             <FaMeta className="hover:text-blue-500 transition-colors cursor-pointer" />
           </Link>
           <Link
-            href="https://discord.com/invite/innerve"
+            href="https://discord.gg/rBrnsHZ6SA"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaDiscord className="hover:text-indigo-500 transition-colors cursor-pointer" />
           </Link>
           <Link
-            href="https://discord.gg/rBrnsHZ6SA"
+            href="https://www.x.com/ait_oss"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -119,7 +119,7 @@ export default function Footer() {
             <FaGithub className="hover:text-gray-300 transition-colors cursor-pointer" />
           </Link>
           <Link
-            href="https://www.linkedin.com/company/open-source-software-club/posts/?feedView=all"
+            href="https://www.linkedin.com/company/open-source-software-club/"
             target="_blank"
             rel="noopener noreferrer"
           >
