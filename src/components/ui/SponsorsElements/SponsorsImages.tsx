@@ -17,6 +17,8 @@ import AccopsLogo2 from '@/assets/images/Accops_Systems.png';
 import MongoDbImage from '@/assets/svg/MongoDB_Fores-Green.svg';
 import MastraLogo from '@/assets/svg/MastraAi.svg';
 import Eventopia from '@/assets/svg/eventopia.svg';
+import BankOfBarodaLogo from '@/assets/images/Bank_of_Baroda_logo.png';
+import JoshLogo from '@/assets/images/josh.png';
 
 
 
@@ -164,6 +166,22 @@ export function EventopiaLogo() {
   return (
     <div className='max-w-[80%]'>
       <Image src={Eventopia} alt="Eventopia Sponsor" draggable={false} className='scale-110 ' />
+    </div>
+  );
+}
+
+export function BankOfBarodaLogoImage() {
+  return (
+    <div className='max-w-[80%]'>
+      <Image src={BankOfBarodaLogo} alt="BankOfBaroda Sponsor" draggable={false} className='scale-110 ' />
+    </div>
+  );
+}
+
+export function JoshLogoImage() {
+  return (
+    <div className='max-w-[80%]'>
+      <Image src={JoshLogo} alt="Josh Sponsor" draggable={false} className='scale-110 ' />
     </div>
   );
 }
