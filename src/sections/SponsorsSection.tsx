@@ -26,16 +26,16 @@ export default function Sponsors() {
         <SponsorCardLayout1 />
         <SponsorSubHeading  heading='EVENT PARTNER'/>
         <SponsorCardLayout5 />
+        <SponsorSubHeading  heading='GOLD SPONSOR'/>
+        <SponsorCardLayout9 />
+        <SponsorSubHeading  heading='BANKING PARTNER'/>
+        <SponsorCardLayout8 />
         <SponsorSubHeading  heading='BRONZE SPONSOR'/>
         <SponsorCardLayout6 />
         <SponsorSubHeading  heading='PLATFORM SPONSOR'/>
         <SponsorCardLayout2 />
         <SponsorSubHeading  heading='MEDIA PARTNER'/>
         <SponsorCardLayout7 />
-        <SponsorSubHeading  heading='BANKING PARTNER'/>
-        <SponsorCardLayout8 />
-        <SponsorSubHeading  heading='GOLD SPONSOR'/>
-        <SponsorCardLayout9 />
         <SponsorSubHeading  heading='SUPPORTING SPONSORS'/>
         <SponsorCardLayout3 />
 
