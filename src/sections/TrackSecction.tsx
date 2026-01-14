@@ -27,7 +27,8 @@ const TRACKS_CARDS_DATA = [
         BC2: "border-[#FFBF64]",
         Logo: TrackHealthImg,
         CornerImg: BlueCornerImg,
-        Title: "Health"
+        Title: "Health",
+        alt: "Track Health"
     },
     {
         BgColor: "bg-[#E4630E]",
@@ -35,7 +36,8 @@ const TRACKS_CARDS_DATA = [
         BC2: "border-[#FBC3C1]",
         Logo: TrackArVr,
         CornerImg: OrangeCornerImg,
-        Title: "AR/VR"
+        Title: "AR/VR",
+        alt: "Track AR/VR"
     },
     {
         BgColor: "bg-[#CA4CFA]",
@@ -43,7 +45,8 @@ const TRACKS_CARDS_DATA = [
         BC2: "border-[#FFBF64]",
         Logo: TrackEduTech,
         CornerImg: PurpleCornerImg,
-        Title: "EduTech"
+        Title: "EduTech",
+        alt: "Track EduTech"
     },
     {
         BgColor: "bg-[#2860BC]",
@@ -51,7 +54,8 @@ const TRACKS_CARDS_DATA = [
         BC2: "border-[#FFBF64]",
         Logo: TrackGameDev,
         CornerImg: BlueCornerImg,
-        Title: "GameDev"
+        Title: "GameDev",
+        alt: "Track GameDev"
     },
     {
         BgColor: "bg-[#E4630E]",
@@ -59,7 +63,8 @@ const TRACKS_CARDS_DATA = [
         BC2: "border-[#FBC3C1]",
         Logo: TrackFinTech,
         CornerImg: OrangeCornerImg,
-        Title: "FinTech"
+        Title: "FinTech",
+        alt: "Track FinTech"
     },
     {
         BgColor: "bg-[#CA4CFA]",
@@ -67,7 +72,8 @@ const TRACKS_CARDS_DATA = [
         BC2: "border-[#FFBF64]",
         Logo: TrackCyberSec,
         CornerImg: PurpleCornerImg,
-        Title: "CyberSec"
+        Title: "CyberSec",
+        alt: "Track CyberSec"
     },
     {
         BgColor: "bg-[#2860BC]",
@@ -75,7 +81,8 @@ const TRACKS_CARDS_DATA = [
         BC2: "border-[#FFBF64]",
         Logo: TrackBlockChain,
         CornerImg: BlueCornerImg,
-        Title: "BlockChain"
+        Title: "BlockChain",
+        alt: "Track BlockChain"
     },
     {
         BgColor: "bg-[#E4630E]",
@@ -83,7 +90,8 @@ const TRACKS_CARDS_DATA = [
         BC2: "border-[#FBC3C1]",
         Logo: TrackLogistics,
         CornerImg: OrangeCornerImg,
-        Title: "Logistics"
+        Title: "Logistics",
+        alt: "Track Logistics"
     },
     {
         BgColor: "bg-[#CA4CFA]",
@@ -91,7 +99,8 @@ const TRACKS_CARDS_DATA = [
         BC2: "border-[#FFBF64]",
         Logo: DefenceLogo,
         CornerImg: PurpleCornerImg,
-        Title: "Defence"
+        Title: "Defence",
+        alt: "Track Defence"
     }
 ]
 
@@ -133,6 +142,7 @@ export default function TrackSection() {
                             Logo={card.Logo}
                             CornerImg={card.CornerImg}
                             Title={card.Title}
+                            alt={card.alt}
                         />
                     </div>
                 ))}

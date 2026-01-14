@@ -9,15 +9,16 @@ interface TrackCardProps {
     BC2?: string,
     Logo: string,
     CornerImg: string,
-    Title: string
+    Title: string,
+    alt: string
 }
 
-export default function TrackCard({ BgColor, BC1, BC2, Logo, CornerImg, Title }: TrackCardProps) {
+export default function TrackCard({ BgColor, BC1, BC2, Logo, CornerImg, Title, alt }: TrackCardProps) {
     return (
         <div className="inline-block w-fit h-fit  md:scale-100 scale-83 justify-center items-center  ">
             <div className={`relative w-[270px] h-[338px] mb-10 flex px-2.5 py-[15px] ${BgColor} border-[5px] ${BC1} `}>
                 <div className={`flex flex-1 justify-center items-center bg-transparent border-[6px] ${BC2} `}>
-                    <Image src={Logo} alt="TrackHealth" draggable={false}/>
+                    <Image src={Logo} alt={alt} draggable={false}/>
                 </div>
                 <CornerElement ImageSrc={CornerImg} Position="-top-4 -left-4" Rotation="0deg" />
                 <CornerElement ImageSrc={CornerImg} Position="-top-4 -right-4" Rotation="90deg" />
