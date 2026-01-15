@@ -24,14 +24,14 @@ export default function Sponsors() {
       <div className="z-10 grid grid-cols-1 gap-4 ">
         <SponsorSubHeading heading='TITLE SPONSOR' />
         <SponsorCardLayout1 />
-        <SponsorSubHeading  heading='EVENT PARTNER'/>
-        <SponsorCardLayout5 />
         <SponsorSubHeading  heading='GOLD SPONSOR'/>
         <SponsorCardLayout9 />
-        <SponsorSubHeading  heading='BANKING PARTNER'/>
-        <SponsorCardLayout8 />
         <SponsorSubHeading  heading='BRONZE SPONSOR'/>
         <SponsorCardLayout6 />
+        <SponsorSubHeading  heading='EVENT PARTNER'/>
+        <SponsorCardLayout5 />
+        <SponsorSubHeading  heading='BANKING PARTNER'/>
+        <SponsorCardLayout8 />
         <SponsorSubHeading  heading='PLATFORM SPONSOR'/>
         <SponsorCardLayout2 />
         <SponsorSubHeading  heading='MEDIA PARTNER'/>

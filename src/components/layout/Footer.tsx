@@ -7,7 +7,7 @@ import { MdOutlineMail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="relative flex justify-center items-center w-full min-h-screen mt-8 py-8 md:py-10">
+    <footer className="relative flex justify-center items-center w-full min-h-screen  py-8 md:py-10">
       <Image
         src={FooterImg}
         alt="Footer Image"
