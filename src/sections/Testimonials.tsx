@@ -15,7 +15,7 @@ export default function Testimonials() {
             content:
                 "Innerve 8 was an incredible experience! The challenges were both exciting and tough, pushing me to think creatively and outside the box. The collaborative atmosphere made problem-solving even more rewarding, and I’ve learned a ton from my teammates. Can't wait for the next one!",
             name: "Anjali Gupta, Developer",
-            collegeName: "NIT Ranchi",
+            collegeName: "NIT Patna",
         },
         {
             content:
