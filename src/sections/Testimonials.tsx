@@ -21,7 +21,7 @@ export default function Testimonials() {
             content:
                 "Participating in Innerve 9 was a transformative experience. The hackathon not only allowed me to enhance my coding skills but also provided the opportunity to work on real-world projects alongside dedicated developers. The mentorship provided was exceptional, and the event was exceptionally well-organized.",
             name: "Jaskirat Singh, UI/UX designer",
-            collegeName: "Graphic Era",
+            collegeName: "Graphic Era Hill University",
         },
     ];
 
