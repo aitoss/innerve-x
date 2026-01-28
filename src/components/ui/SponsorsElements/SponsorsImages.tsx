@@ -19,6 +19,7 @@ import MastraLogo from '@/assets/svg/MastraAi.svg';
 import Eventopia from '@/assets/svg/eventopia.svg';
 import BankOfBarodaLogo from '@/assets/images/Bank_of_Baroda_logo.png';
 import JoshLogo from '@/assets/images/josh.png';
+import miniOrange from '@/assets/svg/miniOrange black.svg';
 
 
 
@@ -95,6 +96,14 @@ export function ETHIndiaImage() {
   return (
     <div className='max-w-[85%]'>
       <Image src={ethIndiaImage} alt="ETHIndia Sponsor" draggable={false}/>
+    </div>
+  );
+}
+
+export function MiniOrange() {
+  return (
+    <div className='max-w-[85%]'>
+      <Image src={miniOrange} alt="MiniOrange Sponsor" draggable={false}/>
     </div>
   );
 }

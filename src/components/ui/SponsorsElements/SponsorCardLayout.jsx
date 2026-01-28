@@ -1,5 +1,5 @@
 import SponsorCard from './SponsorCard';
-import { DevfolioImage, ETHIndiaImage, UdchaloImage, Givemycertificate, Keplologo, Keychainlogo, CodeCraftersLogo, MlhLogoSponser, AccopsLogoImage, MastraAiLogo, MongoDbLogo, EventopiaLogo, JoshLogoImage, BankOfBarodaLogoImage } from '@/components/ui/SponsorsElements/SponsorsImages';
+import { DevfolioImage, ETHIndiaImage, MiniOrange, UdchaloImage, Givemycertificate, Keplologo, Keychainlogo, CodeCraftersLogo, MlhLogoSponser, AccopsLogoImage, MastraAiLogo, MongoDbLogo, EventopiaLogo, JoshLogoImage, BankOfBarodaLogoImage } from '@/components/ui/SponsorsElements/SponsorsImages';
 import Link from 'next/link';
 
 const sponsors1 = [
@@ -24,7 +24,7 @@ const sponsors3 = [
 ];
 
 const sponsors4 = [
-  { image: ETHIndiaImage, alt: 'Udchalo Sponsor', link: 'https://ethindia-villa.devfolio.co/' },
+  { image: MiniOrange, alt: 'MiniOrange ', link: 'https://ethindia-villa.devfolio.co/' },
   // { image: UdchaloImage, alt: 'Sponsor 2' },
   // { image: UdchaloImage, alt: 'Sponsor 3' },
 ];
