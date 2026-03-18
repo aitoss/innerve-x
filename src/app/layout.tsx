@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { s } from "motion/react-client";
 import LenisProvider from "@/utils/LenisProvider";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -72,6 +73,22 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${clashClan.variable} antialiased`}
       >
         <LenisProvider>{children}</LenisProvider>
+
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-C9RLSHB45B"
+          strategy="afterInteractive"
+        />
+
+        {/* Initialize GA */}
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-C9RLSHB45B');
+          `}
+        </Script>
       </body>
     </html>
   );
