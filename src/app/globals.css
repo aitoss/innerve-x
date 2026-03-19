@@ -39,7 +39,7 @@ body {
     color: #E8C068;
     text-shadow:
       3px 3px 0 #000,
-      6px 6px 0 rgba(0, 0, 0, 0.8),
+      6px 6px 0 rgba(0, 0, 0, 0.7),
       9px 9px 0 rgba(0, 0, 0, 0.6),
       12px 12px 0 rgba(0, 0, 0, 0.4);
     -webkit-text-stroke: 3px black;
