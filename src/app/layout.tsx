@@ -40,23 +40,23 @@ const clashClan = localFont({
 // });
 
 export const metadata: Metadata = {
-  title: "Innerve X",
+  title: "Innerve 11",
   description:
     "A 24-hour hackathon with challenging problems, exciting swags and goodies for participants. We also conduct seminars and interactions with industry experts.",
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "Innerve X",
+    title: "Innerve 11",
     description:
       "A 24-hour hackathon with challenging problems, exciting swags and goodies for participants.",
     url: "https://www.innerve.tech",
-    siteName: "Innerve X",
+    siteName: "Innerve 11",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Innerve X",
+    title: "Innerve 11",
     description:
       "A 24-hour hackathon with challenging problems, exciting swags and goodies for participants.",
   },

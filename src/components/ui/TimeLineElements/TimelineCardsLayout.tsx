@@ -30,7 +30,7 @@ const timelineData: TimelineCardData[] = [
   {
     cardNumber: 1,
     cardHeading: "Registration Starts",
-    cardLine1: "Secure your spot starting November 15, 2025, at 12:00 AM IST.",
+    cardLine1: "Secure your spot starting November 15, 2026, at 12:00 AM IST.",
     cardLine2: "Join us for an exciting 24-hour hackathon!",
     position: "right",
     yPosition: { base: 230, xs: 200, sm: 260, md: 220, lg: 320, xl: 320 },
@@ -42,7 +42,7 @@ const timelineData: TimelineCardData[] = [
   {
     cardNumber: 2,
     cardHeading: "Registration Ends",
-    cardLine1: "Registration closes on December 31, 2025, at 11:59 PM IST.",
+    cardLine1: "Registration closes on December 31, 2026, at 11:59 PM IST.",
     cardLine2: "Don't miss your chance to be a part of this incredible event!",
     position: "left",
     yPosition: { base: 670, xs: 630, sm: 710, md: 700, lg: 720, xl: 680 },
@@ -54,7 +54,7 @@ const timelineData: TimelineCardData[] = [
   {
     cardNumber: 3,
     cardHeading: "Announcement of Shortlisted Teams",
-    cardLine1: "Shortlisted teams will be announced on January 8, 2026.",
+    cardLine1: "Shortlisted teams will be announced on January 8, 2027.",
     cardLine2: "Check back to see if your team advances.",
     position: "right",
     yPosition: { base: 1100, xs: 1140, sm: 1120, md: 1160, lg: 1180, xl: 1180 },
@@ -66,7 +66,7 @@ const timelineData: TimelineCardData[] = [
   {
     cardNumber: 4,
     cardHeading: "Hackathon Begins",
-    cardLine1: "The 24-hour coding marathon starts on January 30, 2026.",
+    cardLine1: "The 24-hour coding marathon starts on January 30, 2027.",
     cardLine2: "Build innovative solutions and bring your ideas to life!",
     position: "left",
     yPosition: { base: 1600, xs: 1600, sm: 1600, md: 1600, lg: 1650, xl: 1680 },
@@ -78,7 +78,7 @@ const timelineData: TimelineCardData[] = [
   {
     cardNumber: 5,
     cardHeading: "Results Announced",
-    cardLine1: "Winners will be announced on January 31, 2026.",
+    cardLine1: "Winners will be announced on January 31, 2027.",
     cardLine2: "Exciting prizes and recognition awaits!",
     position: "right",
     yPosition: { base: 2100, xs: 2100, sm: 2100, md: 2100, lg: 2100, xl: 2200 },
