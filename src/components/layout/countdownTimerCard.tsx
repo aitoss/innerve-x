@@ -24,7 +24,7 @@ export default function CountdownTimerCard() {
               <ClockAnimation />
             </div>
             <div className="text-center pr-4  flex-1">
-              <CountdownTimer eventdate={new Date(2026, 0, 30, 9, 0, 0)} />
+              <CountdownTimer eventdate={new Date(2027, 0, 29, 9, 0, 0)} />
             </div>
             {/* Mobile: 35px, SM: 50px, MD: 70px, LG: 100px */}
             <div className="hidden md:block absolute -left-[42px] sm:-left-[60px] md:-left-[84px] lg:-left-34 -top-0.5 sm:-top-1 w-[35px] sm:w-[50px] md:w-[70px] lg:w-[100px]">

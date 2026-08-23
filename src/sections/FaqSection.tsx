@@ -32,7 +32,7 @@ export default function FaqSection() {
             {
                 question: "Who is eligible to participate?",
                 answer:
-                    "Innerve 10 welcomes participants passionate about coding with keen interest in problem-solving, i.e., students, professionals, and hobbyists from diverse backgrounds.",
+                    "Innerve 11 welcomes participants passionate about coding with keen interest in problem-solving, i.e., students, professionals, and hobbyists from diverse backgrounds.",
             },
             {
                 question: "What kind of prizes can participants expect?",
@@ -44,7 +44,7 @@ export default function FaqSection() {
             {
                 question: "How do I apply for Innerve 10?",
                 answer:
-                    "Our registration forms are out. Kindly refer to the filling instructions available on the website. The deadline is 8 January 2026.",
+                    "Our registration forms are out. Kindly refer to the filling instructions available on the website. The deadline is 8 January 2027.",
             },
             {
                 question: "Is there a registration fee for Innerve?",
@@ -56,7 +56,7 @@ export default function FaqSection() {
             },
             {
                 question: "What are the dates of Phase 1 & 2?",
-                answer: `Idea Pitching: 15th Dec 2025 - 8th Jan 2026 & 24-hrs Hackathon: 30th - 31st Jan 2026`,
+                answer: `Idea Pitching: 15th Dec 2026 - 8th Jan 2027 & 24-hrs Hackathon: 30th - 31st Jan 2027`,
             },
         ],
         "STAY & TRAVEL": [
