@@ -7,21 +7,22 @@ export default function Testimonials() {
     const data = [
         {
             content:
-                "Innerve provided an excellent platform for innovation and self-challenge. I had the opportunity to engage with talented individuals, work on pioneering ideas, and observe diverse approaches to problem-solving. The energy and learning experiences were exceptional. I highly recommend it",
-            name: "Priya Verma, Data Scientist",
-            collegeName: "RVCE Bangalore",
+                "This has been the best experience I’ve had over many hackthons. The time management,evaluation process, sponsor support,overall program coordination, were exceptionally well planned.eEverything from accommodation to a proper execution. It’s rare to see such well organized management, and the effort truly showed. Huge appreciation to the organizing team for doing such a crazy job.",
+            name: "Mohit Nippanikar",
+            collegeName: "SVKM's Dwarkadas J. Sanghvi College of Engineering",
         },
         {
             content:
-                "Innerve 8 was an incredible experience! The challenges were both exciting and tough, pushing me to think creatively and outside the box. The collaborative atmosphere made problem-solving even more rewarding, and I’ve learned a ton from my teammates. Can't wait for the next one!",
-            name: "Anjali Gupta, Developer",
-            collegeName: "NIT Patna",
+                "InNerve was honestly such a fun and memorable experience! The mentors were super supportive, and the judges were genuinely interested in understanding our projects and ideas. From the great food and endless coffee to the comfortable, friendly vibe, everything made the hackathon so enjoyable. Learned a lot, had loads of fun, and winning 1st Runner-Up made it even more special!",
+            name: "Manasvi Mittal",
+            collegeName: "Indira Gandhi Delhi Technical University for Women",
         },
+
         {
             content:
-                "Participating in Innerve 9 was a transformative experience. The hackathon not only allowed me to enhance my coding skills but also provided the opportunity to work on real-world projects alongside dedicated developers. The mentorship provided was exceptional, and the event was exceptionally well-organized.",
-            name: "Jaskirat Singh, UI/UX designer",
-            collegeName: "Graphic Era Hill University",
+                " Innerve X was an unforgettable journey of innovation and teamwork! The competitive yet thrilling atmosphere pushed us to think creatively and build complex web solutions from scratch, helping us clinch the 2nd Runner-Up title. We enjoyed every minute of the coding sprints and the collaborative vibe. It’s an exceptional platform for developers to challenge their limits. Can't wait for the next one!",
+            name: "Vivek Negi",
+            collegeName: "Army Institute of Technology",
         },
     ];
 
