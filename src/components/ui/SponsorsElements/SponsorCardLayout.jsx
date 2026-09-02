@@ -1,21 +1,7 @@
 import SponsorCard from "./SponsorCard";
 
 import {
-  DevfolioImage,
-  ETHIndiaImage,
-  MiniOrange,
-  UdchaloImage,
-  Givemycertificate,
-  Keplologo,
-  Keychainlogo,
-  CodeCraftersLogo,
-  MlhLogoSponser,
-  AccopsLogoImage,
-  MastraAiLogo,
-  MongoDbLogo,
-  EventopiaLogo,
-  JoshLogoImage,
-  BankOfBarodaLogoImage,
+  DevfolioImage,ETHIndiaImage,MiniOrange,UdchaloImage,Givemycertificate,Keplologo,Keychainlogo,CodeCraftersLogo,MlhLogoSponser,AccopsLogoImage,MastraAiLogo,MongoDbLogo,EventopiaLogo,JoshLogoImage,BankOfBarodaLogoImage,
 } from "@/components/ui/SponsorsElements/SponsorsImages";
 
 import Link from "next/link";
@@ -114,11 +100,7 @@ export function SponsorCardLayout1() {
     <div className="flex flex-wrap gap-x-6 gap-y-4 justify-center items-center scale-50 sm:scale-75 lg:scale-100 mx-[10%] mt-0 sm:-mt-1 md:-mt-15 lg:-my-4 xl:my-0">
       {sponsors1.map((sponsor, idx) => (
         <Link
-          href={sponsor.link}
-          key={idx}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
+          href={sponsor.link} key={idx} target="_blank" rel="noopener noreferrer" className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
         >
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </Link>
@@ -132,11 +114,7 @@ export function SponsorCardLayout2() {
     <div className="flex flex-wrap gap-x-6 gap-y-4 justify-center items-center scale-50 sm:scale-75 lg:scale-100 mx-[10%] mb-2 mt-0 sm:mt-2 md:-mt-10 lg:-my-4 xl:my-0">
       {sponsors2.map((sponsor, idx) => (
         <Link
-          href={sponsor.link}
-          key={idx}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
+          href={sponsor.link} key={idx} target="_blank" rel="noopener noreferrer" className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
         >
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </Link>
@@ -150,11 +128,7 @@ export function SponsorCardLayout3() {
     <div className="flex flex-wrap gap-x-6 gap-y-4 justify-center items-center scale-50 sm:scale-75 lg:scale-100 mx-[10%] mt-0 mb-0 sm:mb-0 sm:-mt-12 md:-mt-25 lg:-my-4 xl:my-0">
       {sponsors3.map((sponsor, idx) => (
         <Link
-          href={sponsor.link}
-          key={idx}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
+          href={sponsor.link} key={idx} target="_blank" rel="noopener noreferrer" className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
         >
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </Link>
@@ -168,11 +142,7 @@ export function SponsorCardLayout4() {
     <div className="flex flex-wrap gap-x-6 gap-y-4 justify-center items-center scale-50 sm:scale-75 lg:scale-100 mx-[10%] my-0 sm:-mt-2 md:-mt-15 lg:-my-4 xl:my-0">
       {sponsors4.map((sponsor, idx) => (
         <Link
-          href={sponsor.link}
-          key={idx}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
+          href={sponsor.link} key={idx} target="_blank" rel="noopener noreferrer" className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
         >
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </Link>
@@ -186,11 +156,7 @@ export function SponsorCardLayout5() {
     <div className="flex flex-wrap gap-x-6 gap-y-10 justify-center items-start scale-50 sm:scale-75 lg:scale-100 mx-[10%] my-0 lg:-my-4 xl:my-0">
       {sponsors5.map((sponsor, idx) => (
         <Link
-          href={sponsor.link}
-          key={idx}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
+          href={sponsor.link} key={idx} target="_blank" rel="noopener noreferrer" className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
         >
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </Link>
@@ -204,11 +170,7 @@ export function SponsorCardLayout6() {
     <div className="flex flex-wrap gap-x-6 gap-y-10 justify-center items-start scale-50 sm:scale-75 lg:scale-100 mx-[10%] my-0 lg:-my-4 xl:my-0">
       {sponsors6.map((sponsor, idx) => (
         <Link
-          href={sponsor.link}
-          key={idx}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
+          href={sponsor.link} key={idx} target="_blank" rel="noopener noreferrer" className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
         >
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </Link>
@@ -222,11 +184,7 @@ export function SponsorCardLayout7() {
     <div className="flex flex-wrap gap-x-6 gap-y-10 justify-center items-start scale-50 sm:scale-75 lg:scale-100 mx-[10%] my-0 lg:-my-4 xl:my-0">
       {sponsors7.map((sponsor, idx) => (
         <Link
-          href={sponsor.link}
-          key={idx}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
+          href={sponsor.link} key={idx} target="_blank" rel="noopener noreferrer" className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
         >
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </Link>
@@ -240,11 +198,7 @@ export function SponsorCardLayout8() {
     <div className="flex flex-wrap gap-x-6 gap-y-10 justify-center items-start scale-50 sm:scale-75 lg:scale-100 mx-[10%] my-0 lg:-my-4 xl:my-0">
       {sponsors8.map((sponsor, idx) => (
         <Link
-          href={sponsor.link}
-          key={idx}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
+          href={sponsor.link} key={idx} target="_blank" rel="noopener noreferrer" className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
         >
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </Link>
@@ -258,11 +212,7 @@ export function SponsorCardLayout9() {
     <div className="flex flex-wrap gap-x-6 gap-y-10 justify-center items-start scale-50 sm:scale-75 lg:scale-100 mx-[10%] my-0 lg:-my-4 xl:my-0">
       {sponsors9.map((sponsor, idx) => (
         <Link
-          href={sponsor.link}
-          key={idx}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
+          href={sponsor.link} key={idx} target="_blank" rel="noopener noreferrer" className="w-full sm:w-1/2 lg:w-1/4 flex justify-center"
         >
           <SponsorCard image={sponsor.image} alt={sponsor.alt} />
         </Link>
