@@ -88,7 +88,7 @@ export function SparkGif() {
 export function DevfolioImage() {
   return (
     <div className='max-w-[80%]'>
-      <Image src={Devfolio_Logo_Black} alt="Devfolio Sponsor" draggable={false}/>
+      <Image src={Devfolio_Logo_Black} alt="DEVFOLIO LOGO" draggable={false}/>
     </div>
   );
 }
