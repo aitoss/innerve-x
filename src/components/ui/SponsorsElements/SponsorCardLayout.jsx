@@ -15,8 +15,8 @@ const sponsors1 = [
 const sponsors2 = [
   {
     image: DevfolioImage,
-    alt: "Udchalo Sponsor",
-    link: "https://devfolio.co/discover",
+    alt: "DEVFOLIO LOGO",
+    link: "https://devfolio.co/",
   },
   // { image: ETHIndiaImage, alt: 'Sponsor 2' },
   // { image: UdchaloImage, alt: 'Sponsor 3' },
