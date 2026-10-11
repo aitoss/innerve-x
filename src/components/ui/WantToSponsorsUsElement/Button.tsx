@@ -2,7 +2,7 @@
 export default function WTSUButton() {
 
     const handleClick = () => {
-        window.open("https://docs.google.com/forms/d/e/1FAIpQLSdXpQDM4iE8h5CCY0FVx5n6B7fxv_TtAgzoPH-gNycNjbM0XA/viewform", "_blank");
+        // window.open("https://docs.google.com/forms/d/e/1FAIpQLSdXpQDM4iE8h5CCY0FVx5n6B7fxv_TtAgzoPH-gNycNjbM0XA/viewform", "_blank");
     }
     const handlePaymentClick = () => {
         window.open("https://razorpay.me/@hilkin", "_blank");

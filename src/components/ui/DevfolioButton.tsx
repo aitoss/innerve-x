@@ -17,7 +17,7 @@ export default function DevfolioButton() {
   return (
     <div
       className="apply-button"
-      data-hackathon-slug="innerve-x"
+      data-hackathon-slug="innerve-11"
       data-button-theme="light"
       style={{ height: "44px", width: "312px" }}
     ></div>

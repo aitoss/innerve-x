@@ -14,7 +14,7 @@ import Balloon from "@/components/ui/HeroSectionElement/Ballon";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import MlhLogo from "@/components/ui/HeroSectionElement/MlhLogo";
-import ResultButton from "@/components/ui/ResultButton";
+// import ResultButton from "@/components/ui/ResultButton";
 
 
 export default function HeroSectionAnimation() {
@@ -122,7 +122,7 @@ export default function HeroSectionAnimation() {
             <motion.div className="z-40 flex flex-col items-center space-y-10 " style={{ y: centerContentY }} >
                 <InnerveHeadingLogo />
                 <DevfolioButton />
-                <ResultButton/>
+                {/* <ResultButton/> */}
             </motion.div>
         </section>
     )
