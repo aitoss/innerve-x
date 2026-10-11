@@ -58,22 +58,22 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [isContentReady, setIsContentReady] = useState(false);
 
-  useEffect(() => {
-    // Simulate minimum loading time for smooth transition
-    const minLoadTime = setTimeout(() => {
-      setIsLoading(false);
-      // Start revealing content after loading screen exits
-      setTimeout(() => {
-        setIsContentReady(true);
-      }, 300);
-    }, 2500);
+  // useEffect(() => {
+  //   // Simulate minimum loading time for smooth transition
+  //   const minLoadTime = setTimeout(() => {
+  //     setIsLoading(false);
+  //     // Start revealing content after loading screen exits
+  //     setTimeout(() => {
+  //       setIsContentReady(true);
+  //     }, 300);
+  //   }, 2500);
 
-    return () => clearTimeout(minLoadTime);
-  }, []);
+  //   return () => clearTimeout(minLoadTime);
+  // }, []);
 
-  if (isLoading) {
-    return <LoadingScreen />;
-  }
+  // if (isLoading) {
+  //   return <LoadingScreen />;
+  // }
 
   return (
     <motion.main
