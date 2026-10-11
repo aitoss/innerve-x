@@ -7,6 +7,7 @@ import headingEnds from '@/assets/svg/SponsorHeadingEnds.svg'
 import sparkgif from '@/assets/gif/sparks.gif'
 import ethIndiaImage from '@/assets/svg/ETHIndiaLogo.png'
 import devfolioImage from '@/assets/svg/DevfolioLogo.svg'
+import Devfolio_Logo_Black from '@/assets/svg/Devfolio_Logo-Black.svg'
 import codeCraftersImage from '@/assets/images/CodeCraftersLogo.png';
 import keychainlogo from '@/assets/svg/keyChainLogo.svg';
 import keplologo from "@/assets/images/keploLogo.png"
@@ -87,7 +88,7 @@ export function SparkGif() {
 export function DevfolioImage() {
   return (
     <div className='max-w-[80%]'>
-      <Image src={devfolioImage} alt="Devfolio Sponsor" draggable={false}/>
+      <Image src={Devfolio_Logo_Black} alt="Devfolio Sponsor" draggable={false}/>
     </div>
   );
 }
