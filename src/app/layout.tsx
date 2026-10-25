@@ -89,6 +89,7 @@ export default function RootLayout({
             gtag('config', 'G-C9RLSHB45B');
           `}
         </Script>
+        <script defer src="https://apply.devfolio.co/v2/sdk.js"></script>
       </body>
     </html>
   );
