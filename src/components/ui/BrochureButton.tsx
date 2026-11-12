@@ -4,7 +4,7 @@ import ButtonSound from "../../utils/ButtonClickedSound"
 export default function BrochureButton() {
 const handleClick = () => {
     ButtonSound();
-    window.open('https://drive.google.com/file/d/1monejdXhVQOtgusD3PEUIt7B63WgBdfA/view?usp=drive_link', '_blank');
+    window.open('https://drive.google.com/file/d/1kcBuw6igb2xDGS1xgk9HivU-EvKXRS6D/view?usp=sharing', '_blank');
 }
 
 
