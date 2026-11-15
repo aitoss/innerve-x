@@ -1,5 +1,4 @@
 'use client';
-import BrochureButton from "../ui/BrochureButton";
 import InnerveNavbarLogo from "../ui/InnerveNavbarLogo";
 import NavigationBar from "../ui/NavigationBar";
 
@@ -13,10 +12,8 @@ export default function xNavbar() {
       <div className="flex justify-between items-center p-3 px-4 sm:p-4 sm:px-6 md:p-5 md:px-8 lg:px-14">
         <InnerveNavbarLogo />
         <NavigationBar />
-        {/* Hide BrochureButton on mobile since it's now in the hamburger menu */}
-        <div className="hidden md:block">
-          <BrochureButton />
-        </div>
+        {/* Spacer to keep nav links centered after removing BrochureButton from top right */}
+        <div className="hidden md:block w-30 md:w-[160px]" />
       </div>
     </nav>
   );
