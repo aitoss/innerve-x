@@ -90,7 +90,7 @@ export default function HeroSectionAnimation() {
             <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.50) 100%)' }} />
 
 
-            <MlhLogo position="-top-8 right-[10%] md:top-0 md:right-[20%]" />
+            <MlhLogo position="-top-8 right-[10%] md:top-0 md:right-8 lg:right-14" />
 
             {/* this is the second layer */}
             <BalloonShip X={BalloonShipX} Y={BalloonShipY} />
